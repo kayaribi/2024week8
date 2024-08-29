@@ -16,26 +16,26 @@ img {
 }
 
 .title-text {
-	font-size: 16px;
-	font-weight: 600;
+	font-size: 16px !important;
+	font-weight: 600 !important;
 }
 
 .sub-text {
-	font-size: 16px;
-	font-weight: 600;
+	font-size: 16px !important;
+	font-weight: 600 !important;
 }
 
 .body2-text {
-	font-size: 14px;
+	font-size: 14px !important;
 }
 
 .tiny-text {
-	font-size: 12px;
+	font-size: 12px !important;
 }
 
 @media screen and (min-width: 768px) {
 	.body-text {
-			font-size: 16px;
+			font-size: 16px !important;
 		}
 		
 }

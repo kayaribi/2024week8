@@ -57,6 +57,15 @@ $utilities: map-merge(
   )
 );
 
+$utilities: map-merge(
+  $utilities, (
+    "font-weight": map-merge(
+      map-get($utilities, "font-weight"),
+      ( responsive: true ),
+      ),
+  )
+);
+
 @import "../../node_modules/bootstrap/scss/utilities/api";
 @import "./base/base.scss";
 
