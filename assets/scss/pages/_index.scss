@@ -1,4 +1,4 @@
-// 看看大家都買了什麼-倫倫
+// 看看大家都買了什麼--倫倫
 
 .everyone-wrap-zindex {
   position: relative;
@@ -96,4 +96,24 @@
 .fix-swiper-shadow {
   margin-left: -12px;
   margin-right: -12px;
+}
+
+// 想學什麼嗎？一探究竟--倫倫
+
+.learn-wrap {
+  max-width: 1656px;
+  background-color: $primary;
+}
+
+.learn-icon-wrap {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+}
+
+.learnswiper {
+  .swiper-slide > a {
+    display: inline-block;
+    width: 272px;
+  }
 }
