@@ -525,7 +525,12 @@ $utilities: map-merge(
         medium: $font-weight-medium,
         semibold: $font-weight-semibold,
         bold: $font-weight-bold,
-        bolder: $font-weight-bolder
+        bolder: $font-weight-bolder,
+        300: $font-weight-light,
+        400: $font-weight-normal,
+        500: $font-weight-medium,
+        600: $font-weight-semibold,
+        700: $font-weight-bold
       )
     ),
     "line-height": (

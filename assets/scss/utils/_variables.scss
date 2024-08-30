@@ -491,6 +491,8 @@ $spacers: (
   23: $spacer * 5.75,
   24: $spacer * 6,
   25: $spacer * 6.25,
+  30: $spacer * 7.5,
+  50: $spacer * 12.5,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -622,9 +624,12 @@ $border-color-translucent:    rgba($black, .175) !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
-$border-radius:               .375rem !default;
-$border-radius-sm:            .25rem !default;
-$border-radius-lg:            .5rem !default;
+// $border-radius:               .375rem !default;
+// $border-radius-sm:            .25rem !default;
+// $border-radius-lg:            .5rem !default;
+$border-radius:               .5rem !default;
+$border-radius-sm:            .75rem !default;
+$border-radius-lg:            1.25rem !default;
 $border-radius-xl:            1rem !default;
 $border-radius-xxl:           2rem !default;
 $border-radius-pill:          50rem !default;
@@ -681,7 +686,7 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      system-ui, -apple-system, "Poppins", "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      "Poppins", "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$prefix}font-sans-serif) !default;
