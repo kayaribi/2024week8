@@ -1,4 +1,27 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.footer-rounded{
+  border-top-left-radius: 48px;
+  border-top-right-radius: 48px;
+  
+
+  
+}
+.footer-logo{
+  width: 200px;
+  height: 32px;
+}
+.footer-link:hover{
+  color: yellow;
+
+}
+
+.footer-icon{
+  cursor: pointer;
+  &:hover{
+    color: yellow;
+    border:1px solid yellow !important;
+  } 
+}
+
+.text-D4D4D4{
+  color: #D4D4D4;
 }
