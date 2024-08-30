@@ -1,5 +1,5 @@
 // core version + navigation, pagination modules:
-import Swiper from "swiper";
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
 import { Navigation, Pagination } from "swiper/modules";
 
 // import Swiper and modules styles
@@ -47,4 +47,17 @@ const learnswiper = new Swiper(".learnswiper", {
   speed: 400,
   spaceBetween: 24,
   slidesPerView: 1,
+});
+
+// 頂尖講師 --蚊香
+var teacherswiper = new Swiper(".teacherswiper", {
+  spaceBetween: 24,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: 3,
+    },
+  },
 });
