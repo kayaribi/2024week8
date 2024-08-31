@@ -28,6 +28,8 @@ var swiper = new Swiper(".bannerSwiper", {
 
 
 
+// 看看大家都買了什麼--倫倫
+
 // init Swiper:
 const everyoneBuyswiper = new Swiper(".everyoneBuyswiper", {
   modules: [Navigation, Pagination],
@@ -54,4 +56,12 @@ const everyoneBuyswiper = new Swiper(".everyoneBuyswiper", {
     nextEl: ".everyoneBuy-button-next",
     prevEl: ".everyoneBuy-button-prev",
   },
+});
+
+// 想學什麼嗎？一探究竟--倫倫
+
+const learnswiper = new Swiper(".learnswiper", {
+  speed: 400,
+  spaceBetween: 24,
+  slidesPerView: 1,
 });
