@@ -1,7 +1,7 @@
 // core version + navigation, pagination modules:
 import Swiper from "swiper";
 import { Navigation, Pagination } from "swiper/modules";
-
+// import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
 // import Swiper and modules styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -10,6 +10,23 @@ import "swiper/css/pagination";
 import "./assets/scss/all.scss";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
+//banner swiper
+
+
+var swiper = new Swiper(".bannerSwiper", {
+  modules: [Navigation, Pagination],
+  spaceBetween: 40,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  navigation: {
+    nextEl: ".banner-button-next",
+    prevEl: ".banner-button-prev",
+  },
+});
+
+
+
 
 // init Swiper:
 const everyoneBuyswiper = new Swiper(".everyoneBuyswiper", {

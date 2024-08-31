@@ -10,9 +10,77 @@
 
 <body>
   <%- include('./layout/header'); -%>
+    <!-- banner--星星 -->
+    <div class="swiper bannerSwiper position-relative overflow-visible">
+      <div class="swiper-wrapper">
+        <!-- =========== 1 ============== -->
+        <div class="swiper-slide banner-rounded-pc-80 overflow-hidden" style="background: url('/assets/images/hero-2.png') no-repeat center center/cover;">
+          <div class="container container-lg-none d-flex h-100 justify-content-center flex-lg-column">
+            <!-- 熱銷課程 -->
+            <div class="slogan bg-white banner-rounded-100 p-lg-4 mt-auto mb-12 me-lg-auto">
+              <div class="d-flex align-items-center">
+                <span class="banner-rounded-100 bg-primary-10 me-2 py-2 px-3 d-flex body2-text fw-semibold">
+                  <p class="text-primary text-nowrap">熱銷課程</p>
+                  <img src="/assets/images/icons/ic_fire.png" alt="fire" style="height: 14px;" class="me-3">
+                </span>
+                <p class="fw-semibold slogn-text">給成人的鋼琴入門課，一小時教你彈奏上手！</p>
+              </div>
+            </div>
+            <!-- PC-按鈕 -->
+            <button class="banner-lg-btn btn btn-primary fw-semibold text-white py-8 d-none d-lg-block me-lg-auto">探索感興趣的課程，今天立即上課<i class="ms-4 bi bi-arrow-right"></i></button>
+          </div>
+          <img class="banner-flower position-absolute top-0 d-none d-lg-block" src="../assets/images/deco/flower-4.png" alt="flower">
+        </div>
+        <!-- =========== 2 ============== -->
+        <div class="swiper-slide banner-rounded-pc-80 overflow-hidden" style="background: url('/assets/images/hero-3.png') no-repeat center center/cover;">
+          <div class="container container-lg-none d-flex h-100 justify-content-center flex-lg-column">
+            <!-- 熱銷課程 -->
+            <div class="slogan bg-white banner-rounded-100 p-lg-4 mt-auto mb-12 me-lg-auto">
+              <div class="d-flex align-items-center">
+                <span class="banner-rounded-100 bg-primary-10 me-2 py-2 px-3 d-flex body2-text fw-semibold">
+                  <p class="text-primary text-nowrap">熱銷課程</p>
+                  <img src="/assets/images/icons/ic_fire.png" alt="fire" style="height: 14px;" class="me-3">
+                </span>
+                <p class="fw-semibold slogn-text">在鍋中煮出的，不僅是美食，更是情感。</p>
+              </div>
+            </div>
+            <!-- PC-按鈕 -->
+            <button class="banner-lg-btn btn btn-primary fw-semibold text-white py-8 d-none d-lg-block me-lg-auto">探索感興趣的課程，今天立即上課<i class="ms-4 bi bi-arrow-right"></i></button>
+          </div>
+        </div>
+        <!-- =========== 3 ============== -->
+        <div class="swiper-slide banner-rounded-pc-80 overflow-hidden" style="background: url('/assets/images/hero-1.png') no-repeat center center/cover;">
+          <div class="container container-lg-none d-flex h-100 justify-content-center flex-lg-column">
+            <!-- 熱銷課程 -->
+            <div class="slogan bg-white banner-rounded-100 p-lg-4 mt-auto mb-12 me-lg-auto">
+              <div class="d-flex align-items-center">
+                <span class="banner-rounded-100 bg-primary-10 me-2 py-2 px-3 d-flex body2-text fw-semibold">
+                  <p class="text-primary text-nowrap">熱銷課程</p>
+                  <img src="/assets/images/icons/ic_fire.png" alt="fire" style="height: 14px;" class="me-3">
+                </span>
+                <p class="fw-semibold slogn-text">透過鏡頭看世界，發現生活的美。</p>
+              </div>
+            </div>
+            <!-- PC-按鈕 -->
+            <button class="banner-lg-btn btn btn-primary fw-semibold text-white py-8 d-none d-lg-block me-lg-auto">探索感興趣的課程，今天立即上課<i class="ms-4 bi bi-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+<!-- 分頁 -->
+      <div class="swiper-pagination d-block d-lg-none"></div>
+<!-- 箭頭 -->
+      <div class="banner-button-prev d-none d-lg-block position-absolute translate-middle top-50 start-0 p-4 shadow-lg">
+        <i class="bi bi-arrow-left"></i>
+      </div>
+      <div class="banner-button-next d-none d-lg-block position-absolute translate-middle top-50 start-100 p-4 shadow-lg">
+        <i class="bi bi-arrow-right"></i>
+      </div>
+    </div>
+    <button class="btn btn-primary rounded-0 w-100 body2-text fw-semibold text-white py-4 d-block d-lg-none">探索感興趣的課程，今天立即上課<i class="ms-4 bi bi-arrow-right"></i></button>
 
-    
-    <section class="everyone py-sm-30 py-20" style="background: linear-gradient(#f0f6ff, #ffffff)">
+
+    <!-- 看看大家都買了什麼--倫倫 -->
+    <section class="everyone py-sm-30 py-20 position-relative" style="background: linear-gradient(#f0f6ff, #ffffff)">
       <div class="container">
         <div class="row mb-10">
           <div class="col-12">
@@ -352,6 +420,7 @@
 
       </div>
     </section>
+    <%- include('./layout/footer'); -%>
 
 
 
