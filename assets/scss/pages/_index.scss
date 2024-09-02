@@ -1,42 +1,49 @@
 //banner
-@mixin pc{ 
-  @media(min-width:992px){ 
-  @content ; 
+@mixin pc {
+  @media(min-width:992px) {
+    @content ;
   }
 }
+
 @media (min-width: 992px) {
   .container-lg-none {
-      max-width: 100%;
-      padding-left: 0;
-      padding-right: 0;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 
 
 
-.bannerSwiper{
+.bannerSwiper {
   height: 375px;
   z-index: 5;
-  @include pc{
+
+  @include pc {
     height: 800px;
     max-width: 1600px;
   }
-  .swiper-slide{
+
+  .swiper-slide {
     z-index: 3;
-    .banner-flower{
+
+    .banner-flower {
       margin-left: -240px;
       margin-top: -300px;
       z-index: -1;
+    }
   }
-  }
-  .banner-button-next,.banner-button-prev {
+
+  .banner-button-next,
+  .banner-button-prev {
     background-color: #fff;
     border-radius: 12px;
     z-index: 99;
     transform: translate(50%, -50%);
     color: #0068ff;
     box-shadow: 0px 10px 15px -3px #000;
+
     &:hover {
       background-color: #0068ff;
       color: #fff;
@@ -44,32 +51,39 @@
     }
   }
 }
-.slogan{
-    margin-left: 40px;
-    padding: 10.5px 8px;
+
+.slogan {
+  margin-left: 40px;
+  padding: 10.5px 8px;
 }
-.banner-rounded-100{
-  border-radius:100px;
+
+.banner-rounded-100 {
+  border-radius: 100px;
 }
-.banner-rounded-pc-80{
-  @include pc{
-    border-radius:80px;
+
+.banner-rounded-pc-80 {
+  @include pc {
+    border-radius: 80px;
   }
 }
-.slogn-text{
+
+.slogn-text {
   font-size: 12px;
-  @include pc{
+
+  @include pc {
     font-size: 20px;
   }
 }
-.banner-lg-btn{
-  font-size: 40px ;
+
+.banner-lg-btn {
+  font-size: 40px;
   border-top-right-radius: 100px;
   border-top-left-radius: 0;
   border-bottom-right-radius: 0;
 
 }
-.bi-lg-arrow-right{
+
+.bi-lg-arrow-right {
   font-size: 40px;
   line-height: 0;
 }
@@ -83,6 +97,7 @@
   position: relative;
   z-index: 1;
 }
+
 .everyone {
   &::before {
     content: "";
@@ -201,10 +216,18 @@
 
 // 頂尖講師 --蚊香
 .teacher {
+
+  @media screen and (min-width: 768px) {
+    & {
+      padding-bottom: 152px !important;
+    }
+  }
+
   .flower {
     position: relative;
   }
-  .bg-line{
+
+  .bg-line {
     position: absolute;
     top: 210px;
     width: 100%;
@@ -226,27 +249,36 @@
     z-index: -1;
   }
 
-  .card-down{
+  .card-img-top {
+    max-width: 291px;
+  }
+
+  .card-down {
     background-color: #F6F6F6;
     max-width: 327px;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 20px;
     box-shadow: 0px 25px 50px -12px #0000001F;
-    margin-top: -53px;
+    margin-top: -56px;
     z-index: 2;
   }
 
   @media screen and (min-width: 768px) {
-    .card-down{
+    .card-img-top {
+      max-width: 336px;
+    }
+
+    .card-down {
+      margin-top: -100px;
       max-width: 384px;
     }
   }
 
-  .swiper-pagination{
+  .swiper-pagination {
     position: static;
     margin-top: 24px;
-  } 
+  }
 
-  .swiper-pagination-bullet-active{
+  .swiper-pagination-bullet-active {
     width: 24px;
     border-radius: 100px
   }

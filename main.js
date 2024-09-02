@@ -72,6 +72,9 @@ var teacherswiper = new Swiper(".teacherswiper", {
     el: ".swiper-pagination",
   },
   breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
     992: {
       slidesPerView: 3,
     },
