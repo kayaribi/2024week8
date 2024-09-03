@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>使用者註冊</title>
+    <link rel="stylesheet" href="../assets/scss/all.scss">
+</head>
+<body>
+    <div class="d-flex align-items-center">
+        <img class="d-none d-lg-block py-10 ps-10" src="../assets/images/login.png" alt="login-pic">
+        <div action="" class="container">
+            <div class="row d-flex justify-content-center px-3 px-lg-0">
+                <div class="col col-lg-6">
+                    <div>
+                        <h1 class="mb-6 mb-lg-10 text-neutral-100">歡迎加入 Learning</h1>
+                        <!-- 按鈕 -->
+                        <ul class="list-unstyled d-grid gap-4 mb-4 mb-lg-10">
+                            <li class="position-relative">
+                                <a href="#" class="btn btn-outline-neutral-40 text-neutral-80 w-100 text-center ">
+                                    <div class="login-icon position-absolute top-38 start-0 ms-4" style="background-image: url(../assets/images/icons/ic_google.png) ;"></div>
+                                    使用 Google 帳號登入
+                                </a>
+                            </li>
+                            <li class="position-relative">
+                                <a href="#" class="btn btn-outline-neutral-40 text-neutral-80 w-100 text-center ">
+                                    <div class="login-icon position-absolute top-38 start-0 ms-4" style="background-image: url(../assets/images/icons/ic_facebook.png) ;"></div>
+                                    使用 Facebook 帳號登入
+                                </a>
+                            </li>
+                            <li class="position-relative">
+                                <a href="#" class="btn btn-outline-neutral-40 text-neutral-80 w-100 text-center ">
+                                    <div class="login-icon position-absolute top-38 start-0 ms-4" style="background-image: url(../assets/images/icons/ic_apple.png) ;"></div>
+                                    使用 Apple 帳號登入
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- 表單 -->
+                        <form  id="signUpForm" class="mb-2 mb-lg-4" action="signUp.html" method="post" name="user-signUp">
+                            <h6 class="text-neutral-100 mb-4">或使用 Learning 帳號註冊</h6>
+                            <div class="d-flex flex-column mb-4">
+                                <label for="signUp-mail" class="form-label mb-2">電子信箱<span class="text-danger ms-1">*</span></label>
+                                <input id="signUp-mail" class="form-control text-neutral-60 p-4 login-input-radius" type="email" placeholder="請輸入電子信箱" name="email" required>
+                            </div>
+                            <div class="position-relative d-flex flex-column mb-2">
+                                <label for="signUp-password1" class="form-label mb-2">密碼<span class="text-danger ms-1">*</span></label>
+                                <input id="signUp-password1" class="form-control text-neutral-60 p-4" type="password" placeholder="請輸入密碼" name="password" autocomplete="new-password" required>
+                                <img id="signUp-password-icon1" class="position-absolute password-icon bottom-0 end-0 me-4 mb-4" src="/assets/images/icons/ic_eye-open.png" autocomplete="new-password" alt="eye">
+                            </div>
+                            <div class="position-relative d-flex flex-column mb-2">
+                                <label for="signUp-password2" class="form-label mb-2">密碼<span class="text-danger ms-1">*</span></label>
+                                <input id="signUp-password2" class="form-control text-neutral-60 p-4" type="password" placeholder="請再輸入一次密碼" name="password" required>
+                                <img id="signUp-password-icon2" class="position-absolute password-icon bottom-0 end-0 me-4 mb-4" src="/assets/images/icons/ic_eye-open.png" alt="eye">
+                            </div>
+                            <!-- 按鈕+警語 -->
+                            <div id="error-message" class="error-message"></div>
+                            <button id="signUpBtn" type="submit" class="login-btn fw-semibold w-100 py-4 border-0" disabled>立即登入</button>
+                        </form>
+                        <!-- 服務條款+隱私權設定 -->
+                        <p class="body2-text mb-6 mb-lg-10">建立帳號即表示您同意我們的<a href="#" class="mx-1 text-decoration-underline">服務條款</a>及<a href="#" class="ms-1 text-decoration-underline">隱私權政策</a></p>
+                        <div class="d-flex">
+                            <p class="me-2">已經有 Learning 帳號了嗎？</p>
+                            <a class="link-primary fw-semibold text-decoration-underline" href="userLogin.html">立即登入</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=============== JS ==================-->
+    <script>
+    const signUpForm = document.getElementById('signUpForm');
+    const signUpBtn = document.getElementById('signUpBtn');
+    const signUpPassword1 = document.getElementById('signUp-password1');
+    const signUpPassword2 = document.getElementById('signUp-password2');
+    const signUpPasswordIcon1 = document.getElementById('signUp-password-icon1');
+    const signUpPasswordIcon2 = document.getElementById('signUp-password-icon2');
+    const errorMessage = document.getElementById('error-message');
+    // 按鈕啟用
+    signUpForm.addEventListener('input', function() {
+        if (signUpForm.checkValidity()) {
+            signUpBtn.disabled = false; // 如果表單有效，啟用按鈕
+            signUpBtn.style.backgroundColor = '#0068FF';  
+            signUpBtn.style.color = '#ffffff';  
+        } 
+        else {
+            signUpBtn.disabled = true;  // 如果表單無效，禁用按鈕
+            signUpBtn.style.backgroundColor = '#ECECEC'; 
+            signUpBtn.style.color = '#909090';
+        }
+    });
+    // 眼睛
+    signUpPassword1.addEventListener('input', function() {
+        if (signUpPassword1.value.length > 0) {
+            signUpPasswordIcon1.src = '/assets/images/icons/ic_eye_close.png';
+        } 
+        else {
+            signUpPasswordIcon1.src = '/assets/images/icons/ic_eye-open.png';
+        }
+    });
+    signUpPassword2.addEventListener('input', function() {
+        if (signUpPassword2.value.length > 0) {
+            signUpPasswordIcon2.src = '/assets/images/icons/ic_eye_close.png';
+        } 
+        else {
+            signUpPasswordIcon2.src = '/assets/images/icons/ic_eye-open.png';
+        }
+    });
+    // 密碼驗證
+    signUpForm.addEventListener('input', function() {
+        if (signUpPassword1.value !== signUpPassword2.value) {
+            errorMessage.textContent = '兩邊輸入密碼不一樣喔!!!';
+            signUpBtn.disabled = true;
+        } 
+        else {
+            errorMessage.textContent = '';
+            signUpBtn.disabled = false;
+        }
+    });
+    signUpForm.addEventListener('submit', function(event) {
+        if (signUpPassword1.value !== signUpPassword2.value) {
+            event.preventDefault();  // 防止表單提交
+            errorMessage.textContent = '兩邊輸入密碼不一樣喔!!!';
+        }
+    });
+    </script>
+    <script type="module" src="../main.js"></script>
+</body>
+</html>

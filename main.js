@@ -10,11 +10,13 @@ import "swiper/css/pagination";
 import "./assets/scss/all.scss";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
+
+
+
 //banner swiper
-
-
 var swiper = new Swiper(".bannerSwiper", {
   modules: [Navigation, Pagination],
+  slidesPerView: 1,
   spaceBetween: 40,
   pagination: {
     el: ".swiper-pagination",
@@ -23,6 +25,7 @@ var swiper = new Swiper(".bannerSwiper", {
     nextEl: ".banner-button-next",
     prevEl: ".banner-button-prev",
   },
+  initialSlide: 1, // 預設顯示的滑塊索引，0 代表第一個
 });
 
 
@@ -64,4 +67,29 @@ const learnswiper = new Swiper(".learnswiper", {
   speed: 400,
   spaceBetween: 24,
   slidesPerView: 1,
+});
+
+//登入JS
+const loginForm = document.getElementById('loginForm');
+const loginBtn = document.getElementById('loginBtn');
+const loginPasswordInput = document.getElementById('loginPassword');
+const loginpasswordIcon = document.getElementById('login-password-icon');
+
+loginForm.addEventListener('input', function() {
+    if (loginForm.checkValidity()) {
+        loginBtn.disabled = false; // 如果表單有效，啟用按鈕
+        loginBtn.style.backgroundColor = '#0068FF';  
+        loginBtn.style.color = '#ffffff';  
+    } else {
+        loginBtn.disabled = true;  // 如果表單無效，禁用按鈕
+        loginBtn.style.backgroundColor = '#ECECEC'; 
+        loginBtn.style.color = '#909090';
+    }
+});
+loginPasswordInput.addEventListener('input', function() {
+  if (loginPasswordInput.value.length > 0) {
+      loginpasswordIcon.src = '/assets/images/icons/ic_eye_close.png';
+  } else {
+      loginpasswordIcon.src = '/assets/images/icons/ic_eye-open.png';
+  }
 });
