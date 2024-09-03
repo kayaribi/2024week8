@@ -1,0 +1,22 @@
+.login-icon{
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-size: cover;
+}
+.forget-login-password{
+    &:hover{
+        color: blue !important;
+        
+    }
+}
+.login-btn{
+    color: #909090;
+    background: #ECECEC;
+    border-radius: 12px;
+    
+}
+.password-icon{
+    width: 20px;
+    height: 20px;
+}
