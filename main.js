@@ -69,6 +69,37 @@ const learnswiper = new Swiper(".learnswiper", {
   slidesPerView: 1,
 });
 
+// 頂尖講師 --蚊香
+var teacherswiper = new Swiper(".teacherswiper", {
+  spaceBetween: 24,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+// 課程列表 --蚊香
+var courselistswiper = new Swiper(".courselistswiper", {
+  slidesPerView: 4,
+  spaceBetween: 8,
+  navigation: {
+    nextEl: ".button-next",
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 10,
+    },
+  }
+});
+
 //登入JS
 const loginForm = document.getElementById('loginForm');
 const loginBtn = document.getElementById('loginBtn');
@@ -91,21 +122,5 @@ loginPasswordInput.addEventListener('input', function() {
       loginpasswordIcon.src = '/assets/images/icons/ic_eye_close.png';
   } else {
       loginpasswordIcon.src = '/assets/images/icons/ic_eye-open.png';
-  }
-});
-
-
-// 課程列表 --蚊香
-var courselistswiper = new Swiper(".courselistswiper", {
-  slidesPerView: 4,
-  spaceBetween: 8,
-  navigation: {
-    nextEl: ".button-next",
-  },
-
-  breakpoints: {
-    768: {
-      slidesPerView: 10,
-    },
   }
 });
