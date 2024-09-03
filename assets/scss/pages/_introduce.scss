@@ -1,0 +1,124 @@
+.gradient {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #E7F5FF 100%);
+    border-radius: 0;
+
+    @include media-breakpoint-up(md) {
+        border-radius: 0px 0px 240px 240px;
+    }
+}
+
+.mimicry {
+
+    @include media-breakpoint-up(md) {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+
+    .mimicry-border-end {
+        border-right: 0px;
+
+        @include media-breakpoint-up(md) {
+            border-right: 1px solid $neutral-40;
+        }
+    }
+
+    .mimicry-fs-base {
+        font-size: 14px;
+
+        @include media-breakpoint-up(md) {
+            font-size: 16px;
+        }
+    }
+}
+
+.borderBlue {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: "";
+        background: $primary;
+        width: 32px;
+        height: 4px;
+        border-radius: 10px;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%);
+    }
+
+    &-straight {
+        background: $primary;
+        width: 4px;
+        border-radius: 10px;
+        margin-right: 4px;
+    }
+}
+
+.transparencyMask::after {
+    position: absolute;
+    content: "";
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 60%);
+    bottom: 0;
+    width: 100%;
+    height: 156px;
+    z-index: 0;
+
+    @include media-breakpoint-up(md) {
+        height: 256px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 77.5%);
+    }
+}
+
+.ic-circle {
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background: $neutral-60;
+    margin: 0 8px;
+}
+
+.accordion-button.collapsed {
+    border-radius: 8px;
+}
+
+.accordion-button::after {
+    margin-left: auto;
+
+    @include media-breakpoint-up(md) {
+        margin-left: 16px;
+    }
+}
+
+.accordion-item:last-of-type>.accordion-header .accordion-button {
+    border-top-right-radius: var(--bs-accordion-inner-border-radius);
+    border-top-left-radius: var(--bs-accordion-inner-border-radius);
+}
+
+.list-group-item-action:hover {
+    background: $primary-10;
+}
+
+.pagination-sm {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include media-breakpoint-up(md) {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.fixed-bottom-sale {
+    display: none;
+
+    @include media-breakpoint-up(md) {
+        display: block;
+        position: sticky;
+        right: 0;
+        top: 96px;
+    }
+}

@@ -1,7 +1,6 @@
 // core version + navigation, pagination modules:
-import Swiper from "swiper";
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
 import { Navigation, Pagination } from "swiper/modules";
-// import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
 // import Swiper and modules styles
 import "swiper/css";
 import "swiper/css/navigation";
