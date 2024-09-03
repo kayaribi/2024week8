@@ -80,3 +80,18 @@ var teacherswiper = new Swiper(".teacherswiper", {
     },
   },
 });
+
+// 課程列表 --蚊香
+var courselistswiper = new Swiper(".courselistswiper", {
+  slidesPerView: 4,
+  spaceBetween: 8,
+  navigation: {
+    nextEl: ".button-next",
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 10,
+    },
+  }
+});
