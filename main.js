@@ -14,9 +14,10 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 //banner swiper
 var swiper = new Swiper(".bannerSwiper", {
-  modules: [Navigation, Pagination],
+  
   slidesPerView: 1,
   spaceBetween: 40,
+  slidesPerGroup: 1,
   pagination: {
     el: ".swiper-pagination",
   },
