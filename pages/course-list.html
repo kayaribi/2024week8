@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>課程列表</title>
+</head>
+
+<body>
+  <!-- <%- include('./layout/header'); -%> -->
+  <div class="course-list">
+    <banner class="banner bg-neutral-10 position-relative">
+      <div class="container py-10 py-md-20">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-4 mb-md-10">
+            <li class="breadcrumb-item"><a class="link-neutral-80" href="#">所有課程</a></li>
+            <li class="breadcrumb-item link-neutral-80 active" aria-current="page">程式課程</li>
+          </ol>
+        </nav>
+        <h3 class="fs-md-1 text-neutral-100 mb-10">程式課程</h3>
+        <div class="flower-lg-left d-none d-md-block"></div>
+        <div class="flower-sm-left"></div>
+        <div class="flower-lg-right"></div>
+        <div class="flower-sm-right d-none d-md-block"></div>
+        <div class="swiper-container">
+          <div class="swiper courselistswiper d-flex align-items-center">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><button>所有程式</button></div>
+              <div class="swiper-slide"><button>網頁開發</button></div>
+              <div class="swiper-slide"><button>資料科學</button></div>
+              <div class="swiper-slide"><button>行動版開發</button></div>
+              <div class="swiper-slide"><button>程式語言</button></div>
+              <div class="swiper-slide"><button>遊戲開發</button></div>
+              <div class="swiper-slide"><button>資料庫設計與開發</button></div>
+              <div class="swiper-slide"><button>軟體測試</button></div>
+              <div class="swiper-slide"><button>軟體開發工具</button></div>
+              <div class="swiper-slide"><button>無程式碼開發</button></div>
+              <div class="swiper-slide"><button>無程式碼開發</button></div>
+            </div>
+            <!-- <div class="swiper-button-next d-none d-md-block"></div>
+          <div class="swiper-button-prev d-none d-md-block"></div> -->
+            <div class="button-next d-flex">
+              <span class="material-symbols-outlined">
+                keyboard_arrow_right
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </banner>
+    <section>
+      <div class="popular-topics">
+        <div class="container">
+          <ul class="d-flex gap-6 list-unstyled">
+            <li><a class="hot-picks title-text active" href="#">最熱門</a></li>
+            <li><a class="hot-picks title-text" href="#">最新課程</a></li>
+            <li><a class="hot-picks title-text" href="#">話題最高</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+    </section>
+
+  </div>
+
+
+  <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+</body>
+
+</html>

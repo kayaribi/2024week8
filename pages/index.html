@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-hant">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>index</title>
+  <link rel="stylesheet" href="../assets/scss/all.scss">
 </head>
 
 <body>
@@ -15,8 +16,7 @@
 
     <!-- 火熱募資課程--Hailey -->
     <section class="py-20 py-lg-30 position-relative">
-      <!-- <div class="position-absolute w-100 h-100"
-        style="background: url(../assets/images/deco/flower-2.png) no-repeat; left: -150px;"> </div> -->
+      <div class="position-absolute bgFlower z-n1"> </div>
       <div class="container">
         <div class="row">
           <div class="col-lg-4 pt-lg-10">
@@ -24,11 +24,11 @@
             <p class="mb-6 mb-lg-10 fs-6 body-text">現在購買最優惠✨</p>
             <ul class="list-unstyled d-flex flex-lg-wrap overflow-auto text-nowrap mb-6 mb-lg-10">
               <li><a class="btn btn-primary py-3 px-4 rounded-1 me-3 mb-3" href="#">全部</a></li>
-              <li><a class="btn border py-3 px-4 rounded-1 me-3 mb-3" href="#">🍽️ 烹飪料理</a></li>
-              <li><a class="btn border py-3 px-4 rounded-1 me-3 mb-3" href="#">📊 數據分析</a></li>
-              <li><a class="btn border py-3 px-4 rounded-1 me-3 mb-3" href="#">🎼 音樂製作</a></li>
-              <li><a class="btn border py-3 px-4 rounded-1 me-3 mb-3" href="#">📝 創意寫作</a></li>
-              <li><a class="btn border py-3 px-4 rounded-1 me-3 mb-3" href="#">💬 語言學習</a></li>
+              <li><a class="btn border py-3 px-4 rounded-1 me-3 mb-3 bg-neutral-0" href="#">🍽️ 烹飪料理</a></li>
+              <li><a class="btn border py-3 px-4 rounded-1 me-3 mb-3 bg-neutral-0" href="#">📊 數據分析</a></li>
+              <li><a class="btn border py-3 px-4 rounded-1 me-3 mb-3 bg-neutral-0" href="#">🎼 音樂製作</a></li>
+              <li><a class="btn border py-3 px-4 rounded-1 me-3 mb-3 bg-neutral-0" href="#">📝 創意寫作</a></li>
+              <li><a class="btn border py-3 px-4 rounded-1 me-3 mb-3 bg-neutral-0" href="#">💬 語言學習</a></li>
               <li><a class="btn border py-3 px-4 rounded-1" href="#">🖌️ 藝術創作</a></li>
             </ul>
             <a class="btn btn-primary fw-semibold rounded-1 d-none d-lg-inline-block" href="course-list.html">更多募資課程</a>
@@ -281,6 +281,81 @@
       </div>
 
     </section>
+    <!-- banner--星星 -->
+    <div class="swiper bannerSwiper position-relative px-9">
+      <div class="swiper-wrapper">
+        <!-- =========== 1 ============== -->
+        <div class="swiper-slide banner-rounded-pc-80 overflow-hidden" style="background: url('/assets/images/hero-1.png') no-repeat center center/cover;">
+          <div class="container container-lg-none d-flex h-100 justify-content-center flex-lg-column">
+            <!-- 熱銷課程 -->
+            <div class="slogan bg-white banner-rounded-100 p-lg-4 mt-auto mb-12 me-lg-auto">
+              <div class="d-flex align-items-center">
+                <span class="banner-rounded-100 bg-primary-10 me-2 py-2 px-3 d-flex body2-text fw-semibold">
+                  <p class="text-primary text-nowrap">熱銷課程</p>
+                  <img src="/assets/images/icons/ic_fire.png" alt="fire" style="height: 14px;" class="me-3">
+                </span>
+                <p class="fw-semibold slogn-text">給成人的鋼琴入門課，一小時教你彈奏上手！</p>
+              </div>
+            </div>
+            <!-- PC-按鈕 -->
+            <button
+              class="banner-lg-btn btn btn-primary fw-semibold text-white py-8 d-none d-lg-block me-lg-auto">探索感興趣的課程，今天立即上課<i
+                class="ms-4 bi bi-arrow-right"></i></button>
+          </div>
+        </div>
+        <!-- =========== 2 ============== -->
+        <div class="swiper-slide banner-rounded-pc-80 overflow-hidden" style="background: url('/assets/images/hero-2.png') no-repeat center center/cover;">
+          <div class="container container-lg-none d-flex h-100 justify-content-center flex-lg-column">
+            <!-- 熱銷課程 -->
+            <div class="slogan bg-white banner-rounded-100 p-lg-4 mt-auto mb-12 me-lg-auto">
+              <div class="d-flex align-items-center">
+                <span class="banner-rounded-100 bg-primary-10 me-2 py-2 px-3 d-flex body2-text fw-semibold">
+                  <p class="text-primary text-nowrap">熱銷課程</p>
+                  <img src="/assets/images/icons/ic_fire.png" alt="fire" style="height: 14px;" class="me-3">
+                </span>
+                <p class="fw-semibold slogn-text">在鍋中煮出的，不僅是美食，更是情感。</p>
+              </div>
+            </div>
+            <!-- PC-按鈕 -->
+            <button
+              class="banner-lg-btn btn btn-primary fw-semibold text-white py-8 d-none d-lg-block me-lg-auto">探索感興趣的課程，今天立即上課<i
+                class="ms-4 bi bi-arrow-right"></i></button>
+          </div>
+          <img class="banner-flower position-absolute top-0 d-none d-lg-block" src="../assets/images/deco/flower-4.png" alt="flower">
+        </div>
+        <!-- =========== 3 ============== -->
+        <div class="swiper-slide banner-rounded-pc-80 overflow-hidden" style="background: url('/assets/images/hero-3.png') no-repeat center center/cover;">
+          <div class="container container-lg-none d-flex h-100 justify-content-center flex-lg-column">
+            <!-- 熱銷課程 -->
+            <div class="slogan bg-white banner-rounded-100 p-lg-4 mt-auto mb-12 me-lg-auto">
+              <div class="d-flex align-items-center">
+                <span class="banner-rounded-100 bg-primary-10 me-2 py-2 px-3 d-flex body2-text fw-semibold">
+                  <p class="text-primary text-nowrap">熱銷課程</p>
+                  <img src="/assets/images/icons/ic_fire.png" alt="fire" style="height: 14px;" class="me-3">
+                </span>
+                <p class="fw-semibold slogn-text">透過鏡頭看世界，發現生活的美。</p>
+              </div>
+            </div>
+            <!-- PC-按鈕 -->
+            <button
+              class="banner-lg-btn btn btn-primary fw-semibold text-white py-8 d-none d-lg-block me-lg-auto">探索感興趣的課程，今天立即上課<i
+                class="ms-4 bi bi-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <!-- 分頁 -->
+      <div class="swiper-pagination d-block d-lg-none"></div>
+      <!-- 箭頭 -->
+      <div class="banner-button-prev banner-btn d-none d-lg-block position-absolute start-0 p-4 ms-2">
+        <i class="bi bi-arrow-left"></i>
+      </div>
+      <div class="banner-button-next banner-btn d-none d-lg-block position-absolute end-0 p-4 me-2">
+        <i class="bi bi-arrow-right"></i>
+      </div>
+    </div>
+    <button
+      class="btn btn-primary rounded-0 w-100 body2-text fw-semibold text-white py-4 d-block d-lg-none">探索感興趣的課程，今天立即上課<i
+        class="ms-4 bi bi-arrow-right"></i></button>
 
 
     <!-- 看看大家都買了什麼--倫倫 -->
@@ -932,7 +1007,7 @@
     </section>
 
     <!-- 頂尖講師帶你飛 -->
-    <section class="teacher pt-20 pb-30 pt-md-30 pb-md-50 position-relative">
+    <section class="teacher pt-20 pb-30 pt-md-30 position-relative">
       <div class="bg-line d-none d-md-block"></div>
       <div class="container">
         <div class="pb-6 d-md-flex flex-md-column align-items-md-center">
@@ -945,14 +1020,14 @@
           </p>
         </div>
 
-        <div class="swiper teacherswiper">
+        <div class="swiper teacherswiper pb-md-12">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="card border-0 h-100 bg-transparent">
-                <img src="../assets/images/teacher-3.png" class="card-img-top ms-15 w-auto" alt="teacher-3">
+                <img src="../assets/images/teacher-3.png" class="card-img-top ms-md-20 ms-15 w-auto" alt="teacher-3">
                 <div class="card-body p-0">
-                  <div class="card-down p-6 me-6">
-                    <h6 class="card-title text-black">Mr. Robert</h6>
+                  <div class="card-down p-6 me-6 me-md-8 bg-white">
+                    <h6 class="card-title text-black m-0">Mr. Robert</h6>
                     <div class="py-6">
                       <div class="d-flex align-items-center pb-2">
                         <p class="sub-text py-2 px-3 bg-neutral-40 me-2 d-inline-block" style="border-radius: 100px;">
@@ -976,10 +1051,10 @@
             </div>
             <div class="swiper-slide">
               <div class="card border-0 h-100 bg-transparent">
-                <img src="../assets/images/teacher-1.png" class="card-img-top ms-15 w-auto" alt="teacher-1">
+                <img src="../assets/images/teacher-1.png" class="card-img-top ms-md-20 ms-15 w-auto" alt="teacher-1">
                 <div class="card-body p-0">
-                  <div class="card-down p-6 me-6">
-                    <h6 class="card-title text-black">Kelly Beck</h6>
+                  <div class="card-down p-6 me-6 me-md-8 bg-white">
+                    <h6 class="card-title text-black m-0">Kelly Beck</h6>
                     <div class="py-6">
                       <div class="d-flex align-items-center pb-2">
                         <p class="sub-text py-2 px-3 bg-neutral-40 me-2 d-inline-block" style="border-radius: 100px;">
@@ -1003,10 +1078,10 @@
             </div>
             <div class="swiper-slide">
               <div class="card border-0 h-100 bg-transparent">
-                <img src="../assets/images/teacher-2.png" class="card-img-top ms-15 w-auto" alt="teacher-2">
+                <img src="../assets/images/teacher-2.png" class="card-img-top ms-md-20 ms-15 w-auto" alt="teacher-2">
                 <div class="card-body p-0">
-                  <div class="card-down p-6 me-6">
-                    <h6 class="card-title text-black">K. Lee</h6>
+                  <div class="card-down p-6 me-6 me-md-8 bg-white">
+                    <h6 class="card-title text-black m-0">K. Lee</h6>
                     <div class="py-6">
                       <div class="d-flex align-items-center pb-2">
                         <p class="sub-text py-2 px-3 bg-neutral-40 me-2 d-inline-block" style="border-radius: 100px;">
@@ -1032,7 +1107,6 @@
         </div>
       </div>
     </section>
-
 
 
     <%- include('./layout/footer'); -%>
