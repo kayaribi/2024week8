@@ -1,5 +1,5 @@
 // core version + navigation, pagination modules:
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
 import { Navigation, Pagination } from "swiper/modules";
 // import Swiper and modules styles
 import "swiper/css";
@@ -24,8 +24,21 @@ var swiper = new Swiper(".bannerSwiper", {
   },
 });
 
+// 火熱募資課程--Hailey
 
-
+var swiper = new Swiper(".mySwiperHot", {
+  spaceBetween: 0,
+  slidesPerView: 1,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 
 // 看看大家都買了什麼--倫倫
 

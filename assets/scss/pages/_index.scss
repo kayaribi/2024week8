@@ -74,7 +74,19 @@
   line-height: 0;
 }
 
+// 火熱募資課程-Hailey
 
+.mySwiperHot{
+  .swiper-pagination{
+    position: static;
+    margin-top: 24px;
+  } 
+  
+  .swiper-pagination-bullet-active{
+    width: 24px;
+    border-radius: 100px
+  }
+}
 
 
 // 看看大家都買了什麼-倫倫

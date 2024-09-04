@@ -10,86 +10,277 @@
 
 <body>
   <%- include('./layout/header'); -%>
-    <!-- banner--星星 -->
-    <div class="swiper bannerSwiper position-relative overflow-visible">
-      <div class="swiper-wrapper">
-        <!-- =========== 1 ============== -->
-        <div class="swiper-slide banner-rounded-pc-80 overflow-hidden"
-          style="background: url('/assets/images/hero-2.png') no-repeat center center/cover;">
-          <div class="container container-lg-none d-flex h-100 justify-content-center flex-lg-column">
-            <!-- 熱銷課程 -->
-            <div class="slogan bg-white banner-rounded-100 p-lg-4 mt-auto mb-12 me-lg-auto">
-              <div class="d-flex align-items-center">
-                <span class="banner-rounded-100 bg-primary-10 me-2 py-2 px-3 d-flex body2-text fw-semibold">
-                  <p class="text-primary text-nowrap">熱銷課程</p>
-                  <img src="/assets/images/icons/ic_fire.png" alt="fire" style="height: 14px;" class="me-3">
-                </span>
-                <p class="fw-semibold slogn-text">給成人的鋼琴入門課，一小時教你彈奏上手！</p>
+
+
+
+    <!-- 火熱募資課程--Hailey -->
+    <section class="py-20 py-lg-30 position-relative">
+      <!-- <div class="position-absolute w-100 h-100"
+        style="background: url(../assets/images/deco/flower-2.png) no-repeat; left: -150px;"> </div> -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 pt-lg-10">
+            <h1 class="text-neutral-100 mb-2 pt-lg-30">火熱募資課程</h1>
+            <p class="mb-6 mb-lg-10 fs-6 body-text">現在購買最優惠✨</p>
+            <ul class="list-unstyled d-flex flex-lg-wrap overflow-auto text-nowrap mb-6 mb-lg-10">
+              <li><a class="btn btn-primary py-3 px-4 rounded-1 me-3 mb-3" href="#">全部</a></li>
+              <li><a class="btn border py-3 px-4 rounded-1 me-3 mb-3" href="#">🍽️ 烹飪料理</a></li>
+              <li><a class="btn border py-3 px-4 rounded-1 me-3 mb-3" href="#">📊 數據分析</a></li>
+              <li><a class="btn border py-3 px-4 rounded-1 me-3 mb-3" href="#">🎼 音樂製作</a></li>
+              <li><a class="btn border py-3 px-4 rounded-1 me-3 mb-3" href="#">📝 創意寫作</a></li>
+              <li><a class="btn border py-3 px-4 rounded-1 me-3 mb-3" href="#">💬 語言學習</a></li>
+              <li><a class="btn border py-3 px-4 rounded-1" href="#">🖌️ 藝術創作</a></li>
+            </ul>
+            <a class="btn btn-primary fw-semibold rounded-1 d-none d-lg-inline-block" href="course-list.html">更多募資課程</a>
+          </div>
+          <div class="col-lg-8">
+            <div class="row gy-lg-5 d-none d-lg-flex">
+              <div class="col-lg-6">
+                <div class="card border-0 rounded-3 position-relative"
+                  style="box-shadow: 0px 25px 50px -12px #0000001F;">
+                  <div class="bg-primary-10 py-2 px-3 rounded-pill position-absolute" style="top: 16px;left: 16px;">
+                    <span class="text-primary small fw-semibold">優惠倒數 10 天</span>
+                  </div>
+                  <img src="../assets/images/course-4.png" class="card-img-top rounded-top-3" alt="photo">
+                  <div class="card-body py-6">
+                    <h6 class="card-title">創意寫作工坊：從靈感到出版的全過程</h6>
+                    <div class="d-flex align-items-center mb-6">
+                      <img class="me-2" style="width: 44px;height: 44px;" src="../assets/images/avatar-2.png"
+                        alt="photo">
+                      <p>Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <p class="fw-semibold text-primary">募資進度 81 %</p>
+                      <p class="small">已有 521 位同學加入</p>
+                    </div>
+                    <div class="progress my-2" style="height: 8px;">
+                      <div class="progress-bar" role="progressbar" style="width: 367px; border-radius: 100px;"
+                        aria-valuemin="81" aria-valuemax="100"></div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <h6 class="fw-semibold text-neutral-100 me-2">NT$ 2,480</h6>
+                      <p class="small text-decoration-line-through" style="color: #808080;">NT$ 3,200</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card border-0 rounded-3 position-relative"
+                  style="box-shadow: 0px 25px 50px -12px #0000001F;">
+                  <div class="bg-primary-10 py-2 px-3 rounded-pill position-absolute" style="top: 16px;left: 16px;">
+                    <span class="text-primary small fw-semibold">優惠倒數 17 天</span>
+                  </div>
+                  <img src="../assets/images/course-1.png" class="card-img-top rounded-top-3" alt="photo">
+                  <div class="card-body py-6">
+                    <h6 class="card-title">健康廚房：營養均衡的素食料理指南</h6>
+                    <div class="d-flex align-items-center mb-6">
+                      <img class="me-2 rounded-circle" style="width: 44px;height: 44px; object-fit: cover;"
+                        src="../assets/images/avatar-2-1.jfif" alt="photo">
+                      <p>希姐帶你吃</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <p class="fw-semibold text-primary">募資進度 281 %</p>
+                      <p class="small">已有 1,397 位同學加入</p>
+                    </div>
+                    <div class="progress my-2" style="height: 8px;">
+                      <div class="progress-bar w-100" role="progressbar" style="border-radius: 100px;"
+                        aria-valuemin="100" aria-valuemax="100"></div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <h6 class="fw-semibold text-neutral-100 me-2">NT$ 1,680</h6>
+                      <p class="small text-decoration-line-through" style="color: #808080;">NT$ 2,980</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card border-0 rounded-3 position-relative"
+                  style="box-shadow: 0px 25px 50px -12px #0000001F;">
+                  <div class="bg-primary-10 py-2 px-3 rounded-pill position-absolute" style="top: 16px;left: 16px;">
+                    <span class="text-primary small fw-semibold">優惠倒數 9 天</span>
+                  </div>
+                  <img src="../assets/images/course-2.png" class="card-img-top rounded-top-3" alt="photo">
+                  <div class="card-body py-6">
+                    <h6 class="card-title">音樂製作入門：從零開始創作你的音樂</h6>
+                    <div class="d-flex align-items-center mb-6">
+                      <img class="me-2 rounded-circle" style="width: 44px;height: 44px; object-fit: cover;"
+                        src="../assets/images/avatar-2-2.jfif" alt="photo">
+                      <p>K.Dee</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <p class="fw-semibold text-primary">募資進度 76 %</p>
+                      <p class="small">已有 420 位同學加入</p>
+                    </div>
+                    <div class="progress my-2" style="height: 8px;">
+                      <div class="progress-bar" role="progressbar" style="border-radius: 100px; width: 282px;"
+                        aria-valuemin="76" aria-valuemax="100"></div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <h6 class="fw-semibold text-neutral-100 me-2">NT$ 2,680</h6>
+                      <p class="small text-decoration-line-through" style="color: #808080;">NT$ 3,200</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card border-0 rounded-3 position-relative"
+                  style="box-shadow: 0px 25px 50px -12px #0000001F;">
+                  <div class="bg-primary-10 py-2 px-3 rounded-pill position-absolute" style="top: 16px;left: 16px;">
+                    <span class="text-primary small fw-semibold">優惠倒數 1 天</span>
+                  </div>
+                  <img src="../assets/images/course-3.png" class="card-img-top rounded-top-3" alt="photo">
+                  <div class="card-body py-6">
+                    <h6 class="card-title">掌握商業攝影：打造你的專業攝影事業</h6>
+                    <div class="d-flex align-items-center mb-6">
+                      <img class="me-2 rounded-circle" style="width: 44px;height: 44px; object-fit: cover;"
+                        src="../assets/images/avatar-2-3.jfif" alt="photo">
+                      <p>Mikeeee</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <p class="fw-semibold text-primary">募資進度 98 %</p>
+                      <p class="small">已有 290 位同學加入</p>
+                    </div>
+                    <div class="progress my-2" style="height: 8px;">
+                      <div class="progress-bar" role="progressbar" style="border-radius: 100px; width: 376px;"
+                        aria-valuemin="98" aria-valuemax="100"></div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <h6 class="fw-semibold text-neutral-100 me-2">NT$ 1,980</h6>
+                      <p class="small text-decoration-line-through" style="color: #808080;">NT$ 3,200</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <!-- PC-按鈕 -->
-            <button
-              class="banner-lg-btn btn btn-primary fw-semibold text-white py-8 d-none d-lg-block me-lg-auto">探索感興趣的課程，今天立即上課<i
-                class="ms-4 bi bi-arrow-right"></i></button>
-          </div>
-          <img class="banner-flower position-absolute top-0 d-none d-lg-block" src="../assets/images/deco/flower-4.png"
-            alt="flower">
-        </div>
-        <!-- =========== 2 ============== -->
-        <div class="swiper-slide banner-rounded-pc-80 overflow-hidden"
-          style="background: url('/assets/images/hero-3.png') no-repeat center center/cover;">
-          <div class="container container-lg-none d-flex h-100 justify-content-center flex-lg-column">
-            <!-- 熱銷課程 -->
-            <div class="slogan bg-white banner-rounded-100 p-lg-4 mt-auto mb-12 me-lg-auto">
-              <div class="d-flex align-items-center">
-                <span class="banner-rounded-100 bg-primary-10 me-2 py-2 px-3 d-flex body2-text fw-semibold">
-                  <p class="text-primary text-nowrap">熱銷課程</p>
-                  <img src="/assets/images/icons/ic_fire.png" alt="fire" style="height: 14px;" class="me-3">
-                </span>
-                <p class="fw-semibold slogn-text">在鍋中煮出的，不僅是美食，更是情感。</p>
+
+            <!-- 輪播 -->
+            <div class="swiper mySwiperHot">
+              <div class="row gy-lg-5 d-flex flex-nowrap d-lg-none swiper-wrapper">
+                <div class="col-lg-6 swiper-slide">
+                  <div class="card border-0 rounded-3 position-relative"
+                    style="box-shadow: 0px 25px 50px -12px #0000001F;">
+                    <div class="bg-primary-10 py-2 px-3 rounded-pill position-absolute" style="top: 16px;left: 16px;">
+                      <span class="text-primary small fw-semibold">優惠倒數 10 天</span>
+                    </div>
+                    <img src="../assets/images/course-4.png" class="card-img-top rounded-top-3" alt="photo">
+                    <div class="card-body py-6">
+                      <h6 class="card-title">創意寫作工坊：從靈感到出版的全過程</h6>
+                      <div class="d-flex align-items-center mb-6">
+                        <img class="me-2" style="width: 44px;height: 44px;" src="../assets/images/avatar-2.png"
+                          alt="photo">
+                        <p>Kelly Hsu</p>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="fw-semibold text-primary">募資進度 81 %</p>
+                        <p class="small">已有 521 位同學加入</p>
+                      </div>
+                      <div class="progress my-2" style="height: 8px;">
+                        <div class="progress-bar" role="progressbar" style="width: 367px; border-radius: 100px;"
+                          aria-valuemin="81" aria-valuemax="100"></div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h6 class="fw-semibold text-neutral-100 me-2">NT$ 2,480</h6>
+                        <p class="small text-decoration-line-through" style="color: #808080;">NT$ 3,200</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 swiper-slide">
+                  <div class="card border-0 rounded-3 position-relative"
+                    style="box-shadow: 0px 25px 50px -12px #0000001F;">
+                    <div class="bg-primary-10 py-2 px-3 rounded-pill position-absolute" style="top: 16px;left: 16px;">
+                      <span class="text-primary small fw-semibold">優惠倒數 17 天</span>
+                    </div>
+                    <img src="../assets/images/course-1.png" class="card-img-top rounded-top-3" alt="photo">
+                    <div class="card-body py-6">
+                      <h6 class="card-title">健康廚房：營養均衡的素食料理指南</h6>
+                      <div class="d-flex align-items-center mb-6">
+                        <img class="me-2 rounded-circle" style="width: 44px;height: 44px; object-fit: cover;"
+                          src="../assets/images/avatar-2-1.jfif" alt="photo">
+                        <p>希姐帶你吃</p>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="fw-semibold text-primary">募資進度 281 %</p>
+                        <p class="small">已有 1,397 位同學加入</p>
+                      </div>
+                      <div class="progress my-2" style="height: 8px;">
+                        <div class="progress-bar w-100" role="progressbar" style="border-radius: 100px;"
+                          aria-valuemin="100" aria-valuemax="100"></div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h6 class="fw-semibold text-neutral-100 me-2">NT$ 1,680</h6>
+                        <p class="small text-decoration-line-through" style="color: #808080;">NT$ 2,980</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 swiper-slide">
+                  <div class="card border-0 rounded-3 position-relative"
+                    style="box-shadow: 0px 25px 50px -12px #0000001F;">
+                    <div class="bg-primary-10 py-2 px-3 rounded-pill position-absolute" style="top: 16px;left: 16px;">
+                      <span class="text-primary small fw-semibold">優惠倒數 9 天</span>
+                    </div>
+                    <img src="../assets/images/course-2.png" class="card-img-top rounded-top-3" alt="photo">
+                    <div class="card-body py-6">
+                      <h6 class="card-title">音樂製作入門：從零開始創作你的音樂</h6>
+                      <div class="d-flex align-items-center mb-6">
+                        <img class="me-2 rounded-circle" style="width: 44px;height: 44px; object-fit: cover;"
+                          src="../assets/images/avatar-2-2.jfif" alt="photo">
+                        <p>K.Dee</p>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="fw-semibold text-primary">募資進度 76 %</p>
+                        <p class="small">已有 420 位同學加入</p>
+                      </div>
+                      <div class="progress my-2" style="height: 8px;">
+                        <div class="progress-bar" role="progressbar" style="border-radius: 100px; width: 282px;"
+                          aria-valuemin="76" aria-valuemax="100"></div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h6 class="fw-semibold text-neutral-100 me-2">NT$ 2,680</h6>
+                        <p class="small text-decoration-line-through" style="color: #808080;">NT$ 3,200</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 swiper-slide">
+                  <div class="card border-0 rounded-3 position-relative"
+                    style="box-shadow: 0px 25px 50px -12px #0000001F;">
+                    <div class="bg-primary-10 py-2 px-3 rounded-pill position-absolute" style="top: 16px;left: 16px;">
+                      <span class="text-primary small fw-semibold">優惠倒數 1 天</span>
+                    </div>
+                    <img src="../assets/images/course-3.png" class="card-img-top rounded-top-3" alt="photo">
+                    <div class="card-body py-6">
+                      <h6 class="card-title">掌握商業攝影：打造你的專業攝影事業</h6>
+                      <div class="d-flex align-items-center mb-6">
+                        <img class="me-2 rounded-circle" style="width: 44px;height: 44px; object-fit: cover;"
+                          src="../assets/images/avatar-2-3.jfif" alt="photo">
+                        <p>Mikeeee</p>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="fw-semibold text-primary">募資進度 98 %</p>
+                        <p class="small">已有 290 位同學加入</p>
+                      </div>
+                      <div class="progress my-2" style="height: 8px;">
+                        <div class="progress-bar" role="progressbar" style="border-radius: 100px; width: 376px;"
+                          aria-valuemin="98" aria-valuemax="100"></div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h6 class="fw-semibold text-neutral-100 me-2">NT$ 1,980</h6>
+                        <p class="small text-decoration-line-through" style="color: #808080;">NT$ 3,200</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <div class="swiper-pagination"></div>
             </div>
-            <!-- PC-按鈕 -->
-            <button
-              class="banner-lg-btn btn btn-primary fw-semibold text-white py-8 d-none d-lg-block me-lg-auto">探索感興趣的課程，今天立即上課<i
-                class="ms-4 bi bi-arrow-right"></i></button>
           </div>
         </div>
-        <!-- =========== 3 ============== -->
-        <div class="swiper-slide banner-rounded-pc-80 overflow-hidden"
-          style="background: url('/assets/images/hero-1.png') no-repeat center center/cover;">
-          <div class="container container-lg-none d-flex h-100 justify-content-center flex-lg-column">
-            <!-- 熱銷課程 -->
-            <div class="slogan bg-white banner-rounded-100 p-lg-4 mt-auto mb-12 me-lg-auto">
-              <div class="d-flex align-items-center">
-                <span class="banner-rounded-100 bg-primary-10 me-2 py-2 px-3 d-flex body2-text fw-semibold">
-                  <p class="text-primary text-nowrap">熱銷課程</p>
-                  <img src="/assets/images/icons/ic_fire.png" alt="fire" style="height: 14px;" class="me-3">
-                </span>
-                <p class="fw-semibold slogn-text">透過鏡頭看世界，發現生活的美。</p>
-              </div>
-            </div>
-            <!-- PC-按鈕 -->
-            <button
-              class="banner-lg-btn btn btn-primary fw-semibold text-white py-8 d-none d-lg-block me-lg-auto">探索感興趣的課程，今天立即上課<i
-                class="ms-4 bi bi-arrow-right"></i></button>
-          </div>
-        </div>
+        <a class="mt-6 btn btn-primary fw-semibold rounded-1 d-block d-lg-none" href="course-list.html">更多募資課程</a>
       </div>
-      <!-- 分頁 -->
-      <div class="swiper-pagination d-block d-lg-none"></div>
-      <!-- 箭頭 -->
-      <div class="banner-button-prev d-none d-lg-block position-absolute translate-middle top-50 start-0 p-4 shadow-lg">
-        <i class="bi bi-arrow-left"></i>
-      </div>
-      <div
-        class="banner-button-next d-none d-lg-block position-absolute translate-middle top-50 start-100 p-4 shadow-lg">
-        <i class="bi bi-arrow-right"></i>
-      </div>
-    </div>
-    <button
-      class="btn btn-primary rounded-0 w-100 body2-text fw-semibold text-white py-4 d-block d-lg-none">探索感興趣的課程，今天立即上課<i
-        class="ms-4 bi bi-arrow-right"></i></button>
+
+    </section>
 
 
     <!-- 看看大家都買了什麼--倫倫 -->
@@ -846,7 +1037,7 @@
 
     <%- include('./layout/footer'); -%>
       <script type="module" src="../main.js"></script>
-  </body>
+</body>
 
 
 </html>
