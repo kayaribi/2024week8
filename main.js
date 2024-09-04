@@ -14,7 +14,6 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 //banner swiper
 var swiper = new Swiper(".bannerSwiper", {
-  
   slidesPerView: 1,
   spaceBetween: 40,
   slidesPerGroup: 1,
