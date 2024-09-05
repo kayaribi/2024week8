@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>使用者登入</title>
+    <link rel="stylesheet" href="../assets/scss/all.scss">
+</head>
+<body>
+    <div class="d-flex align-items-center">
+        <img class="d-none d-xxl-block py-10 ps-10" src="../assets/images/login.png" alt="login-pic">
+        <div action="" class="container">
+            <div class="row d-flex justify-content-center px-3 px-lg-0">
+                <div class="col col-xxl-6">
+                    <div>
+                        <h1 class="mb-6 mb-lg-10 text-neutral-100">歡迎回來！</h1>
+                        <!-- 按鈕 -->
+                        <ul class="list-unstyled d-grid gap-4 mb-4 mb-lg-10">
+                            <li class="position-relative">
+                                <a href="#" class="btn btn-outline-neutral-40 text-neutral-80 w-100 text-center ">
+                                    <div class="login-icon position-absolute top-38 start-0 ms-4" style="background-image: url(../assets/images/icons/ic_google.png) ;"></div>
+                                    使用 Google 帳號登入
+                                </a>
+                            </li>
+                            <li class="position-relative">
+                                <a href="#" class="btn btn-outline-neutral-40 text-neutral-80 w-100 text-center ">
+                                    <div class="login-icon position-absolute top-38 start-0 ms-4" style="background-image: url(../assets/images/icons/ic_facebook.png) ;"></div>
+                                    使用 Facebook 帳號登入
+                                </a>
+                            </li>
+                            <li class="position-relative">
+                                <a href="#" class="btn btn-outline-neutral-40 text-neutral-80 w-100 text-center ">
+                                    <div class="login-icon position-absolute top-38 start-0 ms-4" style="background-image: url(../assets/images/icons/ic_apple.png) ;"></div>
+                                    使用 Apple 帳號登入
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- 表單 -->
+                        <form class="mb-6 mb-lg-10" action="userLogin.html" method="post" name="user-login" id="loginForm">
+                            <h6 class="text-neutral-100 mb-4">或使用 Learning 帳號登入</h6>
+                            <div class="d-flex flex-column mb-4">
+                                <label class="form-label mb-2" for="login-mail">電子信箱<span class="text-danger ms-1">*</span></label>
+                                <input class="form-control text-neutral-60 p-4 login-input-radius" type="email" id="login-mail" placeholder="請輸入電子信箱" name="email" required>
+                            </div>
+                            <div class="position-relative d-flex flex-column mb-2">
+                                <label class="form-label mb-2" for="login-password">密碼<span class="text-danger ms-1">*</span></label>
+                                <input class="form-control text-neutral-60 p-4" type="password" id="loginPassword" placeholder="請輸入密碼" name="password" required>
+                                <img id="login-password-icon" class="position-absolute password-icon bottom-0 end-0 me-4 mb-4" src="/assets/images/icons/ic_eye-open.png" alt="eye">
+                            </div>
+                            <div class="d-flex mb-6 mb-lg-10">
+                                <input class="form-check-input me-2" type="checkbox" id="loginRemember">
+                                <label class="form-check-label" for="loginRemember">記住帳號</label>
+                                <a href="#" class="forget-login-password ms-auto">忘記密碼？</a>
+                            </div>
+                            <button type="submit" id="loginBtn" class="login-btn fw-semibold w-100 py-4 border-0" disabled>立即登入</button>
+                        </form>
+                        <!-- 註冊 -->
+                        <div class="d-flex">
+                            <p class="me-2">沒有 Learning 帳號嗎？</p>
+                            <a class="link-primary fw-semibold text-decoration-underline" href="signUp.html">立即註冊</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="../main.js"></script>
+</body>
+</html>

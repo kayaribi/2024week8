@@ -1,0 +1,2002 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>課程介紹｜LEARNING 課程網站</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+        <!-- header -->
+        <header class="bg-neutral-10">
+            <div class="gradient">
+                <div class="container pt-6 pb-10 py-md-20">
+                    <nav aria-label="breadcrumb" class="mb-6 mb-md-12">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">所有課程</a></li>
+                            <li class="breadcrumb-item"><a href="#">程式</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">網頁前端</li>
+                        </ol>
+                    </nav>
+                    <div class="mb-md-20">
+                        <div class="row gy-6">
+                            <div class="col-md-7">
+                                <div class="rounded-3"
+                                    style="background: url(../assets/images/hero-4.png) no-repeat 70%; height: 419px;">
+                                </div>
+                            </div>
+                            <div class="col-md-5 d-flex flex-column">
+                                <div class="text-primary fw-semibold d-flex mb-2 mb-md-4">
+                                    <small class="bg-primary-10 rounded-pill py-2 px-3 me-2">程式開發</small>
+                                    <small class="bg-primary-10 rounded-pill py-2 px-3 me-2">小白友善</small>
+                                    <small class="bg-primary-10 rounded-pill py-2 px-3">網站設計</small>
+                                </div>
+                                <h1 class="fs-3 fs-lg-2 fs-xl-1 text-neutral-100 mb-4 mb-md-6">使用 HTML、CSS <br>開發一個網站
+                                </h1>
+                                <p class="mb-4 mb-md-6">為你打造就算沒有程式基礎，也能夠逐步學習獲得網頁排版技巧的紮實觀念，六角學院的講師將協助你成就更好的自己！</p>
+                                <p class="mb-6"><span class="me-1 text-neutral-100 fw-semibold">16,390 人</span>已註冊</p>
+                                <div class="mt-auto d-flex">
+                                    <a class="btn btn-neutral-0 py-3 px-4 border border-primary rounded-1 text-primary me-2 fw-semibold d-flex align-items-center justify-content-center text-nowrap flex-md-grow-0 flex-grow-1"
+                                        href="#">
+                                        <i class="bi bi-bookmark-fill fs-5 me-3"></i>收藏課程</a>
+                                    <a class="btn btn-neutral-0 py-3 px-4 border border-neutral-0 rounded-1 fw-semibold d-flex align-items-center justify-content-center text-nowrap flex-md-grow-0 flex-grow-1"
+                                        href="#">
+                                        <i class="bi bi-share-fill fs-5 me-3"></i>分享課程</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- 六角評分 -->
+        <div class="bg-neutral-10 pt-4 pt-md-15 pb-6 pb-md-20">
+            <!-- pc -->
+            <div class="container position-relative">
+                <div class="mimicry">
+                    <div class="card rounded-3 border-neutral-40 bg-neutral-0 py-4 py-md-6 px-10 px-md-12 shadow-lg">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="py-6 py-md-4 mimicry-border-end">
+                                    <p class="fs-md-6 mb-2 text-neutral-100 fw-semibold"><img class="me-1"
+                                            style="width: 24px; height: 24px;"
+                                            src="../assets/images/icons/ic_ hexschool.png" alt="logo">六角學院</p>
+                                    <p class="mimicry-fs-base">高雄最大線上程式開發學習單位</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="py-6 py-md-4 mimicry-border-end h-100">
+                                    <p class="fs-md-6 mb-2 text-neutral-100 fw-semibold"><i
+                                            class="bi bi-star-fill me-1 text-warning"></i>4.9</p>
+                                    <p class="mimicry-fs-base">13,208 條評論</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="py-6 py-md-4 mimicry-border-end">
+                                    <p class="fs-md-6 mb-2 text-neutral-100 fw-semibold">3 時 25 分</p>
+                                    <p class="mimicry-fs-base">16 個單元，4 個課後學習作業</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="py-6 py-md-2">
+                                    <div class="bg-primary-10 rounded-pill d-inline-block mb-2 py-2 px-3">
+                                        <div class="d-flex">
+                                            <small class="text-primary fw-semibold">前端開發類別排名第一名</small>
+                                            <img class="ms-1" style="width: 14px; height: 14px;"
+                                                src="../assets/images/icons/ic_fire.png" alt="logo">
+                                        </div>
+                                    </div>
+                                    <p class="mimicry-fs-base">16,390 人已註冊</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 內容 -->
+        <main class="bg-neutral-10">
+            <!-- 導覽列 -->
+            <div class="border-bottom border-neutral-40 sticky-top bg-neutral-10">
+                <div class="container">
+                    <ul class="nav flex-nowrap justify-content-center justify-content-md-start">
+                        <li class="nav-item borderBlue">
+                            <a class="nav-link py-4 px-2 px-md-4 fw-semibold active" aria-current="page"
+                                href="#">課程介紹</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link py-4 px-2 px-md-4 disabled" href="#" tabindex="-1"
+                                aria-disabled="true">預計單元</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link py-4 px-2 px-md-4 disabled" href="#" tabindex="-1"
+                                aria-disabled="true">關於講師</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link py-4 pe-0 ps-2 px-md-4 disabled" href="#" tabindex="-1"
+                                aria-disabled="true">購課前問答</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 內文 -->
+            <div class="pt-10 pt-md-20 pb-30 pb-md-30">
+                <div class="container pb-0 pb-md-10">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <!-- 課程介紹 -->
+                            <div class="d-flex align-items-center mb-4 mb-md-6">
+                                <img class="me-2" src="../assets/images/deco/flower-5.png" alt="photo">
+                                <h5 class="fs-6 fs-md-5">課程介紹</h5>
+                            </div>
+                            <div class="bg-neutral-0 p-4 py-md-6 px-md-8 mx-sm-auto mb-12"
+                                style="margin-left: -12px; margin-right: -12px;">
+                                <div class="position-relative">
+                                    <div class="text-center">
+                                        <picture>
+                                            <source media="(min-width: 768px)"
+                                                srcset="../assets/images/course-detail-1.png">
+                                            <img class="mb-6 mb-md-8 mx-auto"
+                                                src="../assets/images/course-sm-detail-1.png" alt="photo">
+                                        </picture>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-2 mb-md-4">
+                                        <div class="borderBlue-straight align-self-stretch"></div>
+                                        <p class="fw-semibold">入門前端網頁設計從這裡開始，跨出你的第一步！</p>
+                                    </div>
+                                    <p class="mb-6 mb-md-8">如果你也想要踏入前端的世界，歡迎你來到 Hahow
+                                        與六角學院合作的「前端網頁設計」課程組合，透過一系列前端語言的基礎課程，循序漸進的帶你進入網頁開發的世界。<br>而這裡——就是你的第一步！</p>
+                                    <div class="text-center">
+                                        <picture>
+                                            <source media="(min-width: 768px)"
+                                                srcset="../assets/images/course-detail-2.png">
+                                            <img class="mb-6 mb-md-8" src="../assets/images/course-sm-detail-2.png"
+                                                alt="photo">
+                                        </picture>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-2 mb-md-4">
+                                        <div class="borderBlue-straight align-self-stretch"></div>
+                                        <p class="fw-semibold">網頁前端的入門磚，讓我們先從學習 HTML & CSS 開始！</p>
+                                    </div>
+                                    <p class="pb-14">如果你還沒有程式基礎背景，HTML、CSS 便是作為網頁開發的起始點。從 HTML、 CSS
+                                        入門學習會是個好主意，這裡的學習曲線不會那麼的陡峭，網頁開發的基礎知識正式從這裡開始！</p>
+                                    <div class="z-1 position-absolute bottom-0 start-50 translate-middle-x">
+                                        <a class="btn btn-primary fw-semibold px-25 text-nowrap" href="#">展開更多</a>
+                                    </div>
+                                    <div class="transparencyMask"></div>
+                                </div>
+                            </div>
+                            <!-- 預計單元 -->
+                            <div class="mb-4 mb-md-6 d-flex justify-content-between align-items-center">
+                                <div>
+                                    <div class="d-flex align-items-center mb-2">
+                                        <img class="me-2" src="../assets/images/deco/flower-5.png" alt="photo">
+                                        <h5 class="fs-6 fs-md-5">預計單元</h5>
+                                    </div>
+                                    <p>18 章 142 單元｜總時長 928 分鐘</p>
+                                </div>
+                                <div>
+                                    <a class="fw-semibold link-primary" href=".allOpen"
+                                        data-bs-toggle="collapse">全部展開</a>
+                                </div>
+                            </div>
+                            <div class="mb-12">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item border-0 mb-4">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button
+                                                class="accordion-button bg-neutral-40 p-6 text-neutral-100 fw-semibold"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                aria-expanded="true" aria-controls="collapseOne">
+                                                <div class="d-flex align-items-start align-items-md-center">
+                                                    <small class="text-neutral-0 bg-neutral-80 py-1 px-2 me-2"
+                                                        style="border-radius: 4px;">1</small>
+                                                    <p>課前說明</p>
+                                                </div>
+                                                <div
+                                                    class="d-md-flex align-items-center d-none text-neutral-60 ms-auto">
+                                                    <small>4 個單元</small>
+                                                    <div class="ic-circle"></div>
+                                                    <small>少於 1 分鐘</small>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show allOpen"
+                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="list-group list-group-flush py-4">
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <p
+                                                                class="tiny-text bg-primary text-neutral-0 py-1 px-2 rounded-2 me-4">
+                                                                試看單元</p>
+                                                            <p class="small">00:10</p>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程最終任務說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>Hahow 學生如何在六角平台檢視問題</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-book me-3 fs-5"></i>
+                                                            <p>課業作業</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 mb-4">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button
+                                                class="accordion-button bg-neutral-40 p-6 text-neutral-100 fw-semibold collapsed"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                <div class="d-flex align-items-start align-items-md-center">
+                                                    <small class="text-neutral-0 bg-neutral-80 py-1 px-2 me-2"
+                                                        style="border-radius: 4px;">2</small>
+                                                    <p>2020 VS Code 網頁編輯器、HTML 基礎教學</p>
+                                                </div>
+                                                <div
+                                                    class="d-md-flex align-items-center d-none text-neutral-60 ms-auto">
+                                                    <small>15 個單元</small>
+                                                    <div class="ic-circle"></div>
+                                                    <small>25 分鐘</small>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse allOpen"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="list-group list-group-flush py-4">
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <p
+                                                                class="tiny-text bg-primary text-neutral-0 py-1 px-2 rounded-2 me-4">
+                                                                試看單元</p>
+                                                            <p class="small">00:10</p>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程最終任務說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>Hahow 學生如何在六角平台檢視問題</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程最終任務說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>Hahow 學生如何在六角平台檢視問題</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程最終任務說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>Hahow 學生如何在六角平台檢視問題</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>Hahow 學生如何在六角平台檢視問題</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 mb-4">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button
+                                                class="accordion-button bg-neutral-40 p-6 text-neutral-100 fw-semibold collapsed"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                <div class="d-flex align-items-start align-items-md-center">
+                                                    <small class="text-neutral-0 bg-neutral-80 py-1 px-2 me-2"
+                                                        style="border-radius: 4px;">3</small>
+                                                    <p>2020 CSS 常用語法</p>
+                                                </div>
+                                                <div
+                                                    class="d-md-flex align-items-center d-none text-neutral-60 ms-auto">
+                                                    <small>9 個單元</small>
+                                                    <div class="ic-circle"></div>
+                                                    <small>37 分鐘</small>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse allOpen"
+                                            aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="list-group list-group-flush py-4">
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <p
+                                                                class="tiny-text bg-primary text-neutral-0 py-1 px-2 rounded-2 me-4">
+                                                                試看單元</p>
+                                                            <p class="small">00:10</p>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程最終任務說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>Hahow 學生如何在六角平台檢視問題</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程最終任務說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>Hahow 學生如何在六角平台檢視問題</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-book me-3 fs-5"></i>
+                                                            <p>課業作業</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 mb-4">
+                                        <h2 class="accordion-header" id="headingFour">
+                                            <button
+                                                class="accordion-button bg-neutral-40 p-6 text-neutral-100 fw-semibold collapsed"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                aria-expanded="false" aria-controls="collapseFour">
+                                                <div class="d-flex align-items-start align-items-md-center">
+                                                    <small class="text-neutral-0 bg-neutral-80 py-1 px-2 me-2"
+                                                        style="border-radius: 4px;">4</small>
+                                                    <p>2020 使用 CSS 變更 HTML 標籤特性</p>
+                                                </div>
+                                                <div
+                                                    class="d-md-flex align-items-center d-none text-neutral-60 ms-auto">
+                                                    <small>13 個單元</small>
+                                                    <div class="ic-circle"></div>
+                                                    <small>52 分鐘</small>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse allOpen"
+                                            aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                            <div class="list-group list-group-flush py-4">
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <p
+                                                                class="tiny-text bg-primary text-neutral-0 py-1 px-2 rounded-2 me-4">
+                                                                試看單元</p>
+                                                            <p class="small">00:10</p>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程最終任務說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>Hahow 學生如何在六角平台檢視問題</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-book me-3 fs-5"></i>
+                                                            <p>課業作業</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 mb-4">
+                                        <h2 class="accordion-header" id="headingFive">
+                                            <button
+                                                class="accordion-button bg-neutral-40 p-6 text-neutral-100 fw-semibold collapsed"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                                aria-expanded="false" aria-controls="collapseFive">
+                                                <div class="d-flex align-items-start align-items-md-center">
+                                                    <small class="text-neutral-0 bg-neutral-80 py-1 px-2 me-2"
+                                                        style="border-radius: 4px;">5</small>
+                                                    <p>Flex 網頁排版技巧</p>
+                                                </div>
+                                                <div
+                                                    class="d-md-flex align-items-center d-none text-neutral-60 ms-auto">
+                                                    <small>13 個單元</small>
+                                                    <div class="ic-circle"></div>
+                                                    <small>26 分鐘</small>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFive" class="accordion-collapse collapse allOpen"
+                                            aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                            <div class="list-group list-group-flush py-4">
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <p
+                                                                class="tiny-text bg-primary text-neutral-0 py-1 px-2 rounded-2 me-4">
+                                                                試看單元</p>
+                                                            <p class="small">00:10</p>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程最終任務說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>Hahow 學生如何在六角平台檢視問題</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-book me-3 fs-5"></i>
+                                                            <p>課業作業</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 mb-4">
+                                        <h2 class="accordion-header" id="headingSix">
+                                            <button
+                                                class="accordion-button bg-neutral-40 p-6 text-neutral-100 fw-semibold collapsed"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                                aria-expanded="false" aria-controls="collapseSix">
+                                                <div class="d-flex align-items-start align-items-md-center">
+                                                    <small class="text-neutral-0 bg-neutral-80 py-1 px-2 me-2"
+                                                        style="border-radius: 4px;">6</small>
+                                                    <p>Flex 精神時光屋</p>
+                                                </div>
+                                                <div
+                                                    class="d-md-flex align-items-center d-none text-neutral-60 ms-auto">
+                                                    <small>8 個單元</small>
+                                                    <div class="ic-circle"></div>
+                                                    <small>1 小時 15 分鐘</small>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSix" class="accordion-collapse collapse allOpen"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                            <div class="list-group list-group-flush py-4">
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <p
+                                                                class="tiny-text bg-primary text-neutral-0 py-1 px-2 rounded-2 me-4">
+                                                                試看單元</p>
+                                                            <p class="small">00:10</p>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程最終任務說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>Hahow 學生如何在六角平台檢視問題</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-book me-3 fs-5"></i>
+                                                            <p>課業作業</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 mb-4">
+                                        <h2 class="accordion-header" id="headingSeven">
+                                            <button
+                                                class="accordion-button bg-neutral-40 p-6 text-neutral-100 fw-semibold collapsed"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                                aria-expanded="false" aria-controls="collapseSeven">
+                                                <div class="d-flex align-items-start align-items-md-center">
+                                                    <small class="text-neutral-0 bg-neutral-80 py-1 px-2 me-2"
+                                                        style="border-radius: 4px;">7</small>
+                                                    <p>章節說明</p>
+                                                </div>
+                                                <div
+                                                    class="d-md-flex align-items-center d-none text-neutral-60 ms-auto">
+                                                    <small>1 個單元</small>
+                                                    <div class="ic-circle"></div>
+                                                    <small>少於 1 分鐘</small>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSeven" class="accordion-collapse collapse allOpen"
+                                            aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                            <div class="list-group list-group-flush py-4">
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <p
+                                                                class="tiny-text bg-primary text-neutral-0 py-1 px-2 rounded-2 me-4">
+                                                                試看單元</p>
+                                                            <p class="small">00:10</p>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 mb-4">
+                                        <h2 class="accordion-header" id="headingEight">
+                                            <button
+                                                class="accordion-button bg-neutral-40 p-6 text-neutral-100 fw-semibold collapsed"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight"
+                                                aria-expanded="false" aria-controls="collapseEight">
+                                                <div class="d-flex align-items-start align-items-md-center">
+                                                    <small class="text-neutral-0 bg-neutral-80 py-1 px-2 me-2"
+                                                        style="border-radius: 4px;">8</small>
+                                                    <p>網頁排版技巧 Part II</p>
+                                                </div>
+                                                <div
+                                                    class="d-md-flex align-items-center d-none text-neutral-60 ms-auto">
+                                                    <small>7 個單元</small>
+                                                    <div class="ic-circle"></div>
+                                                    <small>24 分鐘</small>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseEight" class="accordion-collapse collapse allOpen"
+                                            aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                            <div class="list-group list-group-flush py-4">
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <p
+                                                                class="tiny-text bg-primary text-neutral-0 py-1 px-2 rounded-2 me-4">
+                                                                試看單元</p>
+                                                            <p class="small">00:10</p>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程最終任務說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>Hahow 學生如何在六角平台檢視問題</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-book me-3 fs-5"></i>
+                                                            <p>課業作業</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 mb-4">
+                                        <h2 class="accordion-header" id="headingNine">
+                                            <button
+                                                class="accordion-button bg-neutral-40 p-6 text-neutral-100 fw-semibold collapsed"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine"
+                                                aria-expanded="false" aria-controls="collapseNine">
+                                                <div class="d-flex align-items-start align-items-md-center">
+                                                    <small class="text-neutral-0 bg-neutral-80 py-1 px-2 me-2"
+                                                        style="border-radius: 4px;">9</small>
+                                                    <p>切圖技巧</p>
+                                                </div>
+                                                <div
+                                                    class="d-md-flex align-items-center d-none text-neutral-60 ms-auto">
+                                                    <small>12 個單元</small>
+                                                    <div class="ic-circle"></div>
+                                                    <small>35 分鐘</small>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseNine" class="accordion-collapse collapse allOpen"
+                                            aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                                            <div class="list-group list-group-flush py-4">
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <p
+                                                                class="tiny-text bg-primary text-neutral-0 py-1 px-2 rounded-2 me-4">
+                                                                試看單元</p>
+                                                            <p class="small">00:10</p>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程最終任務說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>Hahow 學生如何在六角平台檢視問題</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-book me-3 fs-5"></i>
+                                                            <p>課業作業</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 mb-4">
+                                        <h2 class="accordion-header" id="headingTen">
+                                            <button
+                                                class="accordion-button bg-neutral-40 p-6 text-neutral-100 fw-semibold collapsed"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen"
+                                                aria-expanded="false" aria-controls="collapseTen">
+                                                <div class="d-flex align-items-start align-items-md-center">
+                                                    <small class="text-neutral-0 bg-neutral-80 py-1 px-1 me-2"
+                                                        style="border-radius: 4px;">10</small>
+                                                    <p>表格與表單設計技巧</p>
+                                                </div>
+                                                <div
+                                                    class="d-md-flex align-items-center d-none text-neutral-60 ms-auto">
+                                                    <small>10 個單元</small>
+                                                    <div class="ic-circle"></div>
+                                                    <small>30 分鐘</small>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTen" class="accordion-collapse collapse allOpen"
+                                            aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                                            <div class="list-group list-group-flush py-4">
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <p
+                                                                class="tiny-text bg-primary text-neutral-0 py-1 px-2 rounded-2 me-4">
+                                                                試看單元</p>
+                                                            <p class="small">00:10</p>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程最終任務說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>Hahow 學生如何在六角平台檢視問題</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-book me-3 fs-5"></i>
+                                                            <p>課業作業</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 mb-4">
+                                        <h2 class="accordion-header" id="headingEleven">
+                                            <button
+                                                class="accordion-button bg-neutral-40 p-6 text-neutral-100 fw-semibold collapsed"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven"
+                                                aria-expanded="false" aria-controls="collapseEleven">
+                                                <div class="d-flex align-items-start align-items-md-center">
+                                                    <small class="text-neutral-0 bg-neutral-80 py-1 px-2 me-2"
+                                                        style="border-radius: 4px;">11</small>
+                                                    <p>CSS3 技巧</p>
+                                                </div>
+                                                <div
+                                                    class="d-md-flex align-items-center d-none text-neutral-60 ms-auto">
+                                                    <small>5 個單元</small>
+                                                    <div class="ic-circle"></div>
+                                                    <small>23 分鐘</small>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseEleven" class="accordion-collapse collapse allOpen"
+                                            aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
+                                            <div class="list-group list-group-flush py-4">
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <p
+                                                                class="tiny-text bg-primary text-neutral-0 py-1 px-2 rounded-2 me-4">
+                                                                試看單元</p>
+                                                            <p class="small">00:10</p>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程最終任務說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>Hahow 學生如何在六角平台檢視問題</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-book me-3 fs-5"></i>
+                                                            <p>課業作業</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 mb-4">
+                                        <h2 class="accordion-header" id="headingTwelve">
+                                            <button
+                                                class="accordion-button bg-neutral-40 p-6 text-neutral-100 fw-semibold collapsed"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve"
+                                                aria-expanded="false" aria-controls="collapseTwelve">
+                                                <div class="d-flex align-items-start align-items-md-center">
+                                                    <small class="text-neutral-0 bg-neutral-80 py-1 px-1 me-2"
+                                                        style="border-radius: 4px;">12</small>
+                                                    <p>最後，讓你的網頁變得更專業</p>
+                                                </div>
+                                                <div
+                                                    class="d-md-flex align-items-center d-none text-neutral-60 ms-auto">
+                                                    <small>10 個單元</small>
+                                                    <div class="ic-circle"></div>
+                                                    <small>最後，讓你的網頁變得更專業</small>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwelve" class="accordion-collapse collapse allOpen"
+                                            aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
+                                            <div class="list-group list-group-flush py-4">
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <p
+                                                                class="tiny-text bg-primary text-neutral-0 py-1 px-2 rounded-2 me-4">
+                                                                試看單元</p>
+                                                            <p class="small">00:10</p>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程最終任務說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>Hahow 學生如何在六角平台檢視問題</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-book me-3 fs-5"></i>
+                                                            <p>課業作業</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 mb-4">
+                                        <h2 class="accordion-header" id="headingThirteen">
+                                            <button
+                                                class="accordion-button bg-neutral-40 p-6 text-neutral-100 fw-semibold collapsed"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseThirteen" aria-expanded="false"
+                                                aria-controls="collapseThirteen">
+                                                <div class="d-flex align-items-start align-items-md-center">
+                                                    <small class="text-neutral-0 bg-neutral-80 py-1 px-1 me-2"
+                                                        style="border-radius: 4px;">13</small>
+                                                    <p>開發多頁式網站實戰講解</p>
+                                                </div>
+                                                <div
+                                                    class="d-md-flex align-items-center d-none text-neutral-60 ms-auto">
+                                                    <small>6 個單元</small>
+                                                    <div class="ic-circle"></div>
+                                                    <small>8 分鐘</small>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThirteen" class="accordion-collapse collapse allOpen"
+                                            aria-labelledby="headingThirteen" data-bs-parent="#accordionExample">
+                                            <div class="list-group list-group-flush py-4">
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <p
+                                                                class="tiny-text bg-primary text-neutral-0 py-1 px-2 rounded-2 me-4">
+                                                                試看單元</p>
+                                                            <p class="small">00:10</p>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程最終任務說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>Hahow 學生如何在六角平台檢視問題</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-book me-3 fs-5"></i>
+                                                            <p>課業作業</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 mb-4">
+                                        <h2 class="accordion-header" id="headingFourteen">
+                                            <button
+                                                class="accordion-button bg-neutral-40 p-6 text-neutral-100 fw-semibold collapsed"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseFourteen" aria-expanded="false"
+                                                aria-controls="collapseFourteen">
+                                                <div class="d-flex align-items-start align-items-md-center">
+                                                    <small class="text-neutral-0 bg-neutral-80 py-1 px-1 me-2"
+                                                        style="border-radius: 4px;">14</small>
+                                                    <p>接下來，你還可以學什麼？</p>
+                                                </div>
+                                                <div
+                                                    class="d-md-flex align-items-center d-none text-neutral-60 ms-auto">
+                                                    <small>3 個單元</small>
+                                                    <div class="ic-circle"></div>
+                                                    <small>少於 1 分鐘</small>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFourteen" class="accordion-collapse collapse allOpen"
+                                            aria-labelledby="headingFourteen" data-bs-parent="#accordionExample">
+                                            <div class="list-group list-group-flush py-4">
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <p
+                                                                class="tiny-text bg-primary text-neutral-0 py-1 px-2 rounded-2 me-4">
+                                                                試看單元</p>
+                                                            <p class="small">00:10</p>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程最終任務說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>Hahow 學生如何在六角平台檢視問題</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-book me-3 fs-5"></i>
+                                                            <p>課業作業</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 mb-4">
+                                        <h2 class="accordion-header" id="headingFifteen">
+                                            <button
+                                                class="accordion-button bg-neutral-40 p-6 text-neutral-100 fw-semibold collapsed"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseFifteen" aria-expanded="false"
+                                                aria-controls="collapseFifteen">
+                                                <div class="d-flex align-items-start align-items-md-center">
+                                                    <small class="text-neutral-0 bg-neutral-80 py-1 px-1 me-2"
+                                                        style="border-radius: 4px;">15</small>
+                                                    <p>網頁編輯器、HTML 基礎教學（舊章節）</p>
+                                                </div>
+                                                <div
+                                                    class="d-md-flex align-items-center d-none text-neutral-60 ms-auto">
+                                                    <small>4 個單元</small>
+                                                    <div class="ic-circle"></div>
+                                                    <small>1 小時 12 分鐘</small>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFifteen" class="accordion-collapse collapse allOpen"
+                                            aria-labelledby="headingFifteen" data-bs-parent="#accordionExample">
+                                            <div class="list-group list-group-flush py-4">
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <p
+                                                                class="tiny-text bg-primary text-neutral-0 py-1 px-2 rounded-2 me-4">
+                                                                試看單元</p>
+                                                            <p class="small">00:10</p>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程最終任務說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>Hahow 學生如何在六角平台檢視問題</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-book me-3 fs-5"></i>
+                                                            <p>課業作業</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 mb-4">
+                                        <h2 class="accordion-header" id="headingSixteen">
+                                            <button
+                                                class="accordion-button bg-neutral-40 p-6 text-neutral-100 fw-semibold collapsed"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseSixteen" aria-expanded="false"
+                                                aria-controls="collapseSixteen">
+                                                <div class="d-flex align-items-start align-items-md-center">
+                                                    <small class="text-neutral-0 bg-neutral-80 py-1 px-1 me-2"
+                                                        style="border-radius: 4px;">16</small>
+                                                    <p>CSS 常用語法（舊章節）</p>
+                                                </div>
+                                                <div
+                                                    class="d-md-flex align-items-center d-none text-neutral-60 ms-auto">
+                                                    <small>6 個單元</small>
+                                                    <div class="ic-circle"></div>
+                                                    <small>16 分鐘</small>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSixteen" class="accordion-collapse collapse allOpen"
+                                            aria-labelledby="headingSixteen" data-bs-parent="#accordionExample">
+                                            <div class="list-group list-group-flush py-4">
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <p
+                                                                class="tiny-text bg-primary text-neutral-0 py-1 px-2 rounded-2 me-4">
+                                                                試看單元</p>
+                                                            <p class="small">00:10</p>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程最終任務說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>Hahow 學生如何在六角平台檢視問題</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-book me-3 fs-5"></i>
+                                                            <p>課業作業</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 mb-4">
+                                        <h2 class="accordion-header" id="headingSeventeen">
+                                            <button
+                                                class="accordion-button bg-neutral-40 p-6 text-neutral-100 fw-semibold collapsed"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseSeventeen" aria-expanded="false"
+                                                aria-controls="collapseSeventeen">
+                                                <div class="d-flex align-items-start align-items-md-center">
+                                                    <small class="text-neutral-0 bg-neutral-80 py-1 px-1 me-2"
+                                                        style="border-radius: 4px;">17</small>
+                                                    <p>2020 使用 CSS 變更 HTML 標籤特性</p>
+                                                </div>
+                                                <div
+                                                    class="d-md-flex align-items-center d-none text-neutral-60 ms-auto">
+                                                    <small>8 個單元</small>
+                                                    <div class="ic-circle"></div>
+                                                    <small>12 分鐘</small>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSeventeen" class="accordion-collapse collapse allOpen"
+                                            aria-labelledby="headingSeventeen" data-bs-parent="#accordionExample">
+                                            <div class="list-group list-group-flush py-4">
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <p
+                                                                class="tiny-text bg-primary text-neutral-0 py-1 px-2 rounded-2 me-4">
+                                                                試看單元</p>
+                                                            <p class="small">00:10</p>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程最終任務說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>Hahow 學生如何在六角平台檢視問題</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-book me-3 fs-5"></i>
+                                                            <p>課業作業</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 mb-4">
+                                        <h2 class="accordion-header" id="headingEighteen">
+                                            <button
+                                                class="accordion-button bg-neutral-40 p-6 text-neutral-100 fw-semibold collapsed"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseEighteen" aria-expanded="false"
+                                                aria-controls="collapseEighteen">
+                                                <div class="d-flex align-items-start align-items-md-center">
+                                                    <small class="text-neutral-0 bg-neutral-80 py-1 px-1 me-2"
+                                                        style="border-radius: 4px;">18</small>
+                                                    <p>網頁排版技巧 Part I（舊章節）</p>
+                                                </div>
+                                                <div
+                                                    class="d-md-flex align-items-center d-none text-neutral-60 ms-auto">
+                                                    <small>7 個單元</small>
+                                                    <div class="ic-circle"></div>
+                                                    <small>7 分鐘</small>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseEighteen" class="accordion-collapse collapse allOpen"
+                                            aria-labelledby="headingEighteen" data-bs-parent="#accordionExample">
+                                            <div class="list-group list-group-flush py-4">
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <p
+                                                                class="tiny-text bg-primary text-neutral-0 py-1 px-2 rounded-2 me-4">
+                                                                試看單元</p>
+                                                            <p class="small">00:10</p>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程最終任務說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>課程說明</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-camera-video me-3 fs-5"></i>
+                                                            <p>Hahow 學生如何在六角平台檢視問題</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                                <button type="button"
+                                                    class="list-group-item list-group-item-action border-0 py-4 px-6">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-book me-3 fs-5"></i>
+                                                            <p>課業作業</p>
+                                                        </div>
+                                                        <p class="small">00:10</p>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 關於講師 -->
+                            <div class="d-flex align-items-center mb-4 mb-md-6">
+                                <img class="me-2" src="../assets/images/deco/flower-5.png" alt="photo">
+                                <h5 class="fs-6 fs-md-5">關於講師</h5>
+                            </div>
+                            <div class="bg-neutral-0 p-4 p-md-8 rounded-3 mb-12">
+                                <div class="pb-6 pb-md-10 border-bottom border-neutral-40">
+                                    <div class="d-flex align-items-center">
+                                        <img class="me-4" src="../assets/images/icons/ic_ hexschool.png" alt="photo">
+                                        <div>
+                                            <p class="mb-2 fs-md-6 fw-semibold">六角學院</p>
+                                            <p class="body-text small mb-4">打破線上課程售後不理，我們在線上等你！帶你學到會的線上課程。</p>
+                                            <div class="d-none d-md-flex">
+                                                <p class="pe-4">2 堂課程</p>
+                                                <p class="px-4 border-start border-end border-neutral-40">1,567 個學生</p>
+                                                <p class="ps-4">1,034 則評論</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex d-md-none">
+                                        <p class="small pe-3">2 堂課程</p>
+                                        <p class="small px-3 border-start border-end border-neutral-40">1,567 個學生</p>
+                                        <p class="small ps-3">1,034 則評論</p>
+                                    </div>
+                                </div>
+                                <div class="py-6 py-md-10">
+                                    <p class="body-text small mb-4">六角學院是一所線上程式開發學習單位，目前已累積 20,000
+                                        名學員，讓更多人藉由線上學習在職涯規劃上有更多的選擇是我們的使命是，如果您贊同我們的理念，歡迎加入六角。</p>
+                                    <p class="body-text small">我們將深入了解您想發展的領域，每位實習生我們都會量身打造專屬於您的舞台，並讓您實際瞭解公司營運 Know how。
+                                    </p>
+                                </div>
+                                <div class="text-end">
+                                    <a class="link-primary" href="#">了解更多講師履歷<i
+                                            class="bi bi-chevron-right ms-1"></i></a>
+                                </div>
+                            </div>
+                            <!-- 購課前問答 -->
+                            <div class="d-flex align-items-center mb-4 mb-md-6">
+                                <img class="me-2" src="../assets/images/deco/flower-5.png" alt="photo">
+                                <h5 class="fs-6 fs-md-5">購課前問答</h5>
+                            </div>
+                            <div class="bg-neutral-0 p-4 p-md-8 rounded-3 mb-4">
+                                <div class="d-flex align-items-start">
+                                    <img class="d-none d-md-inline-block me-6" src="../assets/images/avatar-3.png"
+                                        alt="photo">
+                                    <div class="w-100">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <img class="d-inline-block d-md-none me-2"
+                                                src="../assets/images/avatar-3.png" alt="photo">
+                                            <p class="fw-semibold text-neutral-100">Jessica</p>
+                                        </div>
+                                        <textarea class="form-control rounded-3 p-4 body-text body2-text mb-4"
+                                            style="height: 100px; display: ruby-text; resize:none;" type="text"
+                                            placeholder="上課前有什麼疑問嗎？ 在這裡盡情詢問講師！" aria-label="default input example">
+                                        </textarea>
+                                        <div class="d-flex justify-content-between flex-lg-row flex-column">
+                                            <div class="d-flex align-items-center mb-2 mb-lg-0">
+                                                <img class="me-2" src="../assets/images/deco/flower-5.png" alt="photo">
+                                                <p class="small">提問之前也別忘了看看其他同學有沒有跟你有相同的問題哦</p>
+                                            </div>
+                                            <button type="button"
+                                                class="btn btn-neutral-40 py-3 px-4 text-neutral-60 fw-semibold rounded-1">送出</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-neutral-0 p-4 p-md-8 rounded-3 mb-4">
+                                <div class="d-flex align-items-start">
+                                    <img class="d-none d-md-inline-block me-6" src="../assets/images/avatar-4.png"
+                                        alt="photo">
+                                    <div class="w-100">
+                                        <div class="d-flex align-items-center align-items-md-start mb-6">
+                                            <img class="d-inline-block d-md-none me-2"
+                                                src="../assets/images/avatar-4.png" alt="photo">
+                                            <div>
+                                                <p class="fw-semibold text-neutral-100 mb-1">Brian</p>
+                                                <p class="small text-neutral-60">2024-01-30</p>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4">
+                                            <p class="body-text body2-text">老師您好，想問您:<br>
+                                                1. 課程是用MAC作業系統，只使用Windows作業系統的同學會有學習上的問題嗎~<br>
+                                                2. 此課程在Udemy、好好學校、六角學院購買會有什麼不一樣嗎~
+                                            </p>
+                                        </div>
+                                        <div class="bg-neutral-10 p-4 rounded-4">
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-neutral-100 fw-semibold me-2">六角學院</p>
+                                                <small
+                                                    class="tiny-text text-primary border border-primary py-1 px-2 rounded-2">授課老師</small>
+                                            </div>
+                                            <p class="small text-neutral-60 mb-6">2024-01-31</p>
+                                            <p class="body-text body2-text">
+                                                嗨嗨 Brian<br>
+                                                我是六角學院助教 Bingbingboom
+                                                <br><br>
+                                                關於同學的問題：<br>
+                                                1. 使用 Windows 系統是可以的，沒有問題哩<br>
+                                                2. 課程內容都是相同的哦 ～
+                                                <br><br>
+                                                若有問題歡迎再次發問 :D
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-neutral-0 p-4 p-md-8 rounded-3 mb-4">
+                                <div class="d-flex align-items-start">
+                                    <img class="d-none d-md-inline-block me-6 rounded-pill"
+                                        style="height: 60px; width: 60px; object-fit: cover;"
+                                        src="../assets/images/avatar-5.png" alt="photo">
+                                    <div class="w-100">
+                                        <div class="d-flex align-items-center align-items-md-start mb-6">
+                                            <img class="d-inline-block d-md-none me-2 rounded-pill"
+                                                style="height: 60px; width: 60px; object-fit: cover;"
+                                                src="../assets/images/avatar-5.png" alt="photo">
+                                            <div>
+                                                <p class="fw-semibold text-neutral-100 mb-1">Sandy</p>
+                                                <p class="small text-neutral-60">2023-12-29</p>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4">
+                                            <p class="body-text body2-text">您好，這個課程跟六角網站上的課程是一樣的嗎?</p>
+                                        </div>
+                                        <div class="bg-neutral-10 p-4 rounded-4">
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-neutral-100 fw-semibold me-2">六角學院</p>
+                                                <small
+                                                    class="tiny-text text-primary border border-primary py-1 px-2 rounded-2">授課老師</small>
+                                            </div>
+                                            <p class="small text-neutral-60 mb-6">2024-01-31</p>
+                                            <p class="body-text body2-text">
+                                                嗨嗨 Sandy<br>
+                                                我是六角學院助教 Bingbingboom<br><br>
+                                                對的，這部分因為字幕問題還沒有更新<br>
+                                                後續等字幕用好了就會更新哩！<br><br>
+                                                若有問題歡迎再次發問 :D
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-neutral-0 p-4 p-md-8 rounded-3 mb-6">
+                                <div class="d-flex align-items-start">
+                                    <img class="d-none d-md-inline-block me-6 rounded-pill"
+                                        style="height: 60px; width: 60px; object-fit: cover;"
+                                        src="../assets/images/avatar-6.png" alt="photo">
+                                    <div class="w-100">
+                                        <div class="d-flex align-items-center align-items-md-start mb-6">
+                                            <img class="d-inline-block d-md-none me-2 rounded-pill"
+                                                style="height: 60px; width: 60px; object-fit: cover;"
+                                                src="../assets/images/avatar-6.png" alt="photo">
+                                            <div>
+                                                <p class="fw-semibold text-neutral-100 mb-1">Tim</p>
+                                                <p class="small text-neutral-60">2024-01-30</p>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4">
+                                            <p class="body-text body2-text">
+                                                助教你好，我本身是一位插畫家，想轉往數位的方向發展。目前想做兩種網站，一個是類似這種的簡易landing
+                                                page，用來介紹我的插畫品牌以及作品或故事等等：https://glory.taipei/#articleSection1<br>
+                                                另一個是數位繪本的形式，像是這個網站，可以利用滑鼠的點擊、拖曳、hold等功能跟網頁做互動：<br>
+                                                https://2019.makemepulse.com/<br>
+                                                請問這堂課學完試可以製作這兩種網頁的嗎？?</p>
+                                        </div>
+                                        <div class="bg-neutral-10 p-4 rounded-4">
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-neutral-100 fw-semibold me-2">六角學院</p>
+                                                <small
+                                                    class="tiny-text text-primary border border-primary py-1 px-2 rounded-2">授課老師</small>
+                                            </div>
+                                            <p class="small text-neutral-60 mb-6">2024-01-31</p>
+                                            <p class="body-text body2-text">
+                                                嗨嗨 Sandy<br>
+                                                我是六角學院助教 Bingbingboom<br><br>
+                                                對的，這部分因為字幕問題還沒有更新<br>
+                                                後續等字幕用好了就會更新哩！<br><br>
+                                                若有問題歡迎再次發問 :D
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 分頁 -->
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center justify-content-md-end">
+                                  <li class="page-item me-2">
+                                    <a class="page-link disabled rounded-2 pagination-sm" href="#" aria-label="Previous">
+                                      <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                  </li>
+                                  <li class="page-item me-2">
+                                    <a class="page-link disabled rounded-2 pagination-sm" href="#" aria-label="Previous">
+                                      <span aria-hidden="true">&lsaquo;</span>
+                                    </a>
+                                  </li>
+                                  <li class="page-item me-2 active"><a class="page-link rounded-2 pagination-sm" href="#">1</a></li>
+                                  <li class="page-item me-2"><a class="page-link rounded-2 pagination-sm text-neutral-80" href="#">2</a></li>
+                                  <li class="page-item me-2 d-none d-lg-block"><a class="page-link rounded-2 pagination-sm text-neutral-80" href="#">3</a></li>
+                                  <li class="page-item me-2"><a class="page-link rounded-2 pagination-sm text-neutral-80" href="#">...</a></li>
+                                  <li class="page-item me-2"><a class="page-link rounded-2 pagination-sm text-neutral-80" href="#">10</a></li>
+                                  <li class="page-item me-2">
+                                    <a class="page-link rounded-2 pagination-sm text-neutral-80" href="#" aria-label="Next">
+                                      <span aria-hidden="true">&rsaquo;</span>
+                                    </a>
+                                  </li>
+                                  <li class="page-item">
+                                    <a class="page-link rounded-2 pagination-sm text-neutral-80" href="#" aria-label="Next">
+                                      <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </nav>
+                        </div>
+                        <div class="col-md-4 fixed-bottom-sale h-100">
+                            <div class="bg-neutral-0 p-4 p-md-8 rounded-3">
+                                <p class="fw-semibold pb-4 d-none d-md-block">購買本堂課</p>
+                                <div class="border-top d-none d-md-block"></div>
+                                <div class="pt-0 pt-md-6">
+                                    <p class="small text-alert-100 fw-semibold d-none d-md-inline-block bg-alert-10 py-2 px-3 rounded-pill mb-6">限定優惠 75 折</p>
+                                    <div class="d-flex flex-md-column flex-row align-items-center align-items-md-start">
+                                        <div class="mb-md-6">
+                                            <div class="d-flex align-items-center mb-0 mb-md-2">
+                                                <h3 class="me-2 text-nowrap text-neutral-100">NT$ 3,375</h3>
+                                                <p class="d-none d-lg-inline-block text-neutral-60 text-decoration-line-through">NT$ 4,500</p>
+                                            </div>
+                                            <p>16,390 人已註冊</p>
+                                        </div>
+                                        <div class="d-flex flex-lg-row flex-column align-items-center  w-100">
+                                            <a class="btn btn-primary me-0 me-lg-4 h-100 w-100 mb-4 mb-lg-0" href="#">立即購買</a>
+                                            <a class="border border-primary rounded-1 px-4 align-self-stretch d-flex align-items-center justify-content-center me-2 me-md-0" href="#"><i class="bi bi-cart3 fs-5"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- mobile-sale -->
+                <div class="d-md-none d-block bg-neutral-0 p-4 p-md-8 border-top fixed-bottom">
+                    <div class="pt-0 pt-md-6">
+                        <div class="d-flex justify-content-between align-items-center ">
+                            <div>
+                                <h6 class="me-2 text-nowrap text-neutral-100 mb-1">NT$ 3,375</h6>
+                                <p class="tiny-text">16,390 人已註冊</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <a class="border border-primary rounded-1 px-4 align-self-stretch d-flex align-items-center justify-content-center me-2 me-md-0" href="#"><i class="bi bi-cart3 fs-5"></i></a>
+                                <a class="btn btn-primary" href="#">立即購買</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+
+
+
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>

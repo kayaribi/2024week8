@@ -1,7 +1,6 @@
 // core version + navigation, pagination modules:
-import Swiper from "swiper";
+import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 import { Navigation, Pagination } from "swiper/modules";
-
 // import Swiper and modules styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -10,6 +9,37 @@ import "swiper/css/pagination";
 import "./assets/scss/all.scss";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
+
+//banner swiper
+var swiper = new Swiper(".bannerSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 40,
+  slidesPerGroup: 1,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  navigation: {
+    nextEl: ".banner-button-next",
+    prevEl: ".banner-button-prev",
+  },
+  initialSlide: 1, // 預設顯示的滑塊索引，0 代表第一個
+});
+
+// 火熱募資課程--Hailey
+
+var swiper = new Swiper(".mySwiperHot", {
+  spaceBetween: 0,
+  slidesPerView: 1,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 
 // swiper (首頁)看看大家都買了什麼區塊--倫倫
 
@@ -123,4 +153,61 @@ $(document).ready(function () {
     event.preventDefault(); // 防止表單提交後刷新頁面`，讓 modal 能正常運作
     // 在這裡執行表單處理的邏輯，或使用 AJAX 提交
   });
+});
+
+// 頂尖講師 --蚊香
+var teacherswiper = new Swiper(".teacherswiper", {
+  spaceBetween: 24,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+// 課程列表 --蚊香
+var courselistswiper = new Swiper(".courselistswiper", {
+  slidesPerView: 4,
+  spaceBetween: 8,
+  navigation: {
+    nextEl: ".button-next",
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 10,
+    },
+  },
+});
+
+//登入JS
+const loginForm = document.getElementById("loginForm");
+const loginBtn = document.getElementById("loginBtn");
+const loginPasswordInput = document.getElementById("loginPassword");
+const loginpasswordIcon = document.getElementById("login-password-icon");
+
+loginForm.addEventListener("input", function () {
+  if (loginForm.checkValidity()) {
+    loginBtn.disabled = false; // 如果表單有效，啟用按鈕
+    loginBtn.style.backgroundColor = "#0068FF";
+    loginBtn.style.color = "#ffffff";
+  } else {
+    loginBtn.disabled = true; // 如果表單無效，禁用按鈕
+    loginBtn.style.backgroundColor = "#ECECEC";
+    loginBtn.style.color = "#909090";
+  }
+});
+
+loginPasswordInput.addEventListener("input", function () {
+  if (loginPasswordInput.value.length > 0) {
+    loginpasswordIcon.src = "/assets/images/icons/ic_eye_close.png";
+  } else {
+    loginpasswordIcon.src = "/assets/images/icons/ic_eye-open.png";
+  }
 });
