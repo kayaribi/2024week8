@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>結帳流程頁</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" crossorigin src="/2024week8/assets/main-6a37c43b.js"></script>
+    <link rel="stylesheet" href="/2024week8/assets/main-2ab6f585.css">
+  </head>
+  <body>
+    
+    <section class="checkoutprocess pt-sm-20 pb-sm-40 py-6 bg-neutral-10">
+      <div class="container">
+        <form action="#" id="testform">
+          <div class="row mb-6">
+            <div class="col-12">
+              <div class="d-flex align-items-center justify-content-center">
+                <div class="d-flex align-items-center justify-content-center">
+                  <i class="bi bi-1-circle-fill text-primary fs-5"></i>
+                  <p class="ms-2" style="color: #333333">確認訂單</p>
+                </div>
+                <div
+                  class="bg-neutral-60 mx-4"
+                  style="width: 40px; height: 1px"
+                ></div>
+                <div class="d-flex align-items-center justify-content-center">
+                  <i
+                    class="bi bi-2-circle-fill text-neutral-60 fs-5 d-sm-none d-block"
+                  ></i>
+                  <i
+                    class="bi bi-2-circle-fill text-primary fs-5 d-sm-block d-none"
+                  ></i>
+                  <p class="ms-2 d-sm-block d-none" style="color: #333333">
+                    訂單資訊
+                  </p>
+                </div>
+                <div
+                  class="bg-neutral-60 mx-4"
+                  style="width: 40px; height: 1px"
+                ></div>
+                <div class="d-flex align-items-center justify-content-center">
+                  <i class="bi bi-3-circle-fill text-neutral-60 fs-5"></i>
+                  <p class="ms-2 d-sm-block d-none" style="color: #333333">
+                    訂單完成
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 col-12">
+              <div class="bg-white rounded-3 mb-8">
+                <div
+                  class="border-bottom border-neutral-40 d-flex align-items-center py-4 px-6"
+                >
+                  <h5 class="text-black">商品明細</h5>
+                  <p class="ms-4">共 2 項課程</p>
+                </div>
+                <div
+                  class="d-flex align-items-center justify-content-between py-8 mx-6 border-bottom border-neutral-40"
+                >
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-1-square-fill fs-5 text-primary"></i>
+                    <p class="ms-3">使用 HTML、CSS 開發一個網站</p>
+                  </div>
+                  <p class="title-text text-black">NT$ 1,200</p>
+                </div>
+                <div
+                  class="d-flex align-items-center justify-content-between py-8 mx-6"
+                >
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-2-square-fill fs-5 text-primary"></i>
+                    <p class="ms-3">一變應萬變：RWD 響應式網頁設計</p>
+                  </div>
+                  <p class="title-text text-black">NT$ 1,200</p>
+                </div>
+              </div>
+              <div class="bg-white rounded-3 mb-8">
+                <div
+                  class="border-bottom border-neutral-40 d-flex align-items-center py-4 px-6"
+                >
+                  <h5 class="text-black">付款方式</h5>
+                </div>
+                <!-- 測試拿掉 -->
+                <div class="py-8 px-6">
+                  <div class="accordion accordion-flush" id="accordionExample">
+                    <div class="accordion-item border border-0">
+                      <div class="accordion-header" id="headingOne">
+                        <div
+                          class="form-check ps-0 py-5 d-flex align-items-center"
+                        >
+                          <input
+                            class="form-check-input ms-0 mt-0 float-none"
+                            type="radio"
+                            name="payment"
+                            id="cardOnePayment"
+                            style="
+                              width: 24px;
+                              height: 24px;
+                              background-size: 16px 16px;
+                            "
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne"
+                            aria-expanded="true"
+                            aria-controls="collapseOne"
+                            checked
+                          />
+                          <label
+                            class="form-check-label d-flex align-items-center ms-2"
+                            for="cardOnePayment"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne"
+                            aria-expanded="true"
+                            aria-controls="collapseOne"
+                          >
+                            信用卡一次付清
+                            <img
+                              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANlSURBVHgB7ZhdSJNRGMefQhCSJshUhC29zU0Q6kYNsYto3mVl8yZIMHYnlXUTUpTSjZ/UlRpY4EVT1Dv3cRFhbBIoCNv0Vp2g4hAUDLyy8z++5+y8q5FMYbx4fjDes+2853n+z9c7RqTRaDSai8yloaGhKrvdPl5eXt5EFmJra2t5b2+vpaCkpGS2tbW1trCwkKzE0dFR7dTU1PjliooKyzkP4HNZWVnTZbI4WkC+0QLyjRaQbwqyffFtcp6i0VVKJnflZy53JfW+e2za96R9kPYPfvN1D/susrBKweAif/+y6wE11F/n60h0hfoHZiiW2KCDg0Oy2YqoxnWNvo6/YOsr8ry+gWluN5u9Uwtoe9TIXxDS/WaCG4Vzvo5mcjrt0qm50BJfO52l5GYG+wdn+D4uQHGqjzmvIs5Tncd56r54Yj13AaoQv39eOhVPrEkB/smfct+rrvv8uq5krIYJ2kimTE75nnrI4Silzc1dSm7smmyp5wFkNsnuF/ZyEgCaPTelgCi74j0Qn4GGupNSSbCogWIWWUQ3c09PlohCKLINUF7IEFAD9i9O1cQuV6Vci6gFWOmI/kCWUEJxVt8Ct3GP7apSIkxM57MRHtVMgqFFuf407JPrqBKAnAWgEREVEFs5cTIQSBv0MgEguZkuCfSDuFdkByDK9x720uhYwGRjZCzIrwhEs+eGtJdZZjkJAJgY/EAWdbxEumFQTJp4fE3udzrSaf/CJk2bIVKc0f12gjXtSXTVbPo67prsRc4jA0DUPVCbUjQvSCgl5HJVyTX64SMri6Vfw1ywYMzIAoaEwFZcxIXhCkQjn1lAfX21XIvoA7U89vcPTU6L54MAzve+TzcxvkfzzgXT5YgeaWElFlA+iyysUDZONYWAm6VUnQ5ANK8gZmQAzqMHMNc7n49ykWIQjH4Oyv1ebyN7uE3/z7ScbGcSAG6xWlej5VXqGtEU4hyGKJQU75fk342IKYUAqOX4PfyBio3SAbfvvOZnxuPnJMDDpoMoE2RDNC9QHzg1RrQRdUQ/8+cDyhG9EwjiKX7M72uoq5aTS4CAxdhzILMUTYTD4WOrEgqFjvXP6XyjBeQbLSDfWF/Azs7OD/ZHKVkN+Ly9vb1ckEql2v1+/yz+5CULgcCzv9fbSaPRaDQXmj94dUApKQg67gAAAABJRU5ErkJggg=="
+                              alt="VISA"
+                              style="width: 24px; height: 24px"
+                              class="ms-6"
+                            />
+                            <img
+                              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAP7SURBVHgB7ZjPTxNpGMe/Mx0o1lJIQ/gRqnLwsuWw3ROYvZDsIrun3VVK4mlhda8rkt3sZX808Q+oelaKRyj+uBY0IfEgeNIDxUQPGMdQEqza+oPSzozv89aSKLTzDCEmjfNJ3syv5535Pu/zvjPPM4CLi4uLy5eMEo/He9ra2hIdHR0DqCPW1tbuZ7PZX7RgMHgjGo1GvF4v6olCoRBJJpMJtaurq+7EE6S5vb19QEWdo2GPFBfuonB1BlsLizBXn8pzas8haJEwvD8PwfvryLattZWD+WgGZuYuzGwa1uuyvRLshRoMQz38AzxHhrAXlLm5OWtwcJDdwXiwjNfjMelALTzCGV/sHLSBFpTuxbZFVxXiP4TGH2fklovQDkdTiEb85UDUVjxhiKgY8d9hJUZsxRNkU0geg/F4Bk5gT6GtmynkRye45vB9nYcvkgNWy8elI82sfsU7EzIKaucxlj0rAjTH35yLgYvHb5TFf0BbzUF9WWD3L94+LdcNB5YDm1eTckpw8X/7Ysc57UkeXEi8sXyZZctyoDCVBBca/YbOnaNNEVAKBrgY6X1ygBask9HfTXwFz8YmuFAUrOyyrZ2tA8aqDid4gsWq15TNEpxgPt8HB5yiNprVL5ZqXNvr8/A50fb/cbZ39PSE4IRStqHqNavJWeaiNNt/lW0d0CK9UFoD4FLLAbOFn/UqjQHWx8zWARLfNDoCLsWMV7ZPMf0NovEjoB7mJXesSXng7GlHUXj7YGfaYHT7wYVGX/uGl7awHKA0+eD//DyIIvBu5eD2MeVBRqeP3Z/Ec7NS9muhafwMfA6ceHOvVTphdPhQ6uFHj8R7wmfY9o7ea77YBJoTcZnr2yGn3KkLsE6dBweaNg3fXREvDf4gEY4rMu9oVDbKjzZFffBpbUBvrcafhnBARKyybjxHoyLPT8J8khIV2cdfV3rTUDWmHh2RTjjFcUW2G5WSUmltYS327ZLSQfW1G44rsmrQIqdWEb+STte0J+G1xF+fvQYu7Cl06cJF5HI5hELdYpvHH+NnMTU5KfdPDJ/ELTEatN/X3ydt//nvX+HICnRdx0lxPTGZkNulxUUEAgF8FQ5jfm4elrh3r9jX9af4/vhxKX5e3IvuyYEdARIy+tuYFBkKhaR4EkHtoRC6tLgk7fr6+2XrFjbz0qlXckuidf2ZtD8xPIxrQigNwkMRrbRo1GdKOEnn6P5c9jyF6IE0gtdnZ+UxCX6ml1NvmkLUKGKBQIsc2XKfPtmHhFIkKVIVmoWDdO7vP/9CPscrJyW0iOuVVCpl1f2fOXV9fX1B/ChFvUGaM5nMfW1jY2Nsenr6Bv3kRR1BAy9+r4/BxcXFxeWL5j1EwUONBsSt9QAAAABJRU5ErkJggg=="
+                              alt="Mastercard"
+                              style="width: 24px; height: 24px"
+                              class="mx-2"
+                            />
+                            <img
+                              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOaSURBVHgB7ZhdSFNhGMf/6tTm/GLqbGq2UPNCyGVldFFuCEGGSRfWRRdqGQRe6E134WcXQYFoIAaVChaYhETpraMgSykmJKSCH5RuUxvT6aZtZu973JbTub2bkxieHxzO4Tnvznme57zn/f93AB4eHh6eg0xQY2OjLD4+vi0xMVGBAEKj0aj1ev1VgVgs7ikuLpaHh4cjkFhbW5N3d3e3BUul0oBLnkJzlkgkimAEOAKWQcMzRlS9/g71z2UYzJYd52ViISbrznPH61Ma/Lp5H7+Hx/HHYHR5vdT1AW5vshrxarQVqh9vsWJxPbYlvxcJEUnwuQCavPzBAFigyevyK2Ale0/Mm2dR8/E25k2z2Asep1Bp5zewYqh/xpQ85d3Eyz0nT3FbgMFsJdPGCFZMb94zj51eHIU/8FCABd6wYWAvds48A38Q8KsQX4A7gmKjuG0/YdKB7VQpjqKSbHaUzUPcPkQmRXTldQivXICAHG+F6oJFPcZpBKX23FOX1zYRPRjU9aN79AlY8KmA2AgBZHGHdsSlXzoQbOv4muorjM1dWDcsIyQ2EsKiPKeiJDZxah95SERsGaLQSFzLvMPFZTGZXKxv4oWnVHwrYDfsya909JFONzid222JHdT2Ez3Y1I4ziUpkxZ/eHG9ZAgt+LcDOKuk+KxXyem4vEkRxnafQ6UPtBQv7UoA3TC2OYcW6qR+isCgkCJOgOFKIyaVRDJGn4wmfViGZ+N/8p2q9ncjSApe/c7Ui9U52ko63clu/revUvFXI68CCwH2imy6z4/MsVON6LpaXLkbJ2WTHmCbVtOOYKjFNMjwvB3HP75F5/4FzpPTlDZNnkPhJaHNKnO6Re1jJvbAUZUqhI26ysqm62wJod6f0qyg6IUHNpTSnuJq41I5PM2gnxdFCKZpTJYipLkdYdjpEJZe5zQ41eeYtL/KczcgVHLvhiG3Y4tNk+rSNPIIfCrBA2TTkFIsVhu7qkazcf4EGsFA7UO5YffaC1++AtwZvv+G90P/GLwW4shW73pDYCm+g2uD2evAD8pRo5rHUE7FClTlCsM8F0O5XKlKZxlK3GlN9C6xUZNd7HOOzlaCOtDQ3GTUFaWRpdX8ZTtyyMyAm4rbdZm9HFEo8UXQmSrPukidwHJ7wqMQbjy+CFfv3HhZa8vvgDwJ/FdLpdCryoRSBBs1Zq9WqBQsLC2VdXV099CMvAgjaePJ5vQw8PDw8PAeav+5CR+oP98bWAAAAAElFTkSuQmCC"
+                              alt="JCB"
+                              style="width: 24px; height: 24px"
+                            />
+                          </label>
+                        </div>
+                      </div>
+                      <fieldset>
+                        <div
+                          id="collapseOne"
+                          class="accordion-collapse collapse show"
+                          aria-labelledby="headingOne"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body p-0">
+                            <div class="bg-neutral-10 ms-8 p-6 rounded-4">
+                              <div class="card-wrap-width mb-4">
+                                <div class="mb-3">
+                                  <label
+                                    for="cardNumberInput"
+                                    class="form-label"
+                                    >信用卡卡號 </label
+                                  ><span class="text-alert-100 ms-1">*</span>
+                                  <input
+                                    type="text"
+                                    class="form-control p-4 testInput"
+                                    id="cardNumberInput"
+                                    placeholder="**** **** **** ****"
+                                    name="cardNumber"
+                                    required
+                                    checked
+                                  />
+                                </div>
+                                <div
+                                  class="d-flex justify-content-between flex-sm-row flex-column"
+                                >
+                                  <div class="card-item-width mb-sm-0 mb-6">
+                                    <label
+                                      for="cardValidityPeriodInput"
+                                      class="form-label"
+                                      >信用卡有限期限 </label
+                                    ><span class="text-alert-100 ms-1">*</span>
+                                    <input
+                                      type="text"
+                                      class="form-control p-4 testInput"
+                                      id="cardValidityPeriodInput"
+                                      placeholder="MM / YY"
+                                      name="cardValidityPeriod"
+                                      required
+                                    />
+                                  </div>
+                                  <div class="card-item-width">
+                                    <label for="cardCVVInput" class="form-label"
+                                      >卡片背面後三碼 </label
+                                    ><span class="text-alert-100 ms-1">*</span>
+                                    <input
+                                      type="text"
+                                      class="form-control p-4 testInput"
+                                      id="cardCVVInput"
+                                      placeholder="CVC / CVV"
+                                      name="cardCVV"
+                                      required
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <p class="body2-text">
+                                本公司採用喬睿科技 TapPay
+                                金流交易系統，消費者刷卡時直接在銀行端系統中交易，本公司不會留下您的信用卡資料，以保障你的權益，資料傳輸過程採用嚴密的
+                                SSL 2048bit 加密技術保護。
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+                    <div class="accordion-item border border-0">
+                      <div class="accordion-header" id="headingTwo">
+                        <div
+                          class="form-check ps-0 py-5 d-flex align-items-center"
+                        >
+                          <input
+                            class="form-check-input ms-0 mt-0 float-none"
+                            type="radio"
+                            name="payment"
+                            id="installment"
+                            style="
+                              width: 24px;
+                              height: 24px;
+                              background-size: 16px 16px;
+                            "
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo"
+                            aria-expanded="true"
+                            aria-controls="collapseTwo"
+                          />
+                          <label
+                            class="form-check-label d-flex align-items-center ms-2"
+                            for="installment"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo"
+                            aria-expanded="true"
+                            aria-controls="collapseTwo"
+                          >
+                            信用卡分期
+                            <img
+                              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANlSURBVHgB7ZhdSJNRGMefQhCSJshUhC29zU0Q6kYNsYto3mVl8yZIMHYnlXUTUpTSjZ/UlRpY4EVT1Dv3cRFhbBIoCNv0Vp2g4hAUDLyy8z++5+y8q5FMYbx4fjDes+2853n+z9c7RqTRaDSai8yloaGhKrvdPl5eXt5EFmJra2t5b2+vpaCkpGS2tbW1trCwkKzE0dFR7dTU1PjliooKyzkP4HNZWVnTZbI4WkC+0QLyjRaQbwqyffFtcp6i0VVKJnflZy53JfW+e2za96R9kPYPfvN1D/susrBKweAif/+y6wE11F/n60h0hfoHZiiW2KCDg0Oy2YqoxnWNvo6/YOsr8ry+gWluN5u9Uwtoe9TIXxDS/WaCG4Vzvo5mcjrt0qm50BJfO52l5GYG+wdn+D4uQHGqjzmvIs5Tncd56r54Yj13AaoQv39eOhVPrEkB/smfct+rrvv8uq5krIYJ2kimTE75nnrI4Silzc1dSm7smmyp5wFkNsnuF/ZyEgCaPTelgCi74j0Qn4GGupNSSbCogWIWWUQ3c09PlohCKLINUF7IEFAD9i9O1cQuV6Vci6gFWOmI/kCWUEJxVt8Ct3GP7apSIkxM57MRHtVMgqFFuf407JPrqBKAnAWgEREVEFs5cTIQSBv0MgEguZkuCfSDuFdkByDK9x720uhYwGRjZCzIrwhEs+eGtJdZZjkJAJgY/EAWdbxEumFQTJp4fE3udzrSaf/CJk2bIVKc0f12gjXtSXTVbPo67prsRc4jA0DUPVCbUjQvSCgl5HJVyTX64SMri6Vfw1ywYMzIAoaEwFZcxIXhCkQjn1lAfX21XIvoA7U89vcPTU6L54MAzve+TzcxvkfzzgXT5YgeaWElFlA+iyysUDZONYWAm6VUnQ5ANK8gZmQAzqMHMNc7n49ykWIQjH4Oyv1ebyN7uE3/z7ScbGcSAG6xWlej5VXqGtEU4hyGKJQU75fk342IKYUAqOX4PfyBio3SAbfvvOZnxuPnJMDDpoMoE2RDNC9QHzg1RrQRdUQ/8+cDyhG9EwjiKX7M72uoq5aTS4CAxdhzILMUTYTD4WOrEgqFjvXP6XyjBeQbLSDfWF/Azs7OD/ZHKVkN+Ly9vb1ckEql2v1+/yz+5CULgcCzv9fbSaPRaDQXmj94dUApKQg67gAAAABJRU5ErkJggg=="
+                              alt="VISA"
+                              style="width: 24px; height: 24px"
+                              class="ms-4"
+                            />
+                            <img
+                              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAP7SURBVHgB7ZjPTxNpGMe/Mx0o1lJIQ/gRqnLwsuWw3ROYvZDsIrun3VVK4mlhda8rkt3sZX808Q+oelaKRyj+uBY0IfEgeNIDxUQPGMdQEqza+oPSzozv89aSKLTzDCEmjfNJ3syv5535Pu/zvjPPM4CLi4uLy5eMEo/He9ra2hIdHR0DqCPW1tbuZ7PZX7RgMHgjGo1GvF4v6olCoRBJJpMJtaurq+7EE6S5vb19QEWdo2GPFBfuonB1BlsLizBXn8pzas8haJEwvD8PwfvryLattZWD+WgGZuYuzGwa1uuyvRLshRoMQz38AzxHhrAXlLm5OWtwcJDdwXiwjNfjMelALTzCGV/sHLSBFpTuxbZFVxXiP4TGH2fklovQDkdTiEb85UDUVjxhiKgY8d9hJUZsxRNkU0geg/F4Bk5gT6GtmynkRye45vB9nYcvkgNWy8elI82sfsU7EzIKaucxlj0rAjTH35yLgYvHb5TFf0BbzUF9WWD3L94+LdcNB5YDm1eTckpw8X/7Ysc57UkeXEi8sXyZZctyoDCVBBca/YbOnaNNEVAKBrgY6X1ygBask9HfTXwFz8YmuFAUrOyyrZ2tA8aqDid4gsWq15TNEpxgPt8HB5yiNprVL5ZqXNvr8/A50fb/cbZ39PSE4IRStqHqNavJWeaiNNt/lW0d0CK9UFoD4FLLAbOFn/UqjQHWx8zWARLfNDoCLsWMV7ZPMf0NovEjoB7mJXesSXng7GlHUXj7YGfaYHT7wYVGX/uGl7awHKA0+eD//DyIIvBu5eD2MeVBRqeP3Z/Ec7NS9muhafwMfA6ceHOvVTphdPhQ6uFHj8R7wmfY9o7ea77YBJoTcZnr2yGn3KkLsE6dBweaNg3fXREvDf4gEY4rMu9oVDbKjzZFffBpbUBvrcafhnBARKyybjxHoyLPT8J8khIV2cdfV3rTUDWmHh2RTjjFcUW2G5WSUmltYS327ZLSQfW1G44rsmrQIqdWEb+STte0J+G1xF+fvQYu7Cl06cJF5HI5hELdYpvHH+NnMTU5KfdPDJ/ELTEatN/X3ydt//nvX+HICnRdx0lxPTGZkNulxUUEAgF8FQ5jfm4elrh3r9jX9af4/vhxKX5e3IvuyYEdARIy+tuYFBkKhaR4EkHtoRC6tLgk7fr6+2XrFjbz0qlXckuidf2ZtD8xPIxrQigNwkMRrbRo1GdKOEnn6P5c9jyF6IE0gtdnZ+UxCX6ml1NvmkLUKGKBQIsc2XKfPtmHhFIkKVIVmoWDdO7vP/9CPscrJyW0iOuVVCpl1f2fOXV9fX1B/ChFvUGaM5nMfW1jY2Nsenr6Bv3kRR1BAy9+r4/BxcXFxeWL5j1EwUONBsSt9QAAAABJRU5ErkJggg=="
+                              alt="Mastercard"
+                              style="width: 24px; height: 24px"
+                              class="mx-2"
+                            />
+                            <img
+                              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOaSURBVHgB7ZhdSFNhGMf/6tTm/GLqbGq2UPNCyGVldFFuCEGGSRfWRRdqGQRe6E134WcXQYFoIAaVChaYhETpraMgSykmJKSCH5RuUxvT6aZtZu973JbTub2bkxieHxzO4Tnvznme57zn/f93AB4eHh6eg0xQY2OjLD4+vi0xMVGBAEKj0aj1ev1VgVgs7ikuLpaHh4cjkFhbW5N3d3e3BUul0oBLnkJzlkgkimAEOAKWQcMzRlS9/g71z2UYzJYd52ViISbrznPH61Ma/Lp5H7+Hx/HHYHR5vdT1AW5vshrxarQVqh9vsWJxPbYlvxcJEUnwuQCavPzBAFigyevyK2Ale0/Mm2dR8/E25k2z2Asep1Bp5zewYqh/xpQ85d3Eyz0nT3FbgMFsJdPGCFZMb94zj51eHIU/8FCABd6wYWAvds48A38Q8KsQX4A7gmKjuG0/YdKB7VQpjqKSbHaUzUPcPkQmRXTldQivXICAHG+F6oJFPcZpBKX23FOX1zYRPRjU9aN79AlY8KmA2AgBZHGHdsSlXzoQbOv4muorjM1dWDcsIyQ2EsKiPKeiJDZxah95SERsGaLQSFzLvMPFZTGZXKxv4oWnVHwrYDfsya909JFONzid222JHdT2Ez3Y1I4ziUpkxZ/eHG9ZAgt+LcDOKuk+KxXyem4vEkRxnafQ6UPtBQv7UoA3TC2OYcW6qR+isCgkCJOgOFKIyaVRDJGn4wmfViGZ+N/8p2q9ncjSApe/c7Ui9U52ko63clu/revUvFXI68CCwH2imy6z4/MsVON6LpaXLkbJ2WTHmCbVtOOYKjFNMjwvB3HP75F5/4FzpPTlDZNnkPhJaHNKnO6Re1jJvbAUZUqhI26ysqm62wJod6f0qyg6IUHNpTSnuJq41I5PM2gnxdFCKZpTJYipLkdYdjpEJZe5zQ41eeYtL/KczcgVHLvhiG3Y4tNk+rSNPIIfCrBA2TTkFIsVhu7qkazcf4EGsFA7UO5YffaC1++AtwZvv+G90P/GLwW4shW73pDYCm+g2uD2evAD8pRo5rHUE7FClTlCsM8F0O5XKlKZxlK3GlN9C6xUZNd7HOOzlaCOtDQ3GTUFaWRpdX8ZTtyyMyAm4rbdZm9HFEo8UXQmSrPukidwHJ7wqMQbjy+CFfv3HhZa8vvgDwJ/FdLpdCryoRSBBs1Zq9WqBQsLC2VdXV099CMvAgjaePJ5vQw8PDw8PAeav+5CR+oP98bWAAAAAElFTkSuQmCC"
+                              alt="JCB"
+                              style="width: 24px; height: 24px"
+                            />
+                          </label>
+                        </div>
+                      </div>
+                      <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body p-0">
+                          <div class="bg-neutral-10 ms-8 p-6 rounded-4">
+                            <p>
+                              下一步將連至第三方金流服務進行辦卡，您所有的交易資訊皆獲得安全保護。
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item border border-0">
+                      <div class="accordion-header" id="headingThree">
+                        <div
+                          class="form-check ps-0 py-5 d-flex align-items-center"
+                        >
+                          <input
+                            class="form-check-input ms-0 mt-0 float-none"
+                            type="radio"
+                            name="payment"
+                            id="linePay"
+                            style="
+                              width: 24px;
+                              height: 24px;
+                              background-size: 16px 16px;
+                            "
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree"
+                            aria-expanded="true"
+                            aria-controls="collapseThree"
+                          />
+                          <label
+                            class="form-check-label d-flex align-items-center ms-2"
+                            for="linePay"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree"
+                            aria-expanded="true"
+                            aria-controls="collapseThree"
+                          >
+                            LINE Pay
+                            <img
+                              src="data:image/png;base64,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"
+                              alt="LINE-Pay"
+                              style="width: 69px; height: 20px"
+                              class="ms-6"
+                            />
+                          </label>
+                        </div>
+                      </div>
+                      <div
+                        id="collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body p-0">
+                          <div class="bg-neutral-10 ms-8 p-6 rounded-4">
+                            <p>
+                              使用 LINE Pay 付款，可用 LINE Points
+                              折抵。您將被導入「LINE Pay」付款頁面進行安全結帳。
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item border border-0">
+                      <div class="accordion-header" id="headingFour">
+                        <div
+                          class="form-check ps-0 py-5 d-flex align-items-center"
+                        >
+                          <input
+                            class="form-check-input ms-0 mt-0 float-none"
+                            type="radio"
+                            name="payment"
+                            id="JKOPay"
+                            style="
+                              width: 24px;
+                              height: 24px;
+                              background-size: 16px 16px;
+                            "
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour"
+                            aria-expanded="true"
+                            aria-controls="collapseFour"
+                          />
+                          <label
+                            class="form-check-label d-flex align-items-center ms-2"
+                            for="JKOPay"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour"
+                            aria-expanded="true"
+                            aria-controls="collapseFour"
+                          >
+                            街口支付
+                            <img
+                              src="data:image/png;base64,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"
+                              alt="JKOPay"
+                              style="width: 49px; height: 20px"
+                              class="ms-6"
+                            />
+                          </label>
+                        </div>
+                      </div>
+                      <div
+                        id="collapseFour"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body p-0">
+                          <div class="bg-neutral-10 ms-8 p-6 rounded-4">
+                            <p>
+                              可用街口幣折抵，街口支付全用戶不分等級，使用街利存帳戶付款享筆筆 2%
+                              街口幣，回饋無上限！
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item border border-0">
+                      <div class="accordion-header" id="headingFive">
+                        <div
+                          class="form-check ps-0 py-5 d-flex align-items-center"
+                        >
+                          <input
+                            class="form-check-input ms-0 mt-0 float-none"
+                            type="radio"
+                            name="payment"
+                            id="ATM"
+                            style="
+                              width: 24px;
+                              height: 24px;
+                              background-size: 16px 16px;
+                            "
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive"
+                            aria-expanded="true"
+                            aria-controls="collapseFive"
+                          />
+                          <label
+                            class="form-check-label d-flex align-items-center ms-2"
+                            for="ATM"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive"
+                            aria-expanded="true"
+                            aria-controls="collapseFive"
+                          >
+                            ATM 轉帳
+                          </label>
+                        </div>
+                      </div>
+                      <div
+                        id="collapseFive"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body p-0">
+                          <div class="bg-neutral-10 ms-8 p-6 rounded-4">
+                            <p>下一步將連至第三方金流選擇銀行並取得繳費資訊</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item border border-0">
+                      <div class="accordion-header" id="headingSix">
+                        <div
+                          class="form-check ps-0 py-5 d-flex align-items-center"
+                        >
+                          <input
+                            class="form-check-input ms-0 mt-0 float-none"
+                            type="radio"
+                            name="payment"
+                            id="shop"
+                            style="
+                              width: 24px;
+                              height: 24px;
+                              background-size: 16px 16px;
+                            "
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix"
+                            aria-expanded="true"
+                            aria-controls="collapseSix"
+                          />
+                          <label
+                            class="form-check-label d-flex align-items-center ms-2"
+                            for="shop"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix"
+                            aria-expanded="true"
+                            aria-controls="collapseSix"
+                          >
+                            超商付款
+                          </label>
+                        </div>
+                      </div>
+                      <div
+                        id="collapseSix"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingSix"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body p-0">
+                          <div class="bg-neutral-10 ms-8 p-6 rounded-4">
+                            <p>
+                              超商付款將加收 NT$30
+                              手續費，若募資失敗手續費將不進行退款。
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white rounded-3 mb-8">
+                <div
+                  class="border-bottom border-neutral-40 d-flex align-items-center py-4 px-6"
+                >
+                  <h5 class="text-black">發票選項</h5>
+                </div>
+                <div class="py-4 px-6">
+                  <!-- 測試拿掉 -->
+                  <fieldset>
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary title-text mb-6"
+                      id="fillLastCheckout"
+                    >
+                      帶入上次結帳資料
+                    </button>
+                    <div
+                      class="mb-6 d-flex justify-content-between flex-md-row flex-column"
+                    >
+                      <div class="bill-item-width mb-md-0 mb-6">
+                        <label for="name" class="form-label">姓名</label
+                        ><span class="text-alert-100 ms-1">*</span>
+
+                        <input
+                          type="text"
+                          class="form-control p-4 testInput"
+                          id="name"
+                          placeholder="請填寫真實姓名"
+                          name="name"
+                          required
+                        />
+                      </div>
+                      <div class="bill-item-width">
+                        <label for="email" class="form-label"
+                          >聯絡用電子信箱</label
+                        ><span class="text-alert-100 ms-1">*</span>
+
+                        <input
+                          type="text"
+                          class="form-control p-4 testInput"
+                          id="email"
+                          placeholder="請填寫電子信箱"
+                          name="email"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </fieldset>
+                  <div
+                    class="d-flex justify-content-between flex-md-row flex-column"
+                  >
+                    <div class="bill-item-width mb-md-0 mb-6">
+                      <label for="bill" class="form-label">發票類型</label
+                      ><span class="text-alert-100 ms-1">*</span>
+
+                      <div class="dropdown">
+                        <button
+                          class="btn btn-white border dropdown-toggle w-100 text-start p-4 text-black"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span id="changeText">電子發票</span>
+                        </button>
+                        <ul
+                          class="dropdown-menu w-100 p-2"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" id="bill" href="#"
+                              >電子發票</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" id="company" href="#"
+                              >統編發票</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="d-flex align-items-center mt-2">
+                        <img
+                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAESSURBVHgBpVPLVcNADBwZDhxTgqkA00GoII8KwAceuSV0YHdgTnBMCaEDdwBUgEvgmANEzNovRFkrkM+8t7teaTS7srSCbbjXCecCgk+uMzxL6dHEDR5ryvkjsp5TpImpiSuwROZYhx7VF0gwwI44xVQHWGDSnrDEC4PnW9ldajdMPIPy35zhQWictUaL4JTeLRqONLLVQUBxBBKe9IbD0ST4Qo7uevshpPmN63UfjHXI+ZaOkZO/xSPHnD1Rh81mI91phhO84m9crYI3BbpyhuD0H4GG5btEJaHFTSMtULnB2r4Fi5Tc6WqzFhBcoI+SjNIRHfUFFO8RrWauBZ6kar8tTOntWygMMay58eWR7/dWPzZzRx+ljelZAAAAAElFTkSuQmCC"
+                          alt="flower-5"
+                        />
+                        <p class="body2-text ms-2">
+                          如需開立統編，請選擇統編發票
+                        </p>
+                      </div>
+                    </div>
+                    <div class="bill-item-width">
+                      <label for="bill" class="form-label">領取方式</label
+                      ><span class="text-alert-100 ms-1">*</span>
+
+                      <div class="dropdown">
+                        <button
+                          class="btn btn-white border dropdown-toggle w-100 text-start p-4 text-black"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span id="changeTextReceive"
+                            >存在 Learning 中，中獎寄信通知</span
+                          >
+                        </button>
+                        <ul
+                          class="dropdown-menu w-100 p-2"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" id="sendEmail" href="#"
+                              >存在 Learning 中，中獎寄信通知</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" id="carrier" href="#"
+                              >手機條碼載具</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              id="citizenDigital"
+                              href="#"
+                              >自然人憑證</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div style="display: none" id="companyDetail">
+                    <div
+                      class="my-6 d-flex justify-content-between flex-md-row flex-column"
+                    >
+                      <div class="bill-item-width mb-md-0 mb-6">
+                        <label for="companyLetterhead" class="form-label"
+                          >公司抬頭</label
+                        ><span class="text-alert-100 ms-1">*</span>
+
+                        <input
+                          type="text"
+                          class="form-control p-4"
+                          id="companyLetterhead"
+                          placeholder="請輸入公司抬頭"
+                          name="companyLetterhead"
+                        />
+                      </div>
+                      <div class="bill-item-width">
+                        <label for="taxIDNumber" class="form-label"
+                          >公司統編</label
+                        ><span class="text-alert-100 ms-1">*</span>
+
+                        <input
+                          type="text"
+                          class="form-control p-4"
+                          id="taxIDNumber"
+                          placeholder="請輸入公司統編"
+                          name="taxIDNumber"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between flex-md-row flex-column"
+                    >
+                      <div class="postalCode-item-width mb-md-0 mb-6">
+                        <label for="postalCode" class="form-label"
+                          >郵遞區號</label
+                        ><span class="text-alert-100 ms-1">*</span>
+
+                        <input
+                          type="text"
+                          class="form-control p-4"
+                          id="postalCode"
+                          placeholder="請輸入郵遞區號"
+                          name="postalCode"
+                        />
+                      </div>
+                      <div class="companyAddress-item-width">
+                        <label for="companyAddress" class="form-label"
+                          >公司地址</label
+                        ><span class="text-alert-100 ms-1">*</span>
+
+                        <input
+                          type="text"
+                          class="form-control p-4"
+                          id="companyAddress"
+                          placeholder="請輸入公司地址"
+                          name="companyAddress"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div style="display: none" id="carrier-jq">
+                    <div class="my-6">
+                      <div>
+                        <label for="carrier-jq-content" class="form-label"
+                          >載具條碼</label
+                        ><span class="text-alert-100 ms-1">*</span>
+
+                        <input
+                          type="text"
+                          class="form-control p-4"
+                          id="carrier-jq-content"
+                          placeholder="前面加上 / ，加上 7 個數字及大寫字母字元"
+                          name="carrierContent"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-12">
+              <div class="bg-white rounded-3 p-6">
+                <div class="d-sm-block d-none border-bottom border-neutral-40">
+                  <h5 class="text-black">商品明細</h5>
+
+                  <div
+                    class="d-flex align-items-center justify-content-between my-8"
+                  >
+                    <p>2 項課程小計</p>
+                    <p class="title-text">NT$ 3,600</p>
+                  </div>
+                </div>
+                <div
+                  class="d-sm-block d-flex align-items-center justify-content-between"
+                >
+                  <div
+                    class="d-sm-flex d-none align-items-center justify-content-between my-8"
+                  >
+                    <p>總計</p>
+                    <p class="fs-3 fw-semibold text-black">NT$ 3,600</p>
+                  </div>
+                  <div class="d-sm-none d-block">
+                    <button
+                      type="button"
+                      class="btn border-0 p-0 tiny-text text-neutral-60"
+                    >
+                      展開明細<i class="bi bi-chevron-up ms-1"></i>
+                    </button>
+                    <p class="d-sm-none d-block fs-6 fw-semibold">NT$ 3,600</p>
+                  </div>
+
+                  <div>
+                    <button
+                      type="submit"
+                      class="btn btn-neutral-40 fw-semibold w-100 text-neutral-60"
+                      id="testformBtn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#processAanOrder"
+                      disabled
+                    >
+                      同意並付款
+                    </button>
+                    <p class="mt-4 body2-text d-sm-block d-none">
+                      確認購買即表示您已審閱 Learning
+                      所提供之購物相關條款，並同意條款內容。
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="modal fade blur-modal"
+                  id="processAanOrder"
+                  tabindex="-1"
+                  aria-labelledby="processAanOrder"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content mx-auto">
+                      <div class="modal-body">
+                        <div class="d-flex flex-column align-items-center">
+                          <div class="d-flex dot-mb">
+                            <div
+                              class="bg-black rounded-circle modal-dot"
+                            ></div>
+                            <div
+                              class="bg-neutral-80 rounded-circle mx-4 modal-dot"
+                            ></div>
+                            <div
+                              class="bg-neutral-60 rounded-circle modal-dot"
+                            ></div>
+                          </div>
+                          <div class="d-flex flex-column align-items-center">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAABACAYAAAA09iFXAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAA9MSURBVHgB7Z1NdhvFFsdvCxuM4Rz8VoBYAfYKnjwgNjDAXgHyBJw3wVmB5RU8M3kJ7w2irMDxgAMKA3dWYGcFaXaQdw4YQWw199/Vij8idVV3V7WqrPs7p+MkKrtLslT/urfuR0S7aUopvaIWJUR8pXTMX2N6FOHfjTMYDNIy4zc2NiISBEEQGqeV/RnRCgvHKl9b/K/HfL1kYTnhq0uCIAiCMIFWwWMdgpjsphCTNgmCIAjCNVoGY9qkLJJ9EgRBEIQcEwEZ06P76RHtpSskCIIgzD1lBISyM5I/6URERBAEQSgnIACH7UP6NwmCIAhzTXkBUXTZnbVHgiAIwtxSVUCIRrQv0VmCIAjzS3UBQe4IkURmCYIgzCnVBUTRlQN1QRCE+WSB6jIknIX0aF7ZTXuFj0d0Rg+jp+Tm3rAA2+SSJXpAh9ErcoFygeqtWJTa+SF6QC75hs/0WmRjM5S8uVyUA7qfbvHr8VXhmBZ9T/+JzsgGu2mH//xaM+rA9Ln+9NNP7Var1S0ac3Fx8fTLL780nv+zZ88ea4ac3bt373uyhMH9nvP9+uQQnsNqFEWdNE0/5Qt/b/PXG+9f/r9X/H8JqffjC37d488++ywmi9QXEPXm6tH8UrwAptTnP90IiKoW0CGXDHlxIHIjIOp9o1ucIMJYyI55kYrJFS36jmyL8W724Y35emJt7oiChOWvH7NGdmhr74fnpxYp059X+JlZXFxM+IuxgPAi2dWN+eWXX17YWjx19+OFG1/6ZJmjo6OVDz/88LvRaNTlOUAwrs/prfG5oKzm1xZ/3/5gMEh4fvHl5eXB559/nlBN6rqwQFsO04WK/LPE2C0KjzapxfckKwn0TdrMc4CA6CzjOYMXz8dYgClAMG8WwP0PPvjgJT+PHtXb6EB4umyNvIQlBYuQamBDQECHBKEMyjXSNh6fGlgqftPmT9sRP+/HDZ0b7tO/0lUSxrR59x5c0A8v8t+NheO2i6ouYyGBOFFF7AhIREEquzBTumUGZ+8xJTqh02W34GkjVvtIEn6vw4vwHi+WHQoAWB0sHie8yB/aFo7bQJzYtfWyijViR0BSxwe5wt1DdxA8mdCtkDFtFsQm6sp1JOH3JiG4srCQLy8vn7JwdKg5ENxwUlZEbLmwPiJBMAV9ZqpYrajFdlfCxnFO8UcDeVSS8Hsbr11ZeZTaCdFMNuWlRcRGFJbgKwh/jahe+OKSkwisaofJEJ1h9r19ap6EVETVZFKe27gxm6k4RrTH5xRPrIXcTr4H5oKw03USMnJX1rHtkNa6wDKyIB5J/rVN1chEhOeytr29rf3shy4grsJL7wYRvz6Poh75hNoNV3FfjYEbq0/Ng7yOHaOR6qwGi3ZbOzbNrJBtcotyZT2MDknIyF1ZRotkU7DbCr+ftul45Hnw83iCsFz+enY7LDe3ZrIQXirn/h1badrcK1surJnAL5y7nZvgig7Vo+O9Gws5H4+iT0jlRxQzauj5iCvrNjhn8OZ8iA/Mu2S4yOfCcfD7779/srm5ubexsfF0Uk4H/g+P8dXl8WbvxxzTgIOgBYSf5DEJoVH8IUkNrMo/S0ZwzYoldlHpng9cTOcNhMFfubKEK/Z//PHHmYc6w1LgA3PTc5nk8vJyjcWhV8Z6ysWky99rXNHBZE5BCwg/QVcZ3oIL1A64UzgmyszmuHBMWssF1hwoAWNyBtWiphYxicq6xcLCwsxFld1M2FS1deN4vXtxfn6+VieD/IsvvjjkjbeRKxZRYDorJFgBYTOubyMVX2iQkdHheczXc82YTjDumJFRSY6PqSnElXWb1cFg0KMZcXJyAsuwazA04QV9y8aZDa+bff5ZRsE1bLEUfmaDPESHDxC1XEgIC1Vvqog4K8q3m/ZJX2SxSyHUYGuZ13RqBInKmgRcWaUKONri9evXWKDbunGwGmxumN97773eX3/9ZSJGhWOCFBAcIIn1ERgoqzHSflDUIZ8SkZiK3V1hFPFEhd8RNUtKT1koinaO8xaVhUilr4oyuhcXF5G1PwtR1R6c596WmCyyvr4OYehRTUJ0YR1sbm5KOGJojMjE9x5fG68LkGgHUdrkwigs8/9klx7pquPOlysrubi4KPRYwN//888/N3o+BPeVSba5z96WYAQkr23/YGNjo0dCiOgq78Y3ekosG+V6VEtIbJKW0Rztuk6iTJB2NGPmKioLh8fIlygaw4/v161OWwZ2IXV0Y5Cq4LO3JQgByevXr4nlEShmlXdvxqirJlZx4Xf4XqFX7fBNStbHZBvVf0R3UNrJGlTNCbyG6KKPVt55550mRVUbfcebZq9TFXw9A0HTE8Q7Px8Oh4c+ZYsGRZpVsD2hKox48fmvtU6KXe2IpQlNt+DGahWcg4wr9LpsNFUVJAcODbLRU7Y+fnDQuRAssStrmIU8t6eOGRHKy8fOuk56BHbybGEctFqtqQEaY1dWE5vVvJNg4Rh0ESSP8U5A2EUVkWAH5aboUBVa5lmrWpC3UfxbPZ64gMGNNdSUJI+yyK6YfEEJx6qReIC6tcqKwGu6m2LXfVJw/xX6M5ur63IqXoAEvMFgAFGduvvPXVlPXbuOWBw+mtRJ8Dp8dpOQAXC9sfXUIUdMa9ErxRQFt+xm7T91pTomWzpqAYypSATHpUBc76BVl79iaw6L8R9ZqXbT0iSor9Unl8A6281i/qeHUKPKMVxZD61ZnF7DArHDC/dpwZCxK8tpVBba0urGlBAxZLO7dL/1J/1n0JnoQhAU+9jTrOBjf+rjumgstYPukmuurLnpV5lKvIpmwkaXjKKyHt+ZUvkaeDd9hlSAojGziMoKEREQwR0mlXcjKt71wo2lqycVSmmTm+zciDpzibLO9FFZTfQn8QS4skgT/dZ0VFaIiIAILuloR+gsDFVPShfm6n+F3jGqR8u2c9fVbUyistCf5G60DTaCrRBdYcGmo7KCQwREcIkuzDYxjPTSH+iHUaE35kV6bWZnDSauLJofVxayu3U1oVy6shBpqhvjuwUkAnK3Sfj6pNK1RPUWOZPKu6bRU5hLqG4sNW8sUutsBaw35raahIkrC5Fjc+TKQk0o0oiqK1cWi9OvujF5QyhvkSisu86sFixU3tVvT8xChVU0Fir0FolEJ6u35ao9rHI9nb11Tx2wOGYpGrcxicpSrqxjL/NrLIOaUCwOO3kr2Wk4icpiATljcdJZ6RAQ7WZuaWnpbDgcVpofz2EPtcKoAiIgghv0lXeTkgsUEruK3+SqXLwbAYF4wIK4zv30NIu8Ksa/yrdwZf3B7sXiiDG4stZoSHceuLLYTfU9L6JT37NwZQ0Ggy10+CNL5AJSOIYfN6lkMC6OGFMFnj17tq/JR5lq/YuACPYxq7wLN1ePzNH75dNMtHrUFGnW/EqX6d/xLlseFt036Q4LyFHBKOXKiugFzQF5efPirH0W1aOjo5gsAauB71k4BsKFromuSs3n3RA7VDyHqf15REAE+5hV3m0TWfa1N13aRLmDYtK7stRu3qdyIQhe+DYtLvseZb/HPs0Bpq6s5eVla1FZuCfv/mPdAr64uIiNkVEXwbLw8+3pxhR1fpVDdMEFRma3I7aoWUw+2G12BfmXlPY+z13fg75Lc4JJVBZZfn+NRiNtsUSeU1fXWrYKsD4Mzz7iaQ+IgAh2Mau8646mK/SqA3J9PSu413zrvwGLKHWzsw0Vk6gsy/fro1WFbhwLDdxnVsOrYX0UNdkCutbhIiCCbbo0S8ZurCbBobRuJ495RZrCkLMArqy0Zsj2HQJuJbSPpYbA/S4vL00KarbZfXZiS0QGgwHcx9rNlq6ZlQiIYBcf8jEibQSYXVS2vIkVsuVlpndEDwxcWXODoSvLGnyYfmhihTCrLCKndXNScvHo6cbprA8gAiLYA5V3yxUTdMNoBqVNlrIw40Q7zkcrBG64Fh2Q8IYmXVmwQliwTK2eNrueTvlMZL+sNYJzFD60R5BAz2B4YtJK11YUFkIVZ1Mz5lEkPlx/MDlgxJsyoTqo/iJF0UPjCr2H1BQqNPYBL8RHheOQN3I/3aOHUXNzMwHz2U1hPXZIMI3KsgbyS3S5KNdYYTdbj62RLqK4+Hue/Pbbb2eTGu9d6xPyNX9PhwxBtWKTUvK2BKRNs/N9+y0gVX3yLXYp1M2qVh0Je1QH7KxNwk9NKu+q5MEe1WU3TUhfJh5zaXaRxnmCSVjviPbZQup72AUQUVmnXliRHmCSYGiTPBcFEYy65NQxyOHo4mIxQUIgLJk37yme9woOyXVNqyYA8eibDAw9DyQh30mzha586N8oC52rl8GsFoJ6uRbDLA/AZKHrGIyx098Z+Rffpq80C10zjabe5oB0r8VV6XRdNdhmgSvrfnrA71n/3GwzwjDB0Aq51bOdWz1tKkkeUbVy7d9UgQO2hnqmg0M/A0lI8AV9+GzLYlJa5GmFXpXEqJ+br6XTlWstJiGj6agsuI34ftg4JtQ8pcQDhC4gc1FmwXvMKu8mlgsd6kNPZxcR1jOMavK16u2ORGVdAVcWWwWNhTpDRN599921piLBEAHG93pQVjxA6AIi8es+MDJw0ZmEuZYBO339IteZyS4friCz59vJe8b7hURlvcXCwsKOYaitFWD5bG5u7uXWT0KO4OcU43Z8r0rnhSELSDIP5aaDoGWQd+EiWc10kZ4FCD4w2cXjvMHHBk7iyrpByVBba+AwGy6tvId7QpaAGEKc7t27t44e8VSRcAVEsmf9wKR0SZqVQk/IPrF2RNpwUuEYlVyoPyTHgbqPdbIU4sq6BkJtm3RljYFLCz3ccyHZya2GSuTfu82i8Q/TSKsiQo3CSqy7RKrTJzdou5Vl/cRbjg/blgxKdKSa16BlKfrqNlfNkT6aOgbtFnBGoxew48KfY/L7oLfm18/Phz7WjNQ9fgX6kuhe7yVLiz5es90UIlhcHLNV6n4JMpyLBlxeXiZUAt3Pu7i4sHb2BlfW69evC58vz/85OSDPy+jjQn4HuhWiki9//XQcgYXQXYwdh/PyY2c8n18hHOfn5/GkXJE6RPwGqRTrNWMOrOQTCIIgCJUJ0YWViHgIgiDMntAEJCHf2oMKgiDMKeGcgeAwb0Tb9D8nh7GCIAhCScKwQJR4rLN42ExEEwRBEGoQgoC84KP+NREPQRAEv/DXhQWrA6G6cmAuCILgJf4JyFg43jcsIy4IgiDMBB8EJMkylaMsUesp/SDlSQRBEELgbxEGTYX78BUxAAAAAElFTkSuQmCC" alt="logo" />
+                            <p class="fw-semibold text-black mt-4">
+                              正在處理您的訂單
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer-rounded" style="background: #282828;">
+    <div class="container">
+        <div class="footer-content text-white px-3 py-12 py-lg-25">
+            <!-- PC左邊 -->
+            <div class="d-flex flex-column flex-lg-row justify-content-lg-between mb-10 mb-lg-4">
+                <img src="data:image/png;base64,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" class="footer-logo mb-10 mb-lg-0" alt="gooter-logo">
+                <ul class="list-unstyled body2-text d-grid gap-6 gap-lg-8 my-lg-0 mb-0 mt-lg-auto fw-medium d-lg-flex">
+                    <li><a href="#" class="footer-link">常見問題</a></li>
+                    <li><a href="#" class="footer-link">關於我們</a></li>
+                    <li><a href="#" class="footer-link">隱私權政策</a></li>
+                    <li><a href="#" class="footer-link">使用者條款</a></li>
+                </ul>
+            </div>
+            <!-- PC右邊 -->
+            <div class="d-flex flex-column flex-lg-row-reverse justify-content-lg-between ">
+                <ul class="list-unstyled d-grid gap-4 d-flex mb-8 mb-lg-0">
+                    <li class="footer-icon p-3 rounded-circle border border-white"><a href="#"><i class="bi bi-line"></i></a></li>
+                    <li class="footer-icon p-3 rounded-circle border border-white"><a href="#"><i class="bi bi-play-btn-fill"></i></a></li>
+                    <li class="footer-icon p-3 rounded-circle border border-white"><a href="#"><i class="bi bi-facebook"></i></a></li>
+                </ul>
+                <p class="tiny-text text-D4D4D4 mt-lg-auto">copyright © 2024 課程網站 All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>    
+  </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>使用者註冊</title>
+    
+  <script type="module" crossorigin src="/2024week8/assets/main-6a37c43b.js"></script>
+  <link rel="stylesheet" href="/2024week8/assets/main-2ab6f585.css">
+</head>
+<body>
+    <div class="d-flex align-items-center">
+        <img class="d-none d-xxl-block py-10 ps-10" src="/2024week8/assets/login-ad5387e3.png" alt="login-pic">
+        <div action="" class="container">
+            <div class="row d-flex justify-content-center px-3 px-lg-0">
+                <div class="col col-xxl-6">
+                    <div>
+                        <h1 class="mb-6 mb-lg-10 text-neutral-100">歡迎加入 Learning</h1>
+                        <!-- 按鈕 -->
+                        <ul class="list-unstyled d-grid gap-4 mb-4 mb-lg-10">
+                            <li class="position-relative">
+                                <a href="#" class="btn btn-outline-neutral-40 text-neutral-80 w-100 text-center ">
+                                    <div class="login-icon position-absolute top-38 start-0 ms-4" style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARdSURBVHgB7ZnPbxtFFMe/s94kOOWHC+JHw4HtpVKE0rQICaEKsuGCEK1w4MgBR71wIu6BShxQ7QMHyqGOkBASEsofgIiDcm43FAlucZo7WakIV22lumndX/Hu9M3WSVPv7O7sehO3qj/SyKvx7Ox7b96beTMD9OnzdMOQEtyECQeH6HGCivjNtYugQV+ywakwrECDxSxYSIGuFCChc3AxQ4IV8VBYVWwqFjIokzI2EpJIgbbgp9qCp8FcUkViK8Df9yxeQnyLR2FTKbPzpEwMYilAwp9J0epyGErsT5TVmyvguYyDeXo0sRtkMEXuVFVpqqk0wl7qbreE514sKAkviFTAc5urfBy7gRD+Ly++lAlVgL+HQkyfbwghqEySG+yngGSi0PNer45hFgiYaRIILwiMAfJ7g/z+HD0aiEYsUtMkgKXQ9oFhQNPwZt8JhRcEK/CxNod19wtESkNW1WnmsMj6MWhPDBWxOicVXiBVgJ97xoDG13C2BZx1gt/uwnJpIY8BzS15vx/owGe6mIX8bcjyvRZeEBDEbGLr8XAGOD4ACsntDWzhNngM8ClA7mOiM3BzJPzxQRqRzGZNOa7P7xS6v8o1A2NbuNSBjM0+vzeHxwS/Aho7FPrGCFtADPadvMCRDjZnsC59f3B6e6UsBt5AKI7yMp8yBuP+dEaiADcQyrM19A5fCi9RgIXm+Wyy0cvgVVHgyULmQqEW9lbp3uGTTeZCES7SMtAzmN1ZI3OhFYSimegRnPtHwL8OuJQSa/hE1sFlN4sfm2MzwPkSFKmfPqi876Y1Yw1h6TtzlzqrZC4knSZXWy/im/V3UNt4KXdsPl9Ayrz29YUCovYermt1VsnT6aXBa9un0z/uGvilOfrwf1oVm5TmWVPVVKbUXHEtlx28sYxwBWwazf2dlfJp1NXE1g9NPoDvbr71iPAC0tp4DrRXTons4HoFEdYXaYSsPmAduFP513keX10/gn/uvSrvECgcnc+fQpeMnFylPlj0zo850rOiwAArLHxYuepmZxDVL1C5Qel1XHfKz+dzq6tfnrl1c6QQ1ZasP9eZxG0SuBI33GwJiM75aSSKe4DlOIF97Ld8foPeGR37ufDKvr9D2zLvZNsph/wfzLeLR4rLGy8r+7oIbsoYF2izXtV11KrtUSFrG60W+bjuHb37TrL//28S9YuTQb2eqJ8eryCJAoKjv+cr1CrSlbrlcv1dXLQ/erSSs9n6D2Oh51KRydzip9XiC5m7FnYY4Uqj4z9haGjLa1du72mVot5TykabztDU63pzx/cBw8OXcODNX6EP3LJuDztmo3Q4MgZjHa/vijvRcY0YddXmsfYDomPSeJoj+ZVQCI23B66ciCO8INEVk5hVHLqlofk5egFSgayu08VGNUFq0tUl36YiLsMEUzsE3o4QdpbS4Uq1i5wqtWtWSitMSsVNOkofJ4saeKDQ1jUruV2DMdQop1+ij9YWp6oW+vTp0zX3AUlCZA2g5KQhAAAAAElFTkSuQmCC);"></div>
+                                    使用 Google 帳號登入
+                                </a>
+                            </li>
+                            <li class="position-relative">
+                                <a href="#" class="btn btn-outline-neutral-40 text-neutral-80 w-100 text-center ">
+                                    <div class="login-icon position-absolute top-38 start-0 ms-4" style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIJSURBVHgB7ZrNSwJBFMCfZhqmYGRgXfSgRYegyFOQeQq9heGpgvZSEIF46w8Qunq0k968Bh08FknnvAXmwS4lKST4UX7NtrOhGLq62bbjxP5gkZkdZH7OzHtvWQEoR9XdcB9GTVBv2EDdMsG4oplK3cSYYrvZEXDtRwIsgjDQAIuCyfgJP1deAP/yrXrtDShiQqubwSuh5lvNj1WgjQq31TnUQClN3dc5pVagDfUCGiCIw2oGu3UWLGZDp69crXFXg7vqcP/wDOVKbeB3EBHwe1bA41rkBQYRCF3xEoOQVcA4rYNQcBvWlhdAKmQ9A2dHbkknj5FNwMttmU2nDaRGNgHG54S/QJYzgA+rZc44cMxLvgS5QulbH45Ew5BFoDtM9kNMtBFCli2EY70Qidv0yJPHEM/EmacC/AbiAsMy7TCUYo40SjXajYOLNqcHGz3982bhHOD3coXd1lLfezi8DkNSAYNe9+Naxy5QkYpJYpix3UKPWXHhdWwFyu+Ur0CG9hXI5Uuixo2vQKEsapykUQgXZa69i55+xrcOzG7/54HzyDUkkmkYFSUTk0YRII0iQBpFgDSKAGkUAdL8D4E6migCpfACWu1kFihDo5lK4U9eAL/xRqwqCJSAWBRs/1+i80BzFz8Ou3eisaZB+rf2Klb43muhAqyaBTEghIraqj6bvGSo3fI9fAIcwJca2vX6AAAAAABJRU5ErkJggg==);"></div>
+                                    使用 Facebook 帳號登入
+                                </a>
+                            </li>
+                            <li class="position-relative">
+                                <a href="#" class="btn btn-outline-neutral-40 text-neutral-80 w-100 text-center ">
+                                    <div class="login-icon position-absolute top-38 start-0 ms-4" style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH0SURBVHgB7ZrPTcMwFMZ/wIVjN8AbABOQK7eOkA0KE7QbABOUDYAJAhO0R24JExQmCHlKqpaSfyZOXizxkz6pqmz1ey9+tmMX/tHlCB0mmWaZguLzJR4hxjeZ0kIxniCZjtgZ3yrCE8rMi+7xgDnl5kWGkWOoNr/EAxaUm5fiNXjAit/mZRa6wBPKMu+NeWE/6wvy6dQZXVfiCTtDn4UOCTIlhfYx/KyBdUV/54hhmRbLxrZ8F1JdnAH5vL+hvLCb+ndmVvPjh3oqzEypDrhKcdHXGVXbgL41xxFrGNx8qyCOaeYu0zl6fNEBg17mnSx2j4BWAFM6YgAt80scEAKpkgwOeAY0zC+xoG4WOkOHN5vGdQEYdEhsGtcF4HTXaEFi07jNQjY0xqZxXQCDbG1LMDaNxxjAFY7QmkZlC9G6/uqeQIIOYv4GB4ToPIGtOm/kJoBmADEO1qIISBUl9RDSgQWQjkAr/oj2MGoMoGkllrXgFX0e6ECAbvZjHBABqZJCHGAADfNxk7ET2iG1IOeoAcNyS34m5YyI4bLfy92Zof3ZaNeh09sLVQC9mze0pG0N7JNk+qD54EnayZb8hfxFXerolPrMSpvrTO8MgCHP1n72ZHjJsXpQ0y+k+sLbYImL/0oExQ8n2N2yyJPYbpkHu50ZHd8CMMjgAn6PxAAAAABJRU5ErkJggg==);"></div>
+                                    使用 Apple 帳號登入
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- 表單 -->
+                        <form  id="signUpForm" class="mb-2 mb-lg-4" action="signUp.html" method="post" name="user-signUp">
+                            <h6 class="text-neutral-100 mb-4">或使用 Learning 帳號註冊</h6>
+                            <div class="d-flex flex-column mb-4">
+                                <label for="signUp-mail" class="form-label mb-2">電子信箱<span class="text-danger ms-1">*</span></label>
+                                <input id="signUp-mail" class="form-control text-neutral-60 p-4 login-input-radius" type="email" placeholder="請輸入電子信箱" name="email" required>
+                            </div>
+                            <div class="position-relative d-flex flex-column mb-2">
+                                <label for="signUp-password1" class="form-label mb-2">密碼<span class="text-danger ms-1">*</span></label>
+                                <input id="signUp-password1" class="form-control text-neutral-60 p-4" type="password" placeholder="請輸入密碼" name="password" autocomplete="new-password" required>
+                                <img id="signUp-password-icon1" class="position-absolute password-icon bottom-0 end-0 me-4 mb-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJCSURBVHgB7VjhVfMwDLzvmyAb4BG6AR4hG9AN6AbxBmSDdgNggsAE6QZlA9gAbJJCn2PJVuqW8vC9d3+SSDpFsuIYKCgoKCj4y/iHfKgsa8uF5bWlGq85vFluLV8sHy2fxmsXAW15b/lq+S7gGkOSPwZl2UEm+mISaXC8cJ8NzgCFoZcpEa6NWgxrQXl2ery3Y+x3OGE1NOg+78b7El8d6CRqZMbtiYItQVckW0s1RAA3eSocD2W5wYmSoMSvGBuNaa/3iE8bg8xJhMS7NUC1jKvGHeLT5g505WqE1xn3wkhHIfEL0OK56eSzB53EgkjiBolQAQeceIeUNx+qBARJxDR8id8FgtURm9B00vh+yzXhVzN+NeGXHRwbyPtvkxikwjSJNuJ7BUHlqsDDBnH0SK+WxjTZGFpMW6nK5RyYJs2hEj6/h78evtbC/4OH3gLB5oCzm/sPkKTNXfQz5SbFHn5fa+ZZfzz3iKOBoGot5IvYt5Es4nXEd2gPxtqEgswdd/WBT034VYzfmvDL2XxizkckVLkY2xkaFBKxDASMbSV6pIvfQr6VEG/bV0QS3GYupRIt5Js5g5kwhIiGsVEYvs6HFdmNwjVjR/00GRwJQzheI8//q6vGPU4kfg9DBHBvdon5oDZ5KeM7a7AO+X7qX4W+RFCIH4vse115dvV4jzvB2+JMh1wG8rkfo8GZoUCfJkjY4QLOSDeQiXZt5CaPxpHIfbyuMfT6FYYv6uHx+ovlM4Y+f8AFHa8XFBQUFPxefABbfhWP1TATPwAAAABJRU5ErkJggg==" autocomplete="new-password" alt="eye">
+                            </div>
+                            <div class="position-relative d-flex flex-column mb-2">
+                                <label for="signUp-password2" class="form-label mb-2">密碼<span class="text-danger ms-1">*</span></label>
+                                <input id="signUp-password2" class="form-control text-neutral-60 p-4" type="password" placeholder="請再輸入一次密碼" name="password" required>
+                                <img id="signUp-password-icon2" class="position-absolute password-icon bottom-0 end-0 me-4 mb-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJCSURBVHgB7VjhVfMwDLzvmyAb4BG6AR4hG9AN6AbxBmSDdgNggsAE6QZlA9gAbJJCn2PJVuqW8vC9d3+SSDpFsuIYKCgoKCj4y/iHfKgsa8uF5bWlGq85vFluLV8sHy2fxmsXAW15b/lq+S7gGkOSPwZl2UEm+mISaXC8cJ8NzgCFoZcpEa6NWgxrQXl2ery3Y+x3OGE1NOg+78b7El8d6CRqZMbtiYItQVckW0s1RAA3eSocD2W5wYmSoMSvGBuNaa/3iE8bg8xJhMS7NUC1jKvGHeLT5g505WqE1xn3wkhHIfEL0OK56eSzB53EgkjiBolQAQeceIeUNx+qBARJxDR8id8FgtURm9B00vh+yzXhVzN+NeGXHRwbyPtvkxikwjSJNuJ7BUHlqsDDBnH0SK+WxjTZGFpMW6nK5RyYJs2hEj6/h78evtbC/4OH3gLB5oCzm/sPkKTNXfQz5SbFHn5fa+ZZfzz3iKOBoGot5IvYt5Es4nXEd2gPxtqEgswdd/WBT034VYzfmvDL2XxizkckVLkY2xkaFBKxDASMbSV6pIvfQr6VEG/bV0QS3GYupRIt5Js5g5kwhIiGsVEYvs6HFdmNwjVjR/00GRwJQzheI8//q6vGPU4kfg9DBHBvdon5oDZ5KeM7a7AO+X7qX4W+RFCIH4vse115dvV4jzvB2+JMh1wG8rkfo8GZoUCfJkjY4QLOSDeQiXZt5CaPxpHIfbyuMfT6FYYv6uHx+ovlM4Y+f8AFHa8XFBQUFPxefABbfhWP1TATPwAAAABJRU5ErkJggg==" alt="eye">
+                            </div>
+                            <!-- 按鈕+警語 -->
+                            <div id="error-message" class="error-message"></div>
+                            <button id="signUpBtn" type="submit" class="login-btn fw-semibold w-100 py-4 border-0" disabled>立即登入</button>
+                        </form>
+                        <!-- 服務條款+隱私權設定 -->
+                        <p class="body2-text mb-6 mb-lg-10">建立帳號即表示您同意我們的<a href="#" class="mx-1 text-decoration-underline">服務條款</a>及<a href="#" class="ms-1 text-decoration-underline">隱私權政策</a></p>
+                        <div class="d-flex">
+                            <p class="me-2">已經有 Learning 帳號了嗎？</p>
+                            <a class="link-primary fw-semibold text-decoration-underline" href="userLogin.html">立即登入</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=============== JS ==================-->
+    <script>
+    const signUpForm = document.getElementById('signUpForm');
+    const signUpBtn = document.getElementById('signUpBtn');
+    const signUpPassword1 = document.getElementById('signUp-password1');
+    const signUpPassword2 = document.getElementById('signUp-password2');
+    const signUpPasswordIcon1 = document.getElementById('signUp-password-icon1');
+    const signUpPasswordIcon2 = document.getElementById('signUp-password-icon2');
+    const errorMessage = document.getElementById('error-message');
+    // 按鈕啟用
+    signUpForm.addEventListener('input', function() {
+        if (signUpForm.checkValidity()) {
+            signUpBtn.disabled = false; // 如果表單有效，啟用按鈕
+            signUpBtn.style.backgroundColor = '#0068FF';  
+            signUpBtn.style.color = '#ffffff';  
+        } 
+        else {
+            signUpBtn.disabled = true;  // 如果表單無效，禁用按鈕
+            signUpBtn.style.backgroundColor = '#ECECEC'; 
+            signUpBtn.style.color = '#909090';
+        }
+    });
+    // 眼睛
+    signUpPassword1.addEventListener('input', function() {
+        if (signUpPassword1.value.length > 0) {
+            signUpPasswordIcon1.src = '/assets/images/icons/ic_eye_close.png';
+        } 
+        else {
+            signUpPasswordIcon1.src = '/assets/images/icons/ic_eye-open.png';
+        }
+    });
+    signUpPassword2.addEventListener('input', function() {
+        if (signUpPassword2.value.length > 0) {
+            signUpPasswordIcon2.src = '/assets/images/icons/ic_eye_close.png';
+        } 
+        else {
+            signUpPasswordIcon2.src = '/assets/images/icons/ic_eye-open.png';
+        }
+    });
+    // 密碼驗證
+    signUpForm.addEventListener('input', function() {
+        if (signUpPassword1.value !== signUpPassword2.value) {
+            errorMessage.textContent = '兩邊輸入密碼不一樣喔!!!';
+            signUpBtn.disabled = true;
+        } 
+        else {
+            errorMessage.textContent = '';
+            signUpBtn.disabled = false;
+        }
+    });
+    signUpForm.addEventListener('submit', function(event) {
+        if (signUpPassword1.value !== signUpPassword2.value) {
+            event.preventDefault();  // 防止表單提交
+            errorMessage.textContent = '兩邊輸入密碼不一樣喔!!!';
+        }
+    });
+    </script>
+    
+</body>
+</html>
