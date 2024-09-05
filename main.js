@@ -186,33 +186,6 @@ var courselistswiper = new Swiper(".course-list-swiper", {
   },
 });
 
-
-var popularswiper = new Swiper(".popular-swiper", {
-  slidesPerView: "auto",
-  spaceBetween: 24,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".popular-swiper-button-right",
-    prevEl: ".popular-swiper-button-left",
-  },
-});
-
-var popularswiper = new Swiper(".popular-swiper", {
-  slidesPerView: "auto",
-  spaceBetween: 24,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".popular-swiper-button-right",
-    prevEl: ".popular-swiper-button-left",
-  },
-});
-
 var popularswiper = new Swiper(".popular-swiper", {
   slidesPerView: "auto",
   spaceBetween: 24,
@@ -252,13 +225,9 @@ loginPasswordInput.addEventListener("input", function () {
   }
 });
 loginPasswordInput.addEventListener('input', function () {
-
-loginPasswordInput.addEventListener("input", function () {
   if (loginPasswordInput.value.length > 0) {
     loginpasswordIcon.src = '/assets/images/icons/ic_eye_close.png';
-    loginpasswordIcon.src = "/assets/images/icons/ic_eye_close.png";
   } else {
     loginpasswordIcon.src = '/assets/images/icons/ic_eye-open.png';
-    loginpasswordIcon.src = "/assets/images/icons/ic_eye-open.png";
   }
 });
