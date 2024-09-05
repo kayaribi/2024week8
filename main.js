@@ -98,8 +98,8 @@ var teacherswiper = new Swiper(".teacherswiper", {
 });
 
 // 課程列表 --蚊香
-var courselistswiper = new Swiper(".courselistswiper", {
-  slidesPerView: 4,
+var courselistswiper = new Swiper(".course-list-swiper", {
+  slidesPerView: "auto",
   spaceBetween: 8,
   navigation: {
     nextEl: ".button-next",
@@ -112,27 +112,40 @@ var courselistswiper = new Swiper(".courselistswiper", {
   }
 });
 
+var popularswiper = new Swiper(".popular-swiper", {
+  slidesPerView: "auto",
+  spaceBetween: 24,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".popular-swiper-button-right",
+    prevEl: ".popular-swiper-button-left",
+  },
+});
+
 //登入JS
 const loginForm = document.getElementById('loginForm');
 const loginBtn = document.getElementById('loginBtn');
 const loginPasswordInput = document.getElementById('loginPassword');
 const loginpasswordIcon = document.getElementById('login-password-icon');
 
-loginForm.addEventListener('input', function() {
-    if (loginForm.checkValidity()) {
-        loginBtn.disabled = false; // 如果表單有效，啟用按鈕
-        loginBtn.style.backgroundColor = '#0068FF';  
-        loginBtn.style.color = '#ffffff';  
-    } else {
-        loginBtn.disabled = true;  // 如果表單無效，禁用按鈕
-        loginBtn.style.backgroundColor = '#ECECEC'; 
-        loginBtn.style.color = '#909090';
-    }
-});
-loginPasswordInput.addEventListener('input', function() {
-  if (loginPasswordInput.value.length > 0) {
-      loginpasswordIcon.src = '/assets/images/icons/ic_eye_close.png';
+loginForm.addEventListener('input', function () {
+  if (loginForm.checkValidity()) {
+    loginBtn.disabled = false; // 如果表單有效，啟用按鈕
+    loginBtn.style.backgroundColor = '#0068FF';
+    loginBtn.style.color = '#ffffff';
   } else {
-      loginpasswordIcon.src = '/assets/images/icons/ic_eye-open.png';
+    loginBtn.disabled = true;  // 如果表單無效，禁用按鈕
+    loginBtn.style.backgroundColor = '#ECECEC';
+    loginBtn.style.color = '#909090';
+  }
+});
+loginPasswordInput.addEventListener('input', function () {
+  if (loginPasswordInput.value.length > 0) {
+    loginpasswordIcon.src = '/assets/images/icons/ic_eye_close.png';
+  } else {
+    loginpasswordIcon.src = '/assets/images/icons/ic_eye-open.png';
   }
 });

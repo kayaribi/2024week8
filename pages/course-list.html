@@ -11,36 +11,34 @@
 <body>
   <!-- <%- include('./layout/header'); -%> -->
   <div class="course-list">
-    <banner class="banner bg-neutral-10 position-relative">
-      <div class="container py-10 py-md-20">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb mb-4 mb-md-10">
-            <li class="breadcrumb-item"><a class="link-neutral-80" href="#">所有課程</a></li>
-            <li class="breadcrumb-item link-neutral-80 active" aria-current="page">程式課程</li>
-          </ol>
-        </nav>
-        <h3 class="fs-md-1 text-neutral-100 mb-10">程式課程</h3>
-        <div class="flower-lg-left d-none d-md-block"></div>
-        <div class="flower-sm-left"></div>
-        <div class="flower-lg-right"></div>
-        <div class="flower-sm-right d-none d-md-block"></div>
-        <div class="swiper-container">
-          <div class="swiper courselistswiper d-flex align-items-center">
+    <banner class="banner position-relative">
+      <div class="bg-neutral-10">
+        <div class="container py-10 py-md-20">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-4 mb-md-10">
+              <li class="breadcrumb-item"><a class="link-neutral-80" href="#">所有課程</a></li>
+              <li class="breadcrumb-item link-neutral-80 active" aria-current="page">程式課程</li>
+            </ol>
+          </nav>
+          <h3 class="fs-md-1 text-neutral-100 mb-10">程式課程</h3>
+          <div class="flower-lg-left d-none d-md-block"></div>
+          <div class="flower-sm-left"></div>
+          <div class="flower-lg-right"></div>
+          <div class="flower-sm-right d-none d-md-block"></div>
+          <div class="swiper course-list-swiper d-flex align-items-center">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><button>所有程式</button></div>
-              <div class="swiper-slide"><button>網頁開發</button></div>
-              <div class="swiper-slide"><button>資料科學</button></div>
-              <div class="swiper-slide"><button>行動版開發</button></div>
-              <div class="swiper-slide"><button>程式語言</button></div>
-              <div class="swiper-slide"><button>遊戲開發</button></div>
-              <div class="swiper-slide"><button>資料庫設計與開發</button></div>
-              <div class="swiper-slide"><button>軟體測試</button></div>
-              <div class="swiper-slide"><button>軟體開發工具</button></div>
-              <div class="swiper-slide"><button>無程式碼開發</button></div>
-              <div class="swiper-slide"><button>無程式碼開發</button></div>
+              <div class="swiper-slide"><button type="button">所有程式</button></div>
+              <div class="swiper-slide"><button type="button">網頁開發</button></div>
+              <div class="swiper-slide"><button type="button">資料科學</button></div>
+              <div class="swiper-slide"><button type="button">行動版開發</button></div>
+              <div class="swiper-slide"><button type="button">程式語言</button></div>
+              <div class="swiper-slide"><button type="button">遊戲開發</button></div>
+              <div class="swiper-slide"><button type="button">資料庫設計與開發</button></div>
+              <div class="swiper-slide"><button type="button">軟體測試</button></div>
+              <div class="swiper-slide"><button type="button">軟體開發工具</button></div>
+              <div class="swiper-slide"><button type="button">無程式碼開發</button></div>
+              <div class="swiper-slide"><button type="button">無程式碼開發</button></div>
             </div>
-            <!-- <div class="swiper-button-next d-none d-md-block"></div>
-          <div class="swiper-button-prev d-none d-md-block"></div> -->
             <div class="button-next d-flex">
               <span class="material-symbols-outlined">
                 keyboard_arrow_right
@@ -50,10 +48,11 @@
         </div>
       </div>
     </banner>
+
     <section>
       <div class="popular-topics">
         <div class="container">
-          <ul class="d-flex gap-6 list-unstyled mb-10 mb-md-20 px-md-2">
+          <ul class="d-flex gap-6 list-unstyled mb-10 mb-md-20 mt-10 px-md-2">
             <li><a class="hot-picks title-text active" href="#">最熱門</a></li>
             <li><a class="hot-picks title-text" href="#">最新課程</a></li>
             <li><a class="hot-picks title-text" href="#">話題最高</a></li>
@@ -278,20 +277,1491 @@
             </div>
           </div>
 
-
-
-
-
-
-
-
-
-
+          <div class="d-flex justify-content-between align-items-center pb-10">
+            <h6 class="fs-md-3 text-neutral-100">熱門主題</h6>
+            <div class="d-flex align-items-center gap-3">
+              <span class="material-symbols-outlined popular-swiper-button-left">arrow_back</span>
+              <span class="material-symbols-outlined popular-swiper-button-right">arrow_forward</span>
+            </div>
+          </div>
+          <div class="swiper popular-swiper pb-10 pb-md-0">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <button type="button" class="btn btn-outline-secondary custom-btn rounded-1 py-6 px-0"
+                  style="width: 196px;">
+                  <h6 class="lesson text-black mb-2">HTML 5</h6>
+                  <div class="lesson body-text text-neutral-80">2,103 個課程</div>
+                </button>
+              </div>
+              <div class="swiper-slide">
+                <button type="button" class="btn btn-outline-secondary custom-btn rounded-1 py-6 px-0"
+                  style="width: 196px;">
+                  <h6 class="lesson text-black mb-2">Javascript</h6>
+                  <div class="lesson body-text text-neutral-80">891 個課程</div>
+                </button>
+              </div>
+              <div class="swiper-slide">
+                <button type="button" class="btn btn-outline-secondary custom-btn rounded-1 py-6 px-0"
+                  style="width: 196px;">
+                  <h6 class="lesson text-black mb-2">Python</h6>
+                  <div class="lesson body-text text-neutral-80">1,384 個課程</div>
+                </button>
+              </div>
+              <div class="swiper-slide">
+                <button type="button" class="btn btn-outline-secondary custom-btn rounded-1 py-6 px-0"
+                  style="width: 196px;">
+                  <h6 class="lesson text-black mb-2">CSS 3</h6>
+                  <div class="lesson body-text text-neutral-80">240 個課程</div>
+                </button>
+              </div>
+              <div class="swiper-slide">
+                <button type="button" class="btn btn-outline-secondary custom-btn rounded-1 py-6 px-0"
+                  style="width: 196px;">
+                  <h6 class="lesson text-black mb-2">HTML 5</h6>
+                  <div class="lesson body-text text-neutral-80">2,103 個課程</div>
+                </button>
+              </div>
+              <div class="swiper-slide">
+                <button type="button" class="btn btn-outline-secondary custom-btn rounded-1 py-6 px-0"
+                  style="width: 196px;">
+                  <h6 class="lesson text-black mb-2">HTML 5</h6>
+                  <div class="lesson body-text text-neutral-80">2,103 個課程</div>
+                </button>
+              </div>
+              <div class="swiper-slide">
+                <button type="button" class="btn btn-outline-secondary custom-btn rounded-1 py-6 px-0"
+                  style="width: 196px;">
+                  <h6 class="lesson text-black mb-2">HTML 5</h6>
+                  <div class="lesson body-text text-neutral-80">2,103 個課程</div>
+                </button>
+              </div>
+              <div class="swiper-slide">
+                <button type="button" class="btn btn-outline-secondary custom-btn rounded-1 py-6 px-0"
+                  style="width: 196px;">
+                  <h6 class="lesson text-black mb-2">HTML 5</h6>
+                  <div class="lesson body-text text-neutral-80">2,103 個課程</div>
+                </button>
+              </div>
+            </div>
+            <div class="swiper-pagination d-none d-md-block mt-md-10 mb-md-20"></div>
+          </div>
         </div>
       </div>
-
-
     </section>
+
+    <section>
+      <div class="mentors py-10 py-md-20 bg-neutral-10">
+        <div class="container">
+          <h5 class="text-neutral-100 text-center fs-md-2 pb-10">程式頂尖講師</h5>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <div class="col">
+              <div class="card custom-boder h-100">
+                <img src="../assets/images/teacher-4.png" class="card-img-top" alt="teacher-4">
+                <div class="card-body text-center">
+                  <p class="title-text text-neutral-100 mb-1">Devon Lane</h5>
+                  <p class="body2-text">自由接案工程師</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between align-items-center py-4 bg-white">
+                  <div class="body2-text">3,394 個學生</div>
+                  <div>
+                    <span class="me-1">⭐</span><span class="body2-text fw-500 fw-md-400 me-1"
+                      style="color: #180000;">4.0</span><span class="body2-text fw-500 fw-md-400"
+                      style="color: #808080;">(333)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card custom-boder h-100">
+                <img src="../assets/images/teacher-5.png" class="card-img-top" alt="teacher-5">
+                <div class="card-body text-center">
+                  <p class="title-text text-neutral-100 mb-1">Jenny Cooper</h5>
+                  <p class="body2-text">資深全端工程師</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between align-items-center py-4 bg-white">
+                  <div class="body2-text">3,394 個學生</div>
+                  <div>
+                    <span class="me-1">⭐</span><span class="body2-text fw-500 fw-md-400 me-1"
+                      style="color: #180000;">4.0</span><span class="body2-text fw-500 fw-md-400"
+                      style="color: #808080;">(333)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card custom-boder h-100">
+                <img src="../assets/images/teacher-6.png" class="card-img-top" alt="teacher-6">
+                <div class="card-body text-center">
+                  <p class="title-text text-neutral-100 mb-1">Johnny Khan</h5>
+                  <p class="body2-text">矽谷軟體工程師</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between align-items-center py-4 bg-white">
+                  <div class="body2-text">3,394 個學生</div>
+                  <div>
+                    <span class="me-1">⭐</span><span class="body2-text fw-500 fw-md-400 me-1"
+                      style="color: #180000;">4.0</span><span class="body2-text fw-500 fw-md-400"
+                      style="color: #808080;">(333)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card custom-boder h-100">
+                <img src="../assets/images/teacher-7.png" class="card-img-top" alt="teacher-7">
+                <div class="card-body text-center">
+                  <p class="title-text text-neutral-100 mb-1">Annie Lin</h5>
+                  <p class="body2-text">資深前端工程師</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between align-items-center py-4 bg-white">
+                  <div class="body2-text">3,394 個學生</div>
+                  <div>
+                    <span class="me-1">⭐</span><span class="body2-text fw-500 fw-md-400 me-1"
+                      style="color: #180000;">4.0</span><span class="body2-text fw-500 fw-md-400"
+                      style="color: #808080;">(333)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <div class="search pt-10 pb-20 py-md-20">
+        <div class="container">
+          <div class="d-flex flex-column align-items-center flex-md-row justify-content-md-between pb-10">
+            <div class="pb-3 pb-md-0">
+              <p class="text-neutral-100 fs-md-3 fw-600">查看 520 筆與「<span class="text-primary">程式開發</span>」的相關課程</p>
+            </div>
+            <ul class="d-flex list-unstyled mb-0">
+              <li><a class="search-list py-1 px-4" href="#">最新課程</a></li>
+              <li><a class="search-list py-1 px-4 border-end border-start active" href="#">最高人氣</a></li>
+              <li><a class="search-list py-1 px-4" href="#">最低價格</a></li>
+            </ul>
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 pb-md-10">
+            <!-- 第一張卡片 -->
+            <div class="col">
+              <div class="card search-box-shadow position-relative h-100" style="border-radius: 20px; border-width: 0px">
+                <div class="d-flex d-md-block flex-lg-column gap-2 gap-md-0 search-border">
+                  <div>
+                    <p
+                      class="sub-text text-alert-100 bg-alert-10 rounded-pill everyone-card-discount d-none d-md-block">
+                      限時 8 折 🔥
+                    </p>
+                    <p class="body2-text text-alert-100 bg-alert-10 rounded-custom d-block d-md-none py-1 px-2">
+                      8 折
+                    </p>
+                    <img src="../assets/images/course-5.png" class="card-img-top" alt="course-5">
+                  </div>
+                  <div class="d-md-flex flex-md-column">
+                    <div class="card-body d-flex flex-column justify-content-between p-0 p-md-4">
+                      <p class="fs-md-6 text-black mb-4 fw-600">
+                        小白也會！從零開始學習 Python 程式設計
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center pb-2 pb-md-0">
+                        <div class="d-flex align-items-center">
+                          <img src="../assets/images/avatar-2.png" alt="avatar-2">
+                          <p class="ms-2">Kelly Hsu</p>
+                        </div>
+                        <div>
+                          <p class="fw-600 fw-md-700 fs-md-6 text-primary text-end">
+                            NT$ 2,480
+                          </p>
+                          <p class="price-text text-decoration-line-through text-end" style="color: #808080">
+                            NT$ 3,200
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-white p-0 pb-6 p-md-4">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column align-items-start py-2 py-md-0">
+                          <p class="body2-text bg-neutral-40 px-3 py-1 rounded-pill">
+                            程式開發
+                          </p>
+                          <p class="body2-text mt-1">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bi bi-star-fill tiny-text" style="color: #f6bd2b"></i>
+                          <div class="d-flex align-items-center ms-1">
+                            <p class="fw-medium body2-text" style="color: #180000">
+                              4.0
+                            </p>
+                            <p class="fw-medium body2-text ms-1" style="color: #808080">
+                              (333)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block">
+              <div class="card search-box-shadow position-relative h-100" style="border-radius: 20px; border-width: 0px">
+                <div class="d-flex d-md-block flex-lg-column gap-2 gap-md-0">
+                  <div>
+                    <p
+                      class="sub-text text-alert-100 bg-alert-10 rounded-pill everyone-card-discount d-none d-md-block">
+                      限時 8 折 🔥
+                    </p>
+                    <img src="../assets/images/course-6.png" class="card-img-top" alt="course-6">
+                  </div>
+                  <div class="d-md-flex flex-md-column">
+                    <div class="card-body d-flex flex-column justify-content-between p-0 p-md-4">
+                      <p class="fs-md-6 text-black mb-4 fw-600">
+                        小白也會！從零開始學習 Python 程式設計
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center pb-2 pb-md-0">
+                        <div class="d-flex align-items-center">
+                          <img src="../assets/images/avatar-2.png" alt="avatar-2">
+                          <p class="ms-2">Kelly Hsu</p>
+                        </div>
+                        <div>
+                          <p class="fw-600 fw-md-700 fs-md-6 text-primary text-end">
+                            NT$ 2,480
+                          </p>
+                          <p class="price-text text-decoration-line-through text-end" style="color: #808080">
+                            NT$ 3,200
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-white p-0 pb-6 p-md-4">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column align-items-start py-2 py-md-0">
+                          <p class="body2-text bg-neutral-40 px-3 py-1 rounded-pill">
+                            程式開發
+                          </p>
+                          <p class="body2-text mt-1">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bi bi-star-fill tiny-text" style="color: #f6bd2b"></i>
+                          <div class="d-flex align-items-center ms-1">
+                            <p class="fw-medium body2-text" style="color: #180000">
+                              4.0
+                            </p>
+                            <p class="fw-medium body2-text ms-1" style="color: #808080">
+                              (333)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block">
+              <div class="card search-box-shadow position-relative h-100" style="border-radius: 20px; border-width: 0px">
+                <div class="d-flex d-md-block flex-lg-column gap-2 gap-md-0">
+                  <div>
+                    <img src="../assets/images/course-7.png" class="card-img-top" alt="course-7">
+                  </div>
+                  <div class="d-md-flex flex-md-column">
+                    <div class="card-body d-flex flex-column justify-content-between p-0 p-md-4">
+                      <p class="fs-md-6 text-black mb-4 fw-600">
+                        小白也會！從零開始學習 Python 程式設計
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center pb-2 pb-md-0">
+                        <div class="d-flex align-items-center">
+                          <img src="../assets/images/avatar-2.png" alt="avatar-2">
+                          <p class="ms-2">Kelly Hsu</p>
+                        </div>
+                        <div>
+                          <p class="fw-600 fw-md-700 fs-md-6 text-primary text-end">
+                            NT$ 2,480
+                          </p>
+                          <p class="price-text text-decoration-line-through text-end" style="color: #808080">
+                            NT$ 3,200
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-white p-0 pb-6 p-md-4">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column align-items-start py-2 py-md-0">
+                          <p class="body2-text bg-neutral-40 px-3 py-1 rounded-pill">
+                            程式開發
+                          </p>
+                          <p class="body2-text mt-1">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bi bi-star-fill tiny-text" style="color: #f6bd2b"></i>
+                          <div class="d-flex align-items-center ms-1">
+                            <p class="fw-medium body2-text" style="color: #180000">
+                              4.0
+                            </p>
+                            <p class="fw-medium body2-text ms-1" style="color: #808080">
+                              (333)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block">
+              <div class="card search-box-shadow position-relative h-100" style="border-radius: 20px; border-width: 0px">
+                <div class="d-flex d-md-block flex-lg-column gap-2 gap-md-0">
+                  <div>
+                    <img src="../assets/images/course-8.png" class="card-img-top" alt="course-8">
+                  </div>
+                  <div class="d-md-flex flex-md-column">
+                    <div class="card-body d-flex flex-column justify-content-between p-0 p-md-4">
+                      <p class="fs-md-6 text-black mb-4 fw-600">
+                        小白也會！從零開始學習 Python 程式設計
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center pb-2 pb-md-0">
+                        <div class="d-flex align-items-center">
+                          <img src="../assets/images/avatar-2.png" alt="avatar-2">
+                          <p class="ms-2">Kelly Hsu</p>
+                        </div>
+                        <div>
+                          <p class="fw-600 fw-md-700 fs-md-6 text-primary text-end">
+                            NT$ 2,480
+                          </p>
+                          <p class="price-text text-decoration-line-through text-end" style="color: #808080">
+                            NT$ 3,200
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-white p-0 pb-6 p-md-4">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column align-items-start py-2 py-md-0">
+                          <p class="body2-text bg-neutral-40 px-3 py-1 rounded-pill">
+                            程式開發
+                          </p>
+                          <p class="body2-text mt-1">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bi bi-star-fill tiny-text" style="color: #f6bd2b"></i>
+                          <div class="d-flex align-items-center ms-1">
+                            <p class="fw-medium body2-text" style="color: #180000">
+                              4.0
+                            </p>
+                            <p class="fw-medium body2-text ms-1" style="color: #808080">
+                              (333)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card search-box-shadow position-relative h-100" style="border-radius: 20px; border-width: 0px">
+                <div class="d-flex d-md-block flex-lg-column gap-2 gap-md-0 search-border">
+                  <div>
+                    <p
+                      class="sub-text text-alert-100 bg-alert-10 rounded-pill everyone-card-discount d-none d-md-block">
+                      限時 8 折 🔥
+                    </p>
+                    <img src="../assets/images/course-5.png" class="card-img-top" alt="course-5">
+                  </div>
+                  <div class="d-md-flex flex-md-column">
+                    <div class="card-body d-flex flex-column justify-content-between p-0 p-md-4">
+                      <p class="fs-md-6 text-black mb-4 fw-600">
+                        小白也會！從零開始學習 Python 程式設計
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center pb-2 pb-md-0">
+                        <div class="d-flex align-items-center">
+                          <img src="../assets/images/avatar-2.png" alt="avatar-2">
+                          <p class="ms-2">Kelly Hsu</p>
+                        </div>
+                        <div>
+                          <p class="fw-600 fw-md-700 fs-md-6 text-primary text-end">
+                            NT$ 2,480
+                          </p>
+                          <p class="price-text text-decoration-line-through text-end" style="color: #808080">
+                            NT$ 3,200
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-white p-0 pb-6 p-md-4">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column align-items-start py-2 py-md-0">
+                          <p class="body2-text bg-neutral-40 px-3 py-1 rounded-pill">
+                            程式開發
+                          </p>
+                          <p class="body2-text mt-1">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bi bi-star-fill tiny-text" style="color: #f6bd2b"></i>
+                          <div class="d-flex align-items-center ms-1">
+                            <p class="fw-medium body2-text" style="color: #180000">
+                              4.0
+                            </p>
+                            <p class="fw-medium body2-text ms-1" style="color: #808080">
+                              (333)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block">
+              <div class="card search-box-shadow position-relative h-100" style="border-radius: 20px; border-width: 0px">
+                <div class="d-flex d-md-block flex-lg-column gap-2 gap-md-0">
+                  <div>
+                    <p
+                      class="sub-text text-alert-100 bg-alert-10 rounded-pill everyone-card-discount d-none d-md-block">
+                      限時 8 折 🔥
+                    </p>
+                    <img src="../assets/images/course-6.png" class="card-img-top" alt="course-6">
+                  </div>
+                  <div class="d-md-flex flex-md-column">
+                    <div class="card-body d-flex flex-column justify-content-between p-0 p-md-4">
+                      <p class="fs-md-6 text-black mb-4 fw-600">
+                        小白也會！從零開始學習 Python 程式設計
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center pb-2 pb-md-0">
+                        <div class="d-flex align-items-center">
+                          <img src="../assets/images/avatar-2.png" alt="avatar-2">
+                          <p class="ms-2">Kelly Hsu</p>
+                        </div>
+                        <div>
+                          <p class="fw-600 fw-md-700 fs-md-6 text-primary text-end">
+                            NT$ 2,480
+                          </p>
+                          <p class="price-text text-decoration-line-through text-end" style="color: #808080">
+                            NT$ 3,200
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-white p-0 pb-6 p-md-4">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column align-items-start py-2 py-md-0">
+                          <p class="body2-text bg-neutral-40 px-3 py-1 rounded-pill">
+                            程式開發
+                          </p>
+                          <p class="body2-text mt-1">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bi bi-star-fill tiny-text" style="color: #f6bd2b"></i>
+                          <div class="d-flex align-items-center ms-1">
+                            <p class="fw-medium body2-text" style="color: #180000">
+                              4.0
+                            </p>
+                            <p class="fw-medium body2-text ms-1" style="color: #808080">
+                              (333)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block">
+              <div class="card search-box-shadow position-relative h-100" style="border-radius: 20px; border-width: 0px">
+                <div class="d-flex d-md-block flex-lg-column gap-2 gap-md-0">
+                  <div>
+                    <img src="../assets/images/course-7.png" class="card-img-top" alt="course-7">
+                  </div>
+                  <div class="d-md-flex flex-md-column">
+                    <div class="card-body d-flex flex-column justify-content-between p-0 p-md-4">
+                      <p class="fs-md-6 text-black mb-4 fw-600">
+                        小白也會！從零開始學習 Python 程式設計
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center pb-2 pb-md-0">
+                        <div class="d-flex align-items-center">
+                          <img src="../assets/images/avatar-2.png" alt="avatar-2">
+                          <p class="ms-2">Kelly Hsu</p>
+                        </div>
+                        <div>
+                          <p class="fw-600 fw-md-700 fs-md-6 text-primary text-end">
+                            NT$ 2,480
+                          </p>
+                          <p class="price-text text-decoration-line-through text-end" style="color: #808080">
+                            NT$ 3,200
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-white p-0 pb-6 p-md-4">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column align-items-start py-2 py-md-0">
+                          <p class="body2-text bg-neutral-40 px-3 py-1 rounded-pill">
+                            程式開發
+                          </p>
+                          <p class="body2-text mt-1">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bi bi-star-fill tiny-text" style="color: #f6bd2b"></i>
+                          <div class="d-flex align-items-center ms-1">
+                            <p class="fw-medium body2-text" style="color: #180000">
+                              4.0
+                            </p>
+                            <p class="fw-medium body2-text ms-1" style="color: #808080">
+                              (333)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block">
+              <div class="card search-box-shadow position-relative h-100" style="border-radius: 20px; border-width: 0px">
+                <div class="d-flex d-md-block flex-lg-column gap-2 gap-md-0">
+                  <div>
+                    <img src="../assets/images/course-8.png" class="card-img-top" alt="course-8">
+                  </div>
+                  <div class="d-md-flex flex-md-column">
+                    <div class="card-body d-flex flex-column justify-content-between p-0 p-md-4">
+                      <p class="fs-md-6 text-black mb-4 fw-600">
+                        小白也會！從零開始學習 Python 程式設計
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center pb-2 pb-md-0">
+                        <div class="d-flex align-items-center">
+                          <img src="../assets/images/avatar-2.png" alt="avatar-2">
+                          <p class="ms-2">Kelly Hsu</p>
+                        </div>
+                        <div>
+                          <p class="fw-600 fw-md-700 fs-md-6 text-primary text-end">
+                            NT$ 2,480
+                          </p>
+                          <p class="price-text text-decoration-line-through text-end" style="color: #808080">
+                            NT$ 3,200
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-white p-0 pb-6 p-md-4">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column align-items-start py-2 py-md-0">
+                          <p class="body2-text bg-neutral-40 px-3 py-1 rounded-pill">
+                            程式開發
+                          </p>
+                          <p class="body2-text mt-1">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bi bi-star-fill tiny-text" style="color: #f6bd2b"></i>
+                          <div class="d-flex align-items-center ms-1">
+                            <p class="fw-medium body2-text" style="color: #180000">
+                              4.0
+                            </p>
+                            <p class="fw-medium body2-text ms-1" style="color: #808080">
+                              (333)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card search-box-shadow position-relative h-100" style="border-radius: 20px; border-width: 0px">
+                <div class="d-flex d-md-block flex-lg-column gap-2 gap-md-0 search-border">
+                  <div>
+                    <p
+                      class="sub-text text-alert-100 bg-alert-10 rounded-pill everyone-card-discount d-none d-md-block">
+                      限時 8 折 🔥
+                    </p>
+                    <img src="../assets/images/course-5.png" class="card-img-top" alt="course-5">
+                  </div>
+                  <div class="d-md-flex flex-md-column">
+                    <div class="card-body d-flex flex-column justify-content-between p-0 p-md-4">
+                      <p class="fs-md-6 text-black mb-4 fw-600">
+                        小白也會！從零開始學習 Python 程式設計
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center pb-2 pb-md-0">
+                        <div class="d-flex align-items-center">
+                          <img src="../assets/images/avatar-2.png" alt="avatar-2">
+                          <p class="ms-2">Kelly Hsu</p>
+                        </div>
+                        <div>
+                          <p class="fw-600 fw-md-700 fs-md-6 text-primary text-end">
+                            NT$ 2,480
+                          </p>
+                          <p class="price-text text-decoration-line-through text-end" style="color: #808080">
+                            NT$ 3,200
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-white p-0 pb-6 p-md-4">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column align-items-start py-2 py-md-0">
+                          <p class="body2-text bg-neutral-40 px-3 py-1 rounded-pill">
+                            程式開發
+                          </p>
+                          <p class="body2-text mt-1">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bi bi-star-fill tiny-text" style="color: #f6bd2b"></i>
+                          <div class="d-flex align-items-center ms-1">
+                            <p class="fw-medium body2-text" style="color: #180000">
+                              4.0
+                            </p>
+                            <p class="fw-medium body2-text ms-1" style="color: #808080">
+                              (333)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block">
+              <div class="card search-box-shadow position-relative h-100" style="border-radius: 20px; border-width: 0px">
+                <div class="d-flex d-md-block flex-lg-column gap-2 gap-md-0">
+                  <div>
+                    <p
+                      class="sub-text text-alert-100 bg-alert-10 rounded-pill everyone-card-discount d-none d-md-block">
+                      限時 8 折 🔥
+                    </p>
+                    <img src="../assets/images/course-6.png" class="card-img-top" alt="course-6">
+                  </div>
+                  <div class="d-md-flex flex-md-column">
+                    <div class="card-body d-flex flex-column justify-content-between p-0 p-md-4">
+                      <p class="fs-md-6 text-black mb-4 fw-600">
+                        小白也會！從零開始學習 Python 程式設計
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center pb-2 pb-md-0">
+                        <div class="d-flex align-items-center">
+                          <img src="../assets/images/avatar-2.png" alt="avatar-2">
+                          <p class="ms-2">Kelly Hsu</p>
+                        </div>
+                        <div>
+                          <p class="fw-600 fw-md-700 fs-md-6 text-primary text-end">
+                            NT$ 2,480
+                          </p>
+                          <p class="price-text text-decoration-line-through text-end" style="color: #808080">
+                            NT$ 3,200
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-white p-0 pb-6 p-md-4">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column align-items-start py-2 py-md-0">
+                          <p class="body2-text bg-neutral-40 px-3 py-1 rounded-pill">
+                            程式開發
+                          </p>
+                          <p class="body2-text mt-1">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bi bi-star-fill tiny-text" style="color: #f6bd2b"></i>
+                          <div class="d-flex align-items-center ms-1">
+                            <p class="fw-medium body2-text" style="color: #180000">
+                              4.0
+                            </p>
+                            <p class="fw-medium body2-text ms-1" style="color: #808080">
+                              (333)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block">
+              <div class="card search-box-shadow position-relative h-100" style="border-radius: 20px; border-width: 0px">
+                <div class="d-flex d-md-block flex-lg-column gap-2 gap-md-0">
+                  <div>
+                    <img src="../assets/images/course-7.png" class="card-img-top" alt="course-7">
+                  </div>
+                  <div class="d-md-flex flex-md-column">
+                    <div class="card-body d-flex flex-column justify-content-between p-0 p-md-4">
+                      <p class="fs-md-6 text-black mb-4 fw-600">
+                        小白也會！從零開始學習 Python 程式設計
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center pb-2 pb-md-0">
+                        <div class="d-flex align-items-center">
+                          <img src="../assets/images/avatar-2.png" alt="avatar-2">
+                          <p class="ms-2">Kelly Hsu</p>
+                        </div>
+                        <div>
+                          <p class="fw-600 fw-md-700 fs-md-6 text-primary text-end">
+                            NT$ 2,480
+                          </p>
+                          <p class="price-text text-decoration-line-through text-end" style="color: #808080">
+                            NT$ 3,200
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-white p-0 pb-6 p-md-4">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column align-items-start py-2 py-md-0">
+                          <p class="body2-text bg-neutral-40 px-3 py-1 rounded-pill">
+                            程式開發
+                          </p>
+                          <p class="body2-text mt-1">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bi bi-star-fill tiny-text" style="color: #f6bd2b"></i>
+                          <div class="d-flex align-items-center ms-1">
+                            <p class="fw-medium body2-text" style="color: #180000">
+                              4.0
+                            </p>
+                            <p class="fw-medium body2-text ms-1" style="color: #808080">
+                              (333)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block">
+              <div class="card search-box-shadow position-relative h-100" style="border-radius: 20px; border-width: 0px">
+                <div class="d-flex d-md-block flex-lg-column gap-2 gap-md-0">
+                  <div>
+                    <img src="../assets/images/course-8.png" class="card-img-top" alt="course-8">
+                  </div>
+                  <div class="d-md-flex flex-md-column">
+                    <div class="card-body d-flex flex-column justify-content-between p-0 p-md-4">
+                      <p class="fs-md-6 text-black mb-4 fw-600">
+                        小白也會！從零開始學習 Python 程式設計
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center pb-2 pb-md-0">
+                        <div class="d-flex align-items-center">
+                          <img src="../assets/images/avatar-2.png" alt="avatar-2">
+                          <p class="ms-2">Kelly Hsu</p>
+                        </div>
+                        <div>
+                          <p class="fw-600 fw-md-700 fs-md-6 text-primary text-end">
+                            NT$ 2,480
+                          </p>
+                          <p class="price-text text-decoration-line-through text-end" style="color: #808080">
+                            NT$ 3,200
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-white p-0 pb-6 p-md-4">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column align-items-start py-2 py-md-0">
+                          <p class="body2-text bg-neutral-40 px-3 py-1 rounded-pill">
+                            程式開發
+                          </p>
+                          <p class="body2-text mt-1">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bi bi-star-fill tiny-text" style="color: #f6bd2b"></i>
+                          <div class="d-flex align-items-center ms-1">
+                            <p class="fw-medium body2-text" style="color: #180000">
+                              4.0
+                            </p>
+                            <p class="fw-medium body2-text ms-1" style="color: #808080">
+                              (333)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card search-box-shadow position-relative h-100" style="border-radius: 20px; border-width: 0px">
+                <div class="d-flex d-md-block flex-lg-column gap-2 gap-md-0 search-border">
+                  <div>
+                    <p
+                      class="sub-text text-alert-100 bg-alert-10 rounded-pill everyone-card-discount d-none d-md-block">
+                      限時 8 折 🔥
+                    </p>
+                    <img src="../assets/images/course-5.png" class="card-img-top" alt="course-5">
+                  </div>
+                  <div class="d-md-flex flex-md-column">
+                    <div class="card-body d-flex flex-column justify-content-between p-0 p-md-4">
+                      <p class="fs-md-6 text-black mb-4 fw-600">
+                        小白也會！從零開始學習 Python 程式設計
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center pb-2 pb-md-0">
+                        <div class="d-flex align-items-center">
+                          <img src="../assets/images/avatar-2.png" alt="avatar-2">
+                          <p class="ms-2">Kelly Hsu</p>
+                        </div>
+                        <div>
+                          <p class="fw-600 fw-md-700 fs-md-6 text-primary text-end">
+                            NT$ 2,480
+                          </p>
+                          <p class="price-text text-decoration-line-through text-end" style="color: #808080">
+                            NT$ 3,200
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-white p-0 pb-6 p-md-4">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column align-items-start py-2 py-md-0">
+                          <p class="body2-text bg-neutral-40 px-3 py-1 rounded-pill">
+                            程式開發
+                          </p>
+                          <p class="body2-text mt-1">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bi bi-star-fill tiny-text" style="color: #f6bd2b"></i>
+                          <div class="d-flex align-items-center ms-1">
+                            <p class="fw-medium body2-text" style="color: #180000">
+                              4.0
+                            </p>
+                            <p class="fw-medium body2-text ms-1" style="color: #808080">
+                              (333)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block">
+              <div class="card search-box-shadow position-relative h-100" style="border-radius: 20px; border-width: 0px">
+                <div class="d-flex d-md-block flex-lg-column gap-2 gap-md-0">
+                  <div>
+                    <p
+                      class="sub-text text-alert-100 bg-alert-10 rounded-pill everyone-card-discount d-none d-md-block">
+                      限時 8 折 🔥
+                    </p>
+                    <img src="../assets/images/course-6.png" class="card-img-top" alt="course-6">
+                  </div>
+                  <div class="d-md-flex flex-md-column">
+                    <div class="card-body d-flex flex-column justify-content-between p-0 p-md-4">
+                      <p class="fs-md-6 text-black mb-4 fw-600">
+                        小白也會！從零開始學習 Python 程式設計
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center pb-2 pb-md-0">
+                        <div class="d-flex align-items-center">
+                          <img src="../assets/images/avatar-2.png" alt="avatar-2">
+                          <p class="ms-2">Kelly Hsu</p>
+                        </div>
+                        <div>
+                          <p class="fw-600 fw-md-700 fs-md-6 text-primary text-end">
+                            NT$ 2,480
+                          </p>
+                          <p class="price-text text-decoration-line-through text-end" style="color: #808080">
+                            NT$ 3,200
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-white p-0 pb-6 p-md-4">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column align-items-start py-2 py-md-0">
+                          <p class="body2-text bg-neutral-40 px-3 py-1 rounded-pill">
+                            程式開發
+                          </p>
+                          <p class="body2-text mt-1">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bi bi-star-fill tiny-text" style="color: #f6bd2b"></i>
+                          <div class="d-flex align-items-center ms-1">
+                            <p class="fw-medium body2-text" style="color: #180000">
+                              4.0
+                            </p>
+                            <p class="fw-medium body2-text ms-1" style="color: #808080">
+                              (333)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block">
+              <div class="card search-box-shadow position-relative h-100" style="border-radius: 20px; border-width: 0px">
+                <div class="d-flex d-md-block flex-lg-column gap-2 gap-md-0">
+                  <div>
+                    <img src="../assets/images/course-7.png" class="card-img-top" alt="course-7">
+                  </div>
+                  <div class="d-md-flex flex-md-column">
+                    <div class="card-body d-flex flex-column justify-content-between p-0 p-md-4">
+                      <p class="fs-md-6 text-black mb-4 fw-600">
+                        小白也會！從零開始學習 Python 程式設計
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center pb-2 pb-md-0">
+                        <div class="d-flex align-items-center">
+                          <img src="../assets/images/avatar-2.png" alt="avatar-2">
+                          <p class="ms-2">Kelly Hsu</p>
+                        </div>
+                        <div>
+                          <p class="fw-600 fw-md-700 fs-md-6 text-primary text-end">
+                            NT$ 2,480
+                          </p>
+                          <p class="price-text text-decoration-line-through text-end" style="color: #808080">
+                            NT$ 3,200
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-white p-0 pb-6 p-md-4">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column align-items-start py-2 py-md-0">
+                          <p class="body2-text bg-neutral-40 px-3 py-1 rounded-pill">
+                            程式開發
+                          </p>
+                          <p class="body2-text mt-1">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bi bi-star-fill tiny-text" style="color: #f6bd2b"></i>
+                          <div class="d-flex align-items-center ms-1">
+                            <p class="fw-medium body2-text" style="color: #180000">
+                              4.0
+                            </p>
+                            <p class="fw-medium body2-text ms-1" style="color: #808080">
+                              (333)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block">
+              <div class="card search-box-shadow position-relative h-100" style="border-radius: 20px; border-width: 0px">
+                <div class="d-flex d-md-block flex-lg-column gap-2 gap-md-0">
+                  <div>
+                    <img src="../assets/images/course-8.png" class="card-img-top" alt="course-8">
+                  </div>
+                  <div class="d-md-flex flex-md-column">
+                    <div class="card-body d-flex flex-column justify-content-between p-0 p-md-4">
+                      <p class="fs-md-6 text-black mb-4 fw-600">
+                        小白也會！從零開始學習 Python 程式設計
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center pb-2 pb-md-0">
+                        <div class="d-flex align-items-center">
+                          <img src="../assets/images/avatar-2.png" alt="avatar-2">
+                          <p class="ms-2">Kelly Hsu</p>
+                        </div>
+                        <div>
+                          <p class="fw-600 fw-md-700 fs-md-6 text-primary text-end">
+                            NT$ 2,480
+                          </p>
+                          <p class="price-text text-decoration-line-through text-end" style="color: #808080">
+                            NT$ 3,200
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-white p-0 pb-6 p-md-4">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column align-items-start py-2 py-md-0">
+                          <p class="body2-text bg-neutral-40 px-3 py-1 rounded-pill">
+                            程式開發
+                          </p>
+                          <p class="body2-text mt-1">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bi bi-star-fill tiny-text" style="color: #f6bd2b"></i>
+                          <div class="d-flex align-items-center ms-1">
+                            <p class="fw-medium body2-text" style="color: #180000">
+                              4.0
+                            </p>
+                            <p class="fw-medium body2-text ms-1" style="color: #808080">
+                              (333)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card search-box-shadow position-relative h-100" style="border-radius: 20px; border-width: 0px">
+                <div class="d-flex d-md-block flex-lg-column gap-2 gap-md-0 search-border">
+                  <div>
+                    <p
+                      class="sub-text text-alert-100 bg-alert-10 rounded-pill everyone-card-discount d-none d-md-block">
+                      限時 8 折 🔥
+                    </p>
+                    <img src="../assets/images/course-5.png" class="card-img-top" alt="course-5">
+                  </div>
+                  <div class="d-md-flex flex-md-column">
+                    <div class="card-body d-flex flex-column justify-content-between p-0 p-md-4">
+                      <p class="fs-md-6 text-black mb-4 fw-600">
+                        小白也會！從零開始學習 Python 程式設計
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center pb-2 pb-md-0">
+                        <div class="d-flex align-items-center">
+                          <img src="../assets/images/avatar-2.png" alt="avatar-2">
+                          <p class="ms-2">Kelly Hsu</p>
+                        </div>
+                        <div>
+                          <p class="fw-600 fw-md-700 fs-md-6 text-primary text-end">
+                            NT$ 2,480
+                          </p>
+                          <p class="price-text text-decoration-line-through text-end" style="color: #808080">
+                            NT$ 3,200
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-white p-0 pb-6 p-md-4">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column align-items-start py-2 py-md-0">
+                          <p class="body2-text bg-neutral-40 px-3 py-1 rounded-pill">
+                            程式開發
+                          </p>
+                          <p class="body2-text mt-1">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bi bi-star-fill tiny-text" style="color: #f6bd2b"></i>
+                          <div class="d-flex align-items-center ms-1">
+                            <p class="fw-medium body2-text" style="color: #180000">
+                              4.0
+                            </p>
+                            <p class="fw-medium body2-text ms-1" style="color: #808080">
+                              (333)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block">
+              <div class="card search-box-shadow position-relative h-100" style="border-radius: 20px; border-width: 0px">
+                <div class="d-flex d-md-block flex-lg-column gap-2 gap-md-0">
+                  <div>
+                    <p
+                      class="sub-text text-alert-100 bg-alert-10 rounded-pill everyone-card-discount d-none d-md-block">
+                      限時 8 折 🔥
+                    </p>
+                    <img src="../assets/images/course-6.png" class="card-img-top" alt="course-6">
+                  </div>
+                  <div class="d-md-flex flex-md-column">
+                    <div class="card-body d-flex flex-column justify-content-between p-0 p-md-4">
+                      <p class="fs-md-6 text-black mb-4 fw-600">
+                        小白也會！從零開始學習 Python 程式設計
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center pb-2 pb-md-0">
+                        <div class="d-flex align-items-center">
+                          <img src="../assets/images/avatar-2.png" alt="avatar-2">
+                          <p class="ms-2">Kelly Hsu</p>
+                        </div>
+                        <div>
+                          <p class="fw-600 fw-md-700 fs-md-6 text-primary text-end">
+                            NT$ 2,480
+                          </p>
+                          <p class="price-text text-decoration-line-through text-end" style="color: #808080">
+                            NT$ 3,200
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-white p-0 pb-6 p-md-4">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column align-items-start py-2 py-md-0">
+                          <p class="body2-text bg-neutral-40 px-3 py-1 rounded-pill">
+                            程式開發
+                          </p>
+                          <p class="body2-text mt-1">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bi bi-star-fill tiny-text" style="color: #f6bd2b"></i>
+                          <div class="d-flex align-items-center ms-1">
+                            <p class="fw-medium body2-text" style="color: #180000">
+                              4.0
+                            </p>
+                            <p class="fw-medium body2-text ms-1" style="color: #808080">
+                              (333)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block">
+              <div class="card search-box-shadow position-relative h-100" style="border-radius: 20px; border-width: 0px">
+                <div class="d-flex d-md-block flex-lg-column gap-2 gap-md-0">
+                  <div>
+                    <img src="../assets/images/course-7.png" class="card-img-top" alt="course-7">
+                  </div>
+                  <div class="d-md-flex flex-md-column">
+                    <div class="card-body d-flex flex-column justify-content-between p-0 p-md-4">
+                      <p class="fs-md-6 text-black mb-4 fw-600">
+                        小白也會！從零開始學習 Python 程式設計
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center pb-2 pb-md-0">
+                        <div class="d-flex align-items-center">
+                          <img src="../assets/images/avatar-2.png" alt="avatar-2">
+                          <p class="ms-2">Kelly Hsu</p>
+                        </div>
+                        <div>
+                          <p class="fw-600 fw-md-700 fs-md-6 text-primary text-end">
+                            NT$ 2,480
+                          </p>
+                          <p class="price-text text-decoration-line-through text-end" style="color: #808080">
+                            NT$ 3,200
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-white p-0 pb-6 p-md-4">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column align-items-start py-2 py-md-0">
+                          <p class="body2-text bg-neutral-40 px-3 py-1 rounded-pill">
+                            程式開發
+                          </p>
+                          <p class="body2-text mt-1">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bi bi-star-fill tiny-text" style="color: #f6bd2b"></i>
+                          <div class="d-flex align-items-center ms-1">
+                            <p class="fw-medium body2-text" style="color: #180000">
+                              4.0
+                            </p>
+                            <p class="fw-medium body2-text ms-1" style="color: #808080">
+                              (333)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block">
+              <div class="card search-box-shadow position-relative h-100" style="border-radius: 20px; border-width: 0px">
+                <div class="d-flex d-md-block flex-lg-column gap-2 gap-md-0">
+                  <div>
+                    <img src="../assets/images/course-8.png" class="card-img-top" alt="course-8">
+                  </div>
+                  <div class="d-md-flex flex-md-column">
+                    <div class="card-body d-flex flex-column justify-content-between p-0 p-md-4">
+                      <p class="fs-md-6 text-black mb-4 fw-600">
+                        小白也會！從零開始學習 Python 程式設計
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center pb-2 pb-md-0">
+                        <div class="d-flex align-items-center">
+                          <img src="../assets/images/avatar-2.png" alt="avatar-2">
+                          <p class="ms-2">Kelly Hsu</p>
+                        </div>
+                        <div>
+                          <p class="fw-600 fw-md-700 fs-md-6 text-primary text-end">
+                            NT$ 2,480
+                          </p>
+                          <p class="price-text text-decoration-line-through text-end" style="color: #808080">
+                            NT$ 3,200
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-white p-0 pb-6 p-md-4">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column align-items-start py-2 py-md-0">
+                          <p class="body2-text bg-neutral-40 px-3 py-1 rounded-pill">
+                            程式開發
+                          </p>
+                          <p class="body2-text mt-1">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bi bi-star-fill tiny-text" style="color: #f6bd2b"></i>
+                          <div class="d-flex align-items-center ms-1">
+                            <p class="fw-medium body2-text" style="color: #180000">
+                              4.0
+                            </p>
+                            <p class="fw-medium body2-text ms-1" style="color: #808080">
+                              (333)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card search-box-shadow position-relative h-100" style="border-radius: 20px; border-width: 0px">
+                <div class="d-flex d-md-block flex-lg-column gap-2 gap-md-0 search-border mb-10 mb-md-0">
+                  <div>
+                    <p
+                      class="sub-text text-alert-100 bg-alert-10 rounded-pill everyone-card-discount d-none d-md-block">
+                      限時 8 折 🔥
+                    </p>
+                    <img src="../assets/images/course-5.png" class="card-img-top" alt="course-5">
+                  </div>
+                  <div class="d-md-flex flex-md-column">
+                    <div class="card-body d-flex flex-column justify-content-between p-0 p-md-4">
+                      <p class="fs-md-6 text-black mb-4 fw-600">
+                        小白也會！從零開始學習 Python 程式設計
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center pb-2 pb-md-0">
+                        <div class="d-flex align-items-center">
+                          <img src="../assets/images/avatar-2.png" alt="avatar-2">
+                          <p class="ms-2">Kelly Hsu</p>
+                        </div>
+                        <div>
+                          <p class="fw-600 fw-md-700 fs-md-6 text-primary text-end">
+                            NT$ 2,480
+                          </p>
+                          <p class="price-text text-decoration-line-through text-end" style="color: #808080">
+                            NT$ 3,200
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-white p-0 pb-6 p-md-4">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column align-items-start py-2 py-md-0">
+                          <p class="body2-text bg-neutral-40 px-3 py-1 rounded-pill">
+                            程式開發
+                          </p>
+                          <p class="body2-text mt-1">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bi bi-star-fill tiny-text" style="color: #f6bd2b"></i>
+                          <div class="d-flex align-items-center ms-1">
+                            <p class="fw-medium body2-text" style="color: #180000">
+                              4.0
+                            </p>
+                            <p class="fw-medium body2-text ms-1" style="color: #808080">
+                              (333)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block">
+              <div class="card search-box-shadow position-relative h-100" style="border-radius: 20px; border-width: 0px">
+                <div class="d-flex d-md-block flex-lg-column gap-2 gap-md-0">
+                  <div>
+                    <p
+                      class="sub-text text-alert-100 bg-alert-10 rounded-pill everyone-card-discount d-none d-md-block">
+                      限時 8 折 🔥
+                    </p>
+                    <img src="../assets/images/course-6.png" class="card-img-top" alt="course-6">
+                  </div>
+                  <div class="d-md-flex flex-md-column">
+                    <div class="card-body d-flex flex-column justify-content-between p-0 p-md-4">
+                      <p class="fs-md-6 text-black mb-4 fw-600">
+                        小白也會！從零開始學習 Python 程式設計
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center pb-2 pb-md-0">
+                        <div class="d-flex align-items-center">
+                          <img src="../assets/images/avatar-2.png" alt="avatar-2">
+                          <p class="ms-2">Kelly Hsu</p>
+                        </div>
+                        <div>
+                          <p class="fw-600 fw-md-700 fs-md-6 text-primary text-end">
+                            NT$ 2,480
+                          </p>
+                          <p class="price-text text-decoration-line-through text-end" style="color: #808080">
+                            NT$ 3,200
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-white p-0 pb-6 p-md-4">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column align-items-start py-2 py-md-0">
+                          <p class="body2-text bg-neutral-40 px-3 py-1 rounded-pill">
+                            程式開發
+                          </p>
+                          <p class="body2-text mt-1">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bi bi-star-fill tiny-text" style="color: #f6bd2b"></i>
+                          <div class="d-flex align-items-center ms-1">
+                            <p class="fw-medium body2-text" style="color: #180000">
+                              4.0
+                            </p>
+                            <p class="fw-medium body2-text ms-1" style="color: #808080">
+                              (333)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block">
+              <div class="card search-box-shadow position-relative h-100" style="border-radius: 20px; border-width: 0px">
+                <div class="d-flex d-md-block flex-lg-column gap-2 gap-md-0">
+                  <div>
+                    <img src="../assets/images/course-7.png" class="card-img-top" alt="course-7">
+                  </div>
+                  <div class="d-md-flex flex-md-column">
+                    <div class="card-body d-flex flex-column justify-content-between p-0 p-md-4">
+                      <p class="fs-md-6 text-black mb-4 fw-600">
+                        小白也會！從零開始學習 Python 程式設計
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center pb-2 pb-md-0">
+                        <div class="d-flex align-items-center">
+                          <img src="../assets/images/avatar-2.png" alt="avatar-2">
+                          <p class="ms-2">Kelly Hsu</p>
+                        </div>
+                        <div>
+                          <p class="fw-600 fw-md-700 fs-md-6 text-primary text-end">
+                            NT$ 2,480
+                          </p>
+                          <p class="price-text text-decoration-line-through text-end" style="color: #808080">
+                            NT$ 3,200
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-white p-0 pb-6 p-md-4">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column align-items-start py-2 py-md-0">
+                          <p class="body2-text bg-neutral-40 px-3 py-1 rounded-pill">
+                            程式開發
+                          </p>
+                          <p class="body2-text mt-1">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bi bi-star-fill tiny-text" style="color: #f6bd2b"></i>
+                          <div class="d-flex align-items-center ms-1">
+                            <p class="fw-medium body2-text" style="color: #180000">
+                              4.0
+                            </p>
+                            <p class="fw-medium body2-text ms-1" style="color: #808080">
+                              (333)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block">
+              <div class="card search-box-shadow position-relative h-100" style="border-radius: 20px; border-width: 0px">
+                <div class="d-flex d-md-block flex-lg-column gap-2 gap-md-0">
+                  <div>
+                    <img src="../assets/images/course-8.png" class="card-img-top" alt="course-8">
+                  </div>
+                  <div class="d-md-flex flex-md-column">
+                    <div class="card-body d-flex flex-column justify-content-between p-0 p-md-4">
+                      <p class="fs-md-6 text-black mb-4 fw-600">
+                        小白也會！從零開始學習 Python 程式設計
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center pb-2 pb-md-0">
+                        <div class="d-flex align-items-center">
+                          <img src="../assets/images/avatar-2.png" alt="avatar-2">
+                          <p class="ms-2">Kelly Hsu</p>
+                        </div>
+                        <div>
+                          <p class="fw-600 fw-md-700 fs-md-6 text-primary text-end">
+                            NT$ 2,480
+                          </p>
+                          <p class="price-text text-decoration-line-through text-end" style="color: #808080">
+                            NT$ 3,200
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-white p-0 pb-6 p-md-4">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column align-items-start py-2 py-md-0">
+                          <p class="body2-text bg-neutral-40 px-3 py-1 rounded-pill">
+                            程式開發
+                          </p>
+                          <p class="body2-text mt-1">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bi bi-star-fill tiny-text" style="color: #f6bd2b"></i>
+                          <div class="d-flex align-items-center ms-1">
+                            <p class="fw-medium body2-text" style="color: #180000">
+                              4.0
+                            </p>
+                            <p class="fw-medium body2-text ms-1" style="color: #808080">
+                              (333)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <nav aria-label="search-page">
+            <ul class="pagination gap-2 justify-content-center justify-content-md-end m-0">
+              <li class="disabled">
+                <span class="material-symbols-outlined page-link">
+                  keyboard_double_arrow_left
+                  </span>
+              </li>
+              <li class="disabled">
+                <span class="material-symbols-outlined page-link">
+                  keyboard_arrow_left
+                  </span>
+              </li>
+              <li class="page-item active" aria-current="page">
+                <span class="page-link">1</span>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item d-none d-md-block"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">...</a></li>
+              <li class="page-item"><a class="page-link" href="#">10</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">
+                  <span class="material-symbols-outlined">
+                    keyboard_arrow_right
+                    </span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">
+                  <span class="material-symbols-outlined">
+                    keyboard_double_arrow_right
+                    </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    
 
   </div>
 
