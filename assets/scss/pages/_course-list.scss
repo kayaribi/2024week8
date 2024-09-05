@@ -1,0 +1,294 @@
+.course-list {
+    overflow-x: hidden;
+
+    .banner {
+
+        button {
+            padding: 12px 16px 12px 16px;
+            border-radius: 12px;
+            color: #4B4B4B;
+            border: 1px solid #ECECEC;
+            background-color: white;
+
+            &:hover {
+                background-color: #0068FF;
+                color: white;
+                border: 1px solid #0068FF;
+
+            }
+
+            &:focus {
+                background-color: #003BB7;
+                color: white;
+                border: 1px solid #003BB7;
+            }
+        }
+
+
+        .swiper-slide {
+            width: auto !important;
+        }
+
+        h3,
+        nav {
+            position: relative;
+            z-index: 2;
+        }
+
+
+
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            color: #4B4B4B;
+        }
+
+        .flower-sm-left {
+            background-image: url("../images/deco/polygon-2.png");
+            position: absolute;
+            width: 44px;
+            height: 44px;
+            top: 40px;
+            left: 16px;
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        .flower-lg-right {
+            background-image: url("../images/deco/flower-2.png");
+            position: absolute;
+            width: 240px;
+            height: 240px;
+            top: 0px;
+            right: -56px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 0;
+        }
+
+        .button-next {
+            background-color: #E5F4FF;
+            padding: 13px 12px 13px 12px;
+            z-index: 10;
+        }
+
+
+        @media screen and (min-width: 768px) {
+
+
+            .flower-lg-left {
+                background-image: url("../images/deco/flower-2.png");
+                position: absolute;
+                width: 560px;
+                height: 471px;
+                top: -100px;
+                left: -70px;
+                background-repeat: no-repeat;
+                z-index: 0;
+            }
+
+            .flower-sm-left {
+                background-image: url("../images/deco/polygon-2.png");
+                position: absolute;
+                width: 44px;
+                height: 44px;
+                top: 80px;
+                left: 150px;
+                background-repeat: no-repeat;
+                z-index: 1;
+            }
+
+            .flower-lg-right {
+                background-image: url("../images/deco/flower-2.png");
+                position: absolute;
+                width: 560px;
+                height: 270px;
+                top: 100px;
+                right: 24px;
+                background-repeat: no-repeat;
+                z-index: 0;
+            }
+
+            .flower-sm-right {
+                background-image: url("../images/deco/polygon-2.png");
+                position: absolute;
+                width: 44px;
+                height: 44px;
+                top: 40px;
+                right: 360px;
+                background-repeat: no-repeat;
+                z-index: 1;
+            }
+        }
+    }
+
+    .popular-topics {
+        ul {
+            position: relative;
+        }
+
+        ul::before {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: -120px;
+            width: 150%;
+            height: 1px;
+            background-color: #ECECEC;
+        }
+
+        @media screen and (min-width: 768px) {
+            ul::before {
+                left: 0px;
+                width: 100%;
+                height: 1px;
+                background-color: #ECECEC;
+            }
+        }
+
+        .hot-picks {
+            display: inline-block;
+            padding-top: 16px;
+            padding-bottom: 12px;
+
+            &:hover {
+                color: #0068FF;
+            }
+        }
+
+        .hot-picks.active {
+            color: #0068FF;
+        }
+
+        .hot-picks {
+            position: relative;
+        }
+
+        .hot-picks:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 32px;
+            height: 4px;
+            background-color: transparent;
+            transform: translateX(-50%);
+        }
+
+        .custom-btn:hover .lesson {
+            color: white !important;
+        }
+
+        .swiper-slide {
+            width: auto;
+        }
+
+        .swiper-pagination-bullet-active {
+            width: 24px;
+            border-radius: 100px
+        }
+
+        .popular-swiper-button-left:hover,
+        .popular-swiper-button-right:hover {
+            color: #0068FF;
+        }
+
+        .swiper-pagination {
+            position: static;
+        }
+
+        .hot-picks:hover:before {
+            background-color: #0068FF;
+        }
+
+        .hot-picks.active:before {
+            background-color: #0068FF;
+        }
+    }
+
+    .mentors {
+        .custom-boder {
+            border: 1px solid #ECECEC !important;
+        }
+
+        .card-footer:last-child {
+            border-top: 1px solid #ECECEC !important;
+        }
+    }
+
+    .search {
+        .search-list {
+            &:hover {
+                color: #0068FF;
+                font-weight: 600;
+            }
+
+            &.active {
+                color: #0068FF;
+                font-weight: 600;
+            }
+        }
+
+        .rounded-custom {
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            border-radius: 100px;
+
+        }
+
+        .price-text {
+            font-size: 12px;
+        }
+
+        @media screen and (min-width: 768px) {
+            .price-text {
+                font-size: 14px;
+            }
+        }
+
+        .card-img-top {
+            border-radius: 12px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        .search-border {
+            border-bottom: 1px solid #ECECEC;
+        }
+
+        @media screen and (min-width: 768px) {
+            .card-img-top {
+                border-radius: 20px 20px 0 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .search-box-shadow {
+                box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.12);
+            }
+
+            .search-border {
+                border-bottom: 0px;
+            }
+        }
+        .page-link {
+            border-radius: 8px;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+          }
+          .material-symbols-outlined{
+            font-size: 16px;
+            line-height: 1.5;
+          }
+    }
+
+
+
+
+
+
+}
