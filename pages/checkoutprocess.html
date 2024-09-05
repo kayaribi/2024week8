@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>結帳流程頁</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <section class="checkoutprocess pt-sm-20 pb-sm-40 py-6 bg-neutral-10">
+      <div class="container">
+        <form action="#" id="testform">
+          <div class="row mb-6">
+            <div class="col-12">
+              <div class="d-flex align-items-center justify-content-center">
+                <div class="d-flex align-items-center justify-content-center">
+                  <i class="bi bi-1-circle-fill text-primary fs-5"></i>
+                  <p class="ms-2" style="color: #333333">確認訂單</p>
+                </div>
+                <div
+                  class="bg-neutral-60 mx-4"
+                  style="width: 40px; height: 1px"
+                ></div>
+                <div class="d-flex align-items-center justify-content-center">
+                  <i
+                    class="bi bi-2-circle-fill text-neutral-60 fs-5 d-sm-none d-block"
+                  ></i>
+                  <i
+                    class="bi bi-2-circle-fill text-primary fs-5 d-sm-block d-none"
+                  ></i>
+                  <p class="ms-2 d-sm-block d-none" style="color: #333333">
+                    訂單資訊
+                  </p>
+                </div>
+                <div
+                  class="bg-neutral-60 mx-4"
+                  style="width: 40px; height: 1px"
+                ></div>
+                <div class="d-flex align-items-center justify-content-center">
+                  <i class="bi bi-3-circle-fill text-neutral-60 fs-5"></i>
+                  <p class="ms-2 d-sm-block d-none" style="color: #333333">
+                    訂單完成
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 col-12">
+              <div class="bg-white rounded-3 mb-8">
+                <div
+                  class="border-bottom border-neutral-40 d-flex align-items-center py-4 px-6"
+                >
+                  <h5 class="text-black">商品明細</h5>
+                  <p class="ms-4">共 2 項課程</p>
+                </div>
+                <div
+                  class="d-flex align-items-center justify-content-between py-8 mx-6 border-bottom border-neutral-40"
+                >
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-1-square-fill fs-5 text-primary"></i>
+                    <p class="ms-3">使用 HTML、CSS 開發一個網站</p>
+                  </div>
+                  <p class="title-text text-black">NT$ 1,200</p>
+                </div>
+                <div
+                  class="d-flex align-items-center justify-content-between py-8 mx-6"
+                >
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-2-square-fill fs-5 text-primary"></i>
+                    <p class="ms-3">一變應萬變：RWD 響應式網頁設計</p>
+                  </div>
+                  <p class="title-text text-black">NT$ 1,200</p>
+                </div>
+              </div>
+              <div class="bg-white rounded-3 mb-8">
+                <div
+                  class="border-bottom border-neutral-40 d-flex align-items-center py-4 px-6"
+                >
+                  <h5 class="text-black">付款方式</h5>
+                </div>
+                <!-- 測試拿掉 -->
+                <div class="py-8 px-6">
+                  <div class="accordion accordion-flush" id="accordionExample">
+                    <div class="accordion-item border border-0">
+                      <div class="accordion-header" id="headingOne">
+                        <div
+                          class="form-check ps-0 py-5 d-flex align-items-center"
+                        >
+                          <input
+                            class="form-check-input ms-0 mt-0 float-none"
+                            type="radio"
+                            name="payment"
+                            id="cardOnePayment"
+                            style="
+                              width: 24px;
+                              height: 24px;
+                              background-size: 16px 16px;
+                            "
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne"
+                            aria-expanded="true"
+                            aria-controls="collapseOne"
+                            checked
+                          />
+                          <label
+                            class="form-check-label d-flex align-items-center ms-2"
+                            for="cardOnePayment"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne"
+                            aria-expanded="true"
+                            aria-controls="collapseOne"
+                          >
+                            信用卡一次付清
+                            <img
+                              src="../assets/images/icons/Type=VISA.png"
+                              alt="VISA"
+                              style="width: 24px; height: 24px"
+                              class="ms-6"
+                            />
+                            <img
+                              src="../assets/images/icons/Type=Mastercard.png"
+                              alt="Mastercard"
+                              style="width: 24px; height: 24px"
+                              class="mx-2"
+                            />
+                            <img
+                              src="../assets/images/icons/Type=JCB.png"
+                              alt="JCB"
+                              style="width: 24px; height: 24px"
+                            />
+                          </label>
+                        </div>
+                      </div>
+                      <fieldset>
+                        <div
+                          id="collapseOne"
+                          class="accordion-collapse collapse show"
+                          aria-labelledby="headingOne"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body p-0">
+                            <div class="bg-neutral-10 ms-8 p-6 rounded-4">
+                              <div class="card-wrap-width mb-4">
+                                <div class="mb-3">
+                                  <label
+                                    for="cardNumberInput"
+                                    class="form-label"
+                                    >信用卡卡號 </label
+                                  ><span class="text-alert-100 ms-1">*</span>
+                                  <input
+                                    type="text"
+                                    class="form-control p-4 testInput"
+                                    id="cardNumberInput"
+                                    placeholder="**** **** **** ****"
+                                    name="cardNumber"
+                                    required
+                                    checked
+                                  />
+                                </div>
+                                <div
+                                  class="d-flex justify-content-between flex-sm-row flex-column"
+                                >
+                                  <div class="card-item-width mb-sm-0 mb-6">
+                                    <label
+                                      for="cardValidityPeriodInput"
+                                      class="form-label"
+                                      >信用卡有限期限 </label
+                                    ><span class="text-alert-100 ms-1">*</span>
+                                    <input
+                                      type="text"
+                                      class="form-control p-4 testInput"
+                                      id="cardValidityPeriodInput"
+                                      placeholder="MM / YY"
+                                      name="cardValidityPeriod"
+                                      required
+                                    />
+                                  </div>
+                                  <div class="card-item-width">
+                                    <label for="cardCVVInput" class="form-label"
+                                      >卡片背面後三碼 </label
+                                    ><span class="text-alert-100 ms-1">*</span>
+                                    <input
+                                      type="text"
+                                      class="form-control p-4 testInput"
+                                      id="cardCVVInput"
+                                      placeholder="CVC / CVV"
+                                      name="cardCVV"
+                                      required
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <p class="body2-text">
+                                本公司採用喬睿科技 TapPay
+                                金流交易系統，消費者刷卡時直接在銀行端系統中交易，本公司不會留下您的信用卡資料，以保障你的權益，資料傳輸過程採用嚴密的
+                                SSL 2048bit 加密技術保護。
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+                    <div class="accordion-item border border-0">
+                      <div class="accordion-header" id="headingTwo">
+                        <div
+                          class="form-check ps-0 py-5 d-flex align-items-center"
+                        >
+                          <input
+                            class="form-check-input ms-0 mt-0 float-none"
+                            type="radio"
+                            name="payment"
+                            id="installment"
+                            style="
+                              width: 24px;
+                              height: 24px;
+                              background-size: 16px 16px;
+                            "
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo"
+                            aria-expanded="true"
+                            aria-controls="collapseTwo"
+                          />
+                          <label
+                            class="form-check-label d-flex align-items-center ms-2"
+                            for="installment"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo"
+                            aria-expanded="true"
+                            aria-controls="collapseTwo"
+                          >
+                            信用卡分期
+                            <img
+                              src="../assets/images/icons/Type=VISA.png"
+                              alt="VISA"
+                              style="width: 24px; height: 24px"
+                              class="ms-4"
+                            />
+                            <img
+                              src="../assets/images/icons/Type=Mastercard.png"
+                              alt="Mastercard"
+                              style="width: 24px; height: 24px"
+                              class="mx-2"
+                            />
+                            <img
+                              src="../assets/images/icons/Type=JCB.png"
+                              alt="JCB"
+                              style="width: 24px; height: 24px"
+                            />
+                          </label>
+                        </div>
+                      </div>
+                      <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body p-0">
+                          <div class="bg-neutral-10 ms-8 p-6 rounded-4">
+                            <p>
+                              下一步將連至第三方金流服務進行辦卡，您所有的交易資訊皆獲得安全保護。
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item border border-0">
+                      <div class="accordion-header" id="headingThree">
+                        <div
+                          class="form-check ps-0 py-5 d-flex align-items-center"
+                        >
+                          <input
+                            class="form-check-input ms-0 mt-0 float-none"
+                            type="radio"
+                            name="payment"
+                            id="linePay"
+                            style="
+                              width: 24px;
+                              height: 24px;
+                              background-size: 16px 16px;
+                            "
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree"
+                            aria-expanded="true"
+                            aria-controls="collapseThree"
+                          />
+                          <label
+                            class="form-check-label d-flex align-items-center ms-2"
+                            for="linePay"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree"
+                            aria-expanded="true"
+                            aria-controls="collapseThree"
+                          >
+                            LINE Pay
+                            <img
+                              src="../assets/images/icons/LINE-Pay(h)_W238_n 2.png"
+                              alt="LINE-Pay"
+                              style="width: 69px; height: 20px"
+                              class="ms-6"
+                            />
+                          </label>
+                        </div>
+                      </div>
+                      <div
+                        id="collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body p-0">
+                          <div class="bg-neutral-10 ms-8 p-6 rounded-4">
+                            <p>
+                              使用 LINE Pay 付款，可用 LINE Points
+                              折抵。您將被導入「LINE Pay」付款頁面進行安全結帳。
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item border border-0">
+                      <div class="accordion-header" id="headingFour">
+                        <div
+                          class="form-check ps-0 py-5 d-flex align-items-center"
+                        >
+                          <input
+                            class="form-check-input ms-0 mt-0 float-none"
+                            type="radio"
+                            name="payment"
+                            id="JKOPay"
+                            style="
+                              width: 24px;
+                              height: 24px;
+                              background-size: 16px 16px;
+                            "
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour"
+                            aria-expanded="true"
+                            aria-controls="collapseFour"
+                          />
+                          <label
+                            class="form-check-label d-flex align-items-center ms-2"
+                            for="JKOPay"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour"
+                            aria-expanded="true"
+                            aria-controls="collapseFour"
+                          >
+                            街口支付
+                            <img
+                              src="../assets/images/icons/image 31.png"
+                              alt="JKOPay"
+                              style="width: 49px; height: 20px"
+                              class="ms-6"
+                            />
+                          </label>
+                        </div>
+                      </div>
+                      <div
+                        id="collapseFour"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body p-0">
+                          <div class="bg-neutral-10 ms-8 p-6 rounded-4">
+                            <p>
+                              可用街口幣折抵，街口支付全用戶不分等級，使用街利存帳戶付款享筆筆 2%
+                              街口幣，回饋無上限！
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item border border-0">
+                      <div class="accordion-header" id="headingFive">
+                        <div
+                          class="form-check ps-0 py-5 d-flex align-items-center"
+                        >
+                          <input
+                            class="form-check-input ms-0 mt-0 float-none"
+                            type="radio"
+                            name="payment"
+                            id="ATM"
+                            style="
+                              width: 24px;
+                              height: 24px;
+                              background-size: 16px 16px;
+                            "
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive"
+                            aria-expanded="true"
+                            aria-controls="collapseFive"
+                          />
+                          <label
+                            class="form-check-label d-flex align-items-center ms-2"
+                            for="ATM"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive"
+                            aria-expanded="true"
+                            aria-controls="collapseFive"
+                          >
+                            ATM 轉帳
+                          </label>
+                        </div>
+                      </div>
+                      <div
+                        id="collapseFive"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body p-0">
+                          <div class="bg-neutral-10 ms-8 p-6 rounded-4">
+                            <p>下一步將連至第三方金流選擇銀行並取得繳費資訊</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item border border-0">
+                      <div class="accordion-header" id="headingSix">
+                        <div
+                          class="form-check ps-0 py-5 d-flex align-items-center"
+                        >
+                          <input
+                            class="form-check-input ms-0 mt-0 float-none"
+                            type="radio"
+                            name="payment"
+                            id="shop"
+                            style="
+                              width: 24px;
+                              height: 24px;
+                              background-size: 16px 16px;
+                            "
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix"
+                            aria-expanded="true"
+                            aria-controls="collapseSix"
+                          />
+                          <label
+                            class="form-check-label d-flex align-items-center ms-2"
+                            for="shop"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix"
+                            aria-expanded="true"
+                            aria-controls="collapseSix"
+                          >
+                            超商付款
+                          </label>
+                        </div>
+                      </div>
+                      <div
+                        id="collapseSix"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingSix"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body p-0">
+                          <div class="bg-neutral-10 ms-8 p-6 rounded-4">
+                            <p>
+                              超商付款將加收 NT$30
+                              手續費，若募資失敗手續費將不進行退款。
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white rounded-3 mb-8">
+                <div
+                  class="border-bottom border-neutral-40 d-flex align-items-center py-4 px-6"
+                >
+                  <h5 class="text-black">發票選項</h5>
+                </div>
+                <div class="py-4 px-6">
+                  <!-- 測試拿掉 -->
+                  <fieldset>
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary title-text mb-6"
+                      id="fillLastCheckout"
+                    >
+                      帶入上次結帳資料
+                    </button>
+                    <div
+                      class="mb-6 d-flex justify-content-between flex-md-row flex-column"
+                    >
+                      <div class="bill-item-width mb-md-0 mb-6">
+                        <label for="name" class="form-label">姓名</label
+                        ><span class="text-alert-100 ms-1">*</span>
+
+                        <input
+                          type="text"
+                          class="form-control p-4 testInput"
+                          id="name"
+                          placeholder="請填寫真實姓名"
+                          name="name"
+                          required
+                        />
+                      </div>
+                      <div class="bill-item-width">
+                        <label for="email" class="form-label"
+                          >聯絡用電子信箱</label
+                        ><span class="text-alert-100 ms-1">*</span>
+
+                        <input
+                          type="text"
+                          class="form-control p-4 testInput"
+                          id="email"
+                          placeholder="請填寫電子信箱"
+                          name="email"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </fieldset>
+                  <div
+                    class="d-flex justify-content-between flex-md-row flex-column"
+                  >
+                    <div class="bill-item-width mb-md-0 mb-6">
+                      <label for="bill" class="form-label">發票類型</label
+                      ><span class="text-alert-100 ms-1">*</span>
+
+                      <div class="dropdown">
+                        <button
+                          class="btn btn-white border dropdown-toggle w-100 text-start p-4 text-black"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span id="changeText">電子發票</span>
+                        </button>
+                        <ul
+                          class="dropdown-menu w-100 p-2"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" id="bill" href="#"
+                              >電子發票</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" id="company" href="#"
+                              >統編發票</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="d-flex align-items-center mt-2">
+                        <img
+                          src="../assets/images/deco/flower-5.png"
+                          alt="flower-5"
+                        />
+                        <p class="body2-text ms-2">
+                          如需開立統編，請選擇統編發票
+                        </p>
+                      </div>
+                    </div>
+                    <div class="bill-item-width">
+                      <label for="bill" class="form-label">領取方式</label
+                      ><span class="text-alert-100 ms-1">*</span>
+
+                      <div class="dropdown">
+                        <button
+                          class="btn btn-white border dropdown-toggle w-100 text-start p-4 text-black"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span id="changeTextReceive"
+                            >存在 Learning 中，中獎寄信通知</span
+                          >
+                        </button>
+                        <ul
+                          class="dropdown-menu w-100 p-2"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" id="sendEmail" href="#"
+                              >存在 Learning 中，中獎寄信通知</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" id="carrier" href="#"
+                              >手機條碼載具</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              id="citizenDigital"
+                              href="#"
+                              >自然人憑證</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div style="display: none" id="companyDetail">
+                    <div
+                      class="my-6 d-flex justify-content-between flex-md-row flex-column"
+                    >
+                      <div class="bill-item-width mb-md-0 mb-6">
+                        <label for="companyLetterhead" class="form-label"
+                          >公司抬頭</label
+                        ><span class="text-alert-100 ms-1">*</span>
+
+                        <input
+                          type="text"
+                          class="form-control p-4"
+                          id="companyLetterhead"
+                          placeholder="請輸入公司抬頭"
+                          name="companyLetterhead"
+                        />
+                      </div>
+                      <div class="bill-item-width">
+                        <label for="taxIDNumber" class="form-label"
+                          >公司統編</label
+                        ><span class="text-alert-100 ms-1">*</span>
+
+                        <input
+                          type="text"
+                          class="form-control p-4"
+                          id="taxIDNumber"
+                          placeholder="請輸入公司統編"
+                          name="taxIDNumber"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between flex-md-row flex-column"
+                    >
+                      <div class="postalCode-item-width mb-md-0 mb-6">
+                        <label for="postalCode" class="form-label"
+                          >郵遞區號</label
+                        ><span class="text-alert-100 ms-1">*</span>
+
+                        <input
+                          type="text"
+                          class="form-control p-4"
+                          id="postalCode"
+                          placeholder="請輸入郵遞區號"
+                          name="postalCode"
+                        />
+                      </div>
+                      <div class="companyAddress-item-width">
+                        <label for="companyAddress" class="form-label"
+                          >公司地址</label
+                        ><span class="text-alert-100 ms-1">*</span>
+
+                        <input
+                          type="text"
+                          class="form-control p-4"
+                          id="companyAddress"
+                          placeholder="請輸入公司地址"
+                          name="companyAddress"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div style="display: none" id="carrier-jq">
+                    <div class="my-6">
+                      <div>
+                        <label for="carrier-jq-content" class="form-label"
+                          >載具條碼</label
+                        ><span class="text-alert-100 ms-1">*</span>
+
+                        <input
+                          type="text"
+                          class="form-control p-4"
+                          id="carrier-jq-content"
+                          placeholder="前面加上 / ，加上 7 個數字及大寫字母字元"
+                          name="carrierContent"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-12">
+              <div class="bg-white rounded-3 p-6">
+                <div class="d-sm-block d-none border-bottom border-neutral-40">
+                  <h5 class="text-black">商品明細</h5>
+
+                  <div
+                    class="d-flex align-items-center justify-content-between my-8"
+                  >
+                    <p>2 項課程小計</p>
+                    <p class="title-text">NT$ 3,600</p>
+                  </div>
+                </div>
+                <div
+                  class="d-sm-block d-flex align-items-center justify-content-between"
+                >
+                  <div
+                    class="d-sm-flex d-none align-items-center justify-content-between my-8"
+                  >
+                    <p>總計</p>
+                    <p class="fs-3 fw-semibold text-black">NT$ 3,600</p>
+                  </div>
+                  <div class="d-sm-none d-block">
+                    <button
+                      type="button"
+                      class="btn border-0 p-0 tiny-text text-neutral-60"
+                    >
+                      展開明細<i class="bi bi-chevron-up ms-1"></i>
+                    </button>
+                    <p class="d-sm-none d-block fs-6 fw-semibold">NT$ 3,600</p>
+                  </div>
+
+                  <div>
+                    <button
+                      type="submit"
+                      class="btn btn-neutral-40 fw-semibold w-100 text-neutral-60"
+                      id="testformBtn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#processAanOrder"
+                      disabled
+                    >
+                      同意並付款
+                    </button>
+                    <p class="mt-4 body2-text d-sm-block d-none">
+                      確認購買即表示您已審閱 Learning
+                      所提供之購物相關條款，並同意條款內容。
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="modal fade blur-modal"
+                  id="processAanOrder"
+                  tabindex="-1"
+                  aria-labelledby="processAanOrder"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content mx-auto">
+                      <div class="modal-body">
+                        <div class="d-flex flex-column align-items-center">
+                          <div class="d-flex dot-mb">
+                            <div
+                              class="bg-black rounded-circle modal-dot"
+                            ></div>
+                            <div
+                              class="bg-neutral-80 rounded-circle mx-4 modal-dot"
+                            ></div>
+                            <div
+                              class="bg-neutral-60 rounded-circle modal-dot"
+                            ></div>
+                          </div>
+                          <div class="d-flex flex-column align-items-center">
+                            <img src="../assets/images/logo.png" alt="logo" />
+                            <p class="fw-semibold text-black mt-4">
+                              正在處理您的訂單
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
