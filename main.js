@@ -41,6 +41,50 @@ var swiper = new Swiper(".mySwiperHot", {
   },
 });
 
+// 頂尖講師 --蚊香
+var teacherswiper = new Swiper(".teacherswiper", {
+  spaceBetween: 24,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+// 課程列表 --蚊香
+var courselistswiper = new Swiper(".course-list-swiper", {
+  slidesPerView: "auto",
+  spaceBetween: 8,
+  navigation: {
+    nextEl: ".button-next",
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 10,
+    },
+  },
+});
+
+var popularswiper = new Swiper(".popular-swiper", {
+  slidesPerView: "auto",
+  spaceBetween: 24,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".popular-swiper-button-right",
+    prevEl: ".popular-swiper-button-left",
+  },
+});
+
 // swiper (首頁)看看大家都買了什麼區塊--倫倫
 
 // init Swiper:
@@ -155,37 +199,6 @@ $(document).ready(function () {
   });
 });
 
-// 頂尖講師 --蚊香
-var teacherswiper = new Swiper(".teacherswiper", {
-  spaceBetween: 24,
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-    },
-    992: {
-      slidesPerView: 3,
-    },
-  },
-});
-
-// 課程列表 --蚊香
-var courselistswiper = new Swiper(".courselistswiper", {
-  slidesPerView: 4,
-  spaceBetween: 8,
-  navigation: {
-    nextEl: ".button-next",
-  },
-
-  breakpoints: {
-    768: {
-      slidesPerView: 10,
-    },
-  },
-});
-
 //登入JS
 const loginForm = document.getElementById("loginForm");
 const loginBtn = document.getElementById("loginBtn");
@@ -209,5 +222,12 @@ loginPasswordInput.addEventListener("input", function () {
     loginpasswordIcon.src = "/assets/images/icons/ic_eye_close.png";
   } else {
     loginpasswordIcon.src = "/assets/images/icons/ic_eye-open.png";
+  }
+});
+loginPasswordInput.addEventListener('input', function () {
+  if (loginPasswordInput.value.length > 0) {
+    loginpasswordIcon.src = '/assets/images/icons/ic_eye_close.png';
+  } else {
+    loginpasswordIcon.src = '/assets/images/icons/ic_eye-open.png';
   }
 });
