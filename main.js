@@ -124,6 +124,17 @@ document
 
 // 表單輸入後，顯示送出狀態按鈕 -- 倫倫
 $(document).ready(function () {
+  //modal效果結束後，執行頁面跳轉
+  const modalButton = document.getElementById("testformBtn");
+  const link = document.getElementById("link");
+  modalButton.addEventListener("click", function (event) {
+    // 模擬 Modal 完成後再跳轉，這裡設一個延遲，假設 Modal 顯示2秒後關閉並跳轉
+    setTimeout(function () {
+      // 手動觸發跳轉
+      window.location.href = link.href;
+    }, 1000); // 2秒後跳轉，可以根據需求調整時間
+  });
+
   // 監聽表單內所有 input 的變化
   $("#testform .testInput").on("input", function () {
     // 檢查是否所有 input 都有值
@@ -141,11 +152,13 @@ $(document).ready(function () {
         .prop("disabled", false)
         .removeClass("btn-neutral-40 text-neutral-60")
         .addClass("btn-primary text-white");
+      $("#link").removeClass("aTagDisabled");
     } else {
       $("#testformBtn")
         .prop("disabled", true)
         .removeClass("btn-primary text-white")
         .addClass("btn-neutral-40 text-neutral-60");
+      $("#link").addClass("aTagDisabled");
     }
   });
 
