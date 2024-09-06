@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>使用者登入</title>
     
-  <script type="module" crossorigin src="/2024week8/assets/main-697da234.js"></script>
+  <script type="module" crossorigin src="/2024week8/assets/main-aff2bd8e.js"></script>
   <link rel="stylesheet" href="/2024week8/assets/main-8d0d3742.css">
 </head>
 <body>
     <div class="d-flex align-items-center">
         <img class="d-none d-xxl-block py-10 ps-10" src="/2024week8/assets/login-ad5387e3.png" alt="login-pic">
         <div action="" class="container">
-            <div class="row d-flex justify-content-center px-3 px-lg-0 pt-15 pt-lg-0">
+            <div class="row d-flex justify-content-center px-3 px-lg-0 py-15 py-xxl-0">
                 <div class="col col-xxl-6">
                     <div>
                         <h1 class="mb-6 mb-lg-10 text-neutral-100">歡迎回來！</h1>
@@ -66,6 +66,42 @@
             </div>
         </div>
     </div>
-    
+    <!-- JS -->
+    <script>
+        const loginForm = document.getElementById("loginForm");
+        const loginBtn = document.getElementById("loginBtn");
+        const loginPasswordInput = document.getElementById("loginPassword");
+        const loginpasswordIcon = document.getElementById("login-password-icon");
+        
+        loginForm.addEventListener("input", function () {
+            if (loginForm.checkValidity()) {
+                loginBtn.disabled = false; // 如果表單有效，啟用按鈕
+                loginBtn.style.backgroundColor = "#0068FF";
+                loginBtn.style.color = "#ffffff";
+                } 
+            else {
+                loginBtn.disabled = true; // 如果表單無效，禁用按鈕
+                loginBtn.style.backgroundColor = "#ECECEC";
+                loginBtn.style.color = "#909090";
+                }
+        });
+        loginPasswordInput.addEventListener("input", function () {
+            if (loginPasswordInput.value.length > 0) {
+                loginpasswordIcon.src = "/assets/images/icons/ic_eye_close.png";
+                } 
+            else {
+                loginpasswordIcon.src = "/assets/images/icons/ic_eye-open.png";
+                }
+        });
+        loginPasswordInput.addEventListener('input', function () {
+            if (loginPasswordInput.value.length > 0) {
+                loginpasswordIcon.src = '/assets/images/icons/ic_eye_close.png';
+                } 
+            else {
+                loginpasswordIcon.src = '/assets/images/icons/ic_eye-open.png';
+                }
+        });
+    </script>
+     
 </body>
 </html>
