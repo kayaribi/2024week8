@@ -211,36 +211,3 @@ $(document).ready(function () {
     // 在這裡執行表單處理的邏輯，或使用 AJAX 提交
   });
 });
-
-//登入JS
-const loginForm = document.getElementById("loginForm");
-const loginBtn = document.getElementById("loginBtn");
-const loginPasswordInput = document.getElementById("loginPassword");
-const loginpasswordIcon = document.getElementById("login-password-icon");
-
-loginForm.addEventListener("input", function () {
-  if (loginForm.checkValidity()) {
-    loginBtn.disabled = false; // 如果表單有效，啟用按鈕
-    loginBtn.style.backgroundColor = "#0068FF";
-    loginBtn.style.color = "#ffffff";
-  } else {
-    loginBtn.disabled = true; // 如果表單無效，禁用按鈕
-    loginBtn.style.backgroundColor = "#ECECEC";
-    loginBtn.style.color = "#909090";
-  }
-});
-
-loginPasswordInput.addEventListener("input", function () {
-  if (loginPasswordInput.value.length > 0) {
-    loginpasswordIcon.src = "/assets/images/icons/ic_eye_close.png";
-  } else {
-    loginpasswordIcon.src = "/assets/images/icons/ic_eye-open.png";
-  }
-});
-loginPasswordInput.addEventListener('input', function () {
-  if (loginPasswordInput.value.length > 0) {
-    loginpasswordIcon.src = '/assets/images/icons/ic_eye_close.png';
-  } else {
-    loginpasswordIcon.src = '/assets/images/icons/ic_eye-open.png';
-  }
-});
