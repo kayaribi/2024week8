@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>講師介紹｜LEARNING 課程網站</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+        <header class="text-center">
+            <picture>
+                <source media="(min-width: 375px)" srcset="../assets/images/hero-5.png">
+                <img class="w-100" src="../assets/images/hero-sm-5.png" alt="photo">
+            </picture>
+            <div class="container position-relative">
+                <img class="rounded-circle position-absolute bg-neutral-0 p-5 translate-middle-y start-0 top-100 mt-10 d-none d-lg-inline-block"
+                    src="..//assets/images/image 28.png" alt="photo">
+                <img class="rounded-circle position-absolute bg-neutral-0 p-2 translate-middle start-50 top-100 d-inline-block d-lg-none"
+                    src="..//assets/images/image 28.png" alt="photo" style="width: 60px;height: 60px;">
+            </div>
+        </header>
+        <section class="container py-12 py-lg-25">
+            <div class="d-flex justify-content-center text-center text-md-start">
+                <div class="d-none d-md-block" style="width: 25%;"></div>
+                <div class="ms-md-auto">
+                    <h1 class="mb-md-6 mb-4 text-neutral-100">六角學院</h1>
+                    <div class="d-flex justify-content-center justify-content-md-start mb-md-6 mb-4">
+                        <p class="pe-md-6 pe-3 text-nowrap"><span
+                                class="fw-semibold fs-md-6 text-primary me-1">4</span>堂課</p>
+                        <span class="border border-neutral-60"></span>
+                        <p class="px-md-6 px-3 text-nowrap"><span
+                                class="fw-semibold fs-md-6 text-primary me-1">8463</span>收藏數</p>
+                        <span class="border border-neutral-60"></span>
+                        <p class="ps-md-6 ps-3 text-nowrap"><span
+                                class="fw-semibold fs-md-6 text-primary me-1">20,218</span>個學生</p>
+                    </div>
+                    <div class="text-start">
+                        <p class="mb-4 mb-md-6">六角學院 是一所線上程式開發學習單位，目前已累積 20,000
+                            名學員，讓更多人藉由線上學習在職涯規劃上有更多的選擇是我們的使命是，如果您贊同我們的理念，歡迎加入六角。
+                            <br>我們將深入了解您想發展的領域，每位實習生我們都會量身打造專屬於您的舞台，並讓您實際瞭解公司營運 Know how。
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-center justify-content-md-start">
+                        <a href="#"
+                            class="d-flex justify-content-center align-items-center border-neutral-80 border rounded-circle"
+                            style="width: 40px;height: 40px;">
+                            <i class="bi bi-line"></i>
+                        </a>
+                        <a href="#"
+                            class="mx-4 d-flex justify-content-center align-items-center border-neutral-80 border rounded-circle"
+                            style="width: 40px;height: 40px;">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                        <a href="#"
+                            class="d-flex justify-content-center align-items-center border-neutral-80 border rounded-circle"
+                            style="width: 40px;height: 40px;">
+                            <p class="fw-bolder">f</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <main class="container">
+            <div class="d-flex align-items-center mb-4 mb-md-6">
+                <img class="me-1" src="../assets/images/deco/flower-5.png" alt="photo">
+                <h5 class="fs-6 fs-md-5 text-neutral-100">六角學院開的課</h5>
+            </div>
+            <div class="swiper everyoneBuyswiper pb-30 pb-md-50">
+                <div class="swiper-wrapper">
+                    <!-- 第一張 -->
+                    <div class="swiper-slide shadow">
+                        <div class="card position-relative h-100 rounded-3 border-0">
+                            <p class="sub-text text-alert-100 bg-alert-10 rounded-pill everyone-card-discount">
+                                限時 8 折 🔥</p>
+                            <img src="../assets/images/course-5.png" class="card-img-top rounded-top-3" alt="course-5">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <h4 class="h6 text-black mb-4">小白也會！從零開始學習 Python 程式設計</h4>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <img src="../assets/images/avatar-2.png" alt="avatar-2" />
+                                        <p class="ms-2">Kelly Hsu</p>
+                                    </div>
+                                    <div>
+                                        <p class="fw-bold fs-6 text-primary text-end">NT$ 2,480</p>
+                                        <p class="body2-text text-decoration-line-through text-end"
+                                            style="color: #808080">NT$ 3,200</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer py-4 bg-white">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex flex-column align-items-start">
+                                        <p class="body2-text bg-neutral-40 px-3 py-1 rounded-pill">程式開發</p>
+                                        <p class="body2-text mt-1">已有 420 位同學加入</p>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-star-fill tiny-text text-warning"></i>
+                                        <div class="d-flex align-items-center ms-1">
+                                            <p class="fw-medium body2-text" style="color: #180000">4.0</p>
+                                            <p class="fw-medium body2-text ms-1" style="color: #808080">(333)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide shadow">
+                        <div class="card position-relative h-100 rounded-3 border-0">
+                            <p class="sub-text text-alert-100 bg-alert-10 rounded-pill everyone-card-discount">
+                                限時 8 折 🔥</p>
+                            <img src="../assets/images/course-6.png" class="card-img-top rounded-top-3" alt="course-6">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <h4 class="h6 text-black">全面掌握 JavaScript 開發技術</h4>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <img src="../assets/images/avatar-2.png" alt="avatar-2" />
+                                        <p class="ms-2">Kelly Hsu</p>
+                                    </div>
+                                    <div>
+                                        <p class="fw-bold fs-6 text-primary text-end">NT$ 2,480</p>
+                                        <p class="body2-text text-decoration-line-through text-end"
+                                            style="color: #808080">NT$ 3,200</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer py-4 bg-white">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex flex-column align-items-start">
+                                        <p class="body2-text bg-neutral-40 px-3 py-1 rounded-pill">程式開發</p>
+                                        <p class="body2-text mt-1">已有 420 位同學加入</p>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-star-fill tiny-text text-warning"></i>
+                                        <div class="d-flex align-items-center ms-1">
+                                            <p class="fw-medium body2-text" style="color: #180000">4.0</p>
+                                            <p class="fw-medium body2-text ms-1" style="color: #808080">(333)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide shadow">
+                        <div class="card h-100 rounded-3 border-0" style="border-radius: 20px; border-width: 0px">
+                            <img src="../assets/images/course-7.png" class="card-img-top rounded-top-3" alt="course-7">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <h4 class="h6 text-black mb-4">HTML & CSS 網頁設計基礎教程</h4>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <img src="../assets/images/avatar-2.png" alt="avatar-2" />
+                                        <p class="ms-2">Kelly Hsu</p>
+                                    </div>
+                                    <div>
+                                        <p class="fw-bold fs-6 text-primary text-end">NT$ 2,480</p>
+                                        <p class="body2-text text-decoration-line-through text-end"
+                                            style="color: #808080">NT$ 3,200</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer py-4 bg-white">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex flex-column align-items-start">
+                                        <p class="body2-text bg-neutral-40 px-3 py-1 rounded-pill">程式開發</p>
+                                        <p class="body2-text mt-1">已有 420 位同學加入</p>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-star-fill tiny-text text-warning"></i>
+                                        <div class="d-flex align-items-center ms-1">
+                                            <p class="fw-medium body2-text" style="color: #180000">4.0</p>
+                                            <p class="fw-medium body2-text ms-1" style="color: #808080">(333)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide shadow">
+                        <div class="card h-100 rounded-3 border-0" style="border-radius: 20px; border-width: 0px">
+                            <img src="../assets/images/course-8.png" class="card-img-top rounded-top-3" alt="course-8">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <h4 class="h6 text-black mb-4">更進一步！深入學習 Node.js 與後端開發</h4>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <img src="../assets/images/avatar-2.png" alt="avatar-2" />
+                                        <p class="ms-2">Kelly Hsu</p>
+                                    </div>
+                                    <div>
+                                        <p class="fw-bold fs-6 text-primary text-end">NT$ 2,480</p>
+                                        <p class="body2-text text-decoration-line-through text-end"
+                                            style="color: #808080">NT$ 3,200</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer py-4 bg-white">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex flex-column align-items-start">
+                                        <p class="body2-text bg-neutral-40 px-3 py-1 rounded-pill">程式開發</p>
+                                        <p class="body2-text mt-1">已有 420 位同學加入</p>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-star-fill tiny-text text-warning"></i>
+                                        <div class="d-flex align-items-center ms-1">
+                                            <p class="fw-medium body2-text" style="color: #180000">4.0</p>
+                                            <p class="fw-medium body2-text ms-1" style="color: #808080">(333)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>
