@@ -1,0 +1,114 @@
+.card-wrap-width {
+  max-width: 480px;
+}
+
+.card-item-width {
+  width: calc(50% - 8px);
+}
+
+@media screen and (max-width: 575px) {
+  .card-item-width {
+    width: 100%;
+  }
+}
+
+.bill-item-width {
+  width: calc(50% - 8px);
+}
+
+@media screen and (max-width: 767px) {
+  .bill-item-width {
+    width: 100%;
+  }
+}
+
+.postalCode-item-width {
+  width: calc(30% - 8px);
+}
+
+.companyAddress-item-width {
+  width: calc(70% - 8px);
+}
+
+@media screen and (max-width: 767px) {
+  .postalCode-item-width {
+    width: 100%;
+  }
+
+  .companyAddress-item-width {
+    width: 100%;
+  }
+}
+
+.checkoutprocess {
+  .dropdown-item {
+    padding: 16px;
+    &:hover {
+      background-color: #e5f4ff;
+      border-radius: 8px;
+      color: #0068ff;
+    }
+  }
+}
+
+.checkoutprocess {
+  .modal-body {
+    padding: 80px 0;
+
+    .modal-dot {
+      width: 12px;
+      height: 12px;
+    }
+
+    .dot-mb {
+      margin-bottom: 60px;
+    }
+
+    img {
+      width: 200px;
+      height: 32px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .modal-content {
+    width: 440px;
+  }
+
+  .blur-modal {
+    backdrop-filter: blur(5px);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .checkoutprocess {
+    .modal-body {
+      padding: 48px 0px 24px 0px;
+
+      .modal-dot {
+        width: 8px;
+        height: 8px;
+      }
+
+      .dot-mb {
+        margin-bottom: 40px;
+      }
+
+      img {
+        width: 125px;
+        height: 20px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .modal-content {
+      width: 227px;
+    }
+  }
+}

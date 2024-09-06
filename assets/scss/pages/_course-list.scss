@@ -27,7 +27,6 @@
 
         .swiper-slide {
             width: auto !important;
-            /* 設定每個 slide 的右邊距為 8 公分 */
         }
 
         h3,
@@ -121,42 +120,175 @@
             }
         }
     }
-}
 
-.popular-topics {
-    .hot-picks {
-        display: inline-block;
-        padding-top: 16px;
-        padding-bottom: 12px;
-        &:hover {
+    .popular-topics {
+        ul {
+            position: relative;
+        }
+
+        ul::before {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: -120px;
+            width: 150%;
+            height: 1px;
+            background-color: #ECECEC;
+        }
+
+        @media screen and (min-width: 768px) {
+            ul::before {
+                left: 0px;
+                width: 100%;
+                height: 1px;
+                background-color: #ECECEC;
+            }
+        }
+
+        .hot-picks {
+            display: inline-block;
+            padding-top: 16px;
+            padding-bottom: 12px;
+
+            &:hover {
+                color: #0068FF;
+            }
+        }
+
+        .hot-picks.active {
             color: #0068FF;
+        }
+
+        .hot-picks {
+            position: relative;
+        }
+
+        .hot-picks:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 32px;
+            height: 4px;
+            background-color: transparent;
+            transform: translateX(-50%);
+        }
+
+        .custom-btn:hover .lesson {
+            color: white !important;
+        }
+
+        .swiper-slide {
+            width: auto;
+        }
+
+        .swiper-pagination-bullet-active {
+            width: 24px;
+            border-radius: 100px
+        }
+
+        .popular-swiper-button-left:hover,
+        .popular-swiper-button-right:hover {
+            color: #0068FF;
+        }
+
+        .swiper-pagination {
+            position: static;
+        }
+
+        .hot-picks:hover:before {
+            background-color: #0068FF;
+        }
+
+        .hot-picks.active:before {
+            background-color: #0068FF;
         }
     }
 
-    .hot-picks.active {
-        color: #0068FF;
+    .mentors {
+        .custom-boder {
+            border: 1px solid #ECECEC !important;
+        }
+
+        .card-footer:last-child {
+            border-top: 1px solid #ECECEC !important;
+        }
     }
 
-    .hot-picks {
-        position: relative;
+    .search {
+        .search-list {
+            &:hover {
+                color: #0068FF;
+                font-weight: 600;
+            }
+
+            &.active {
+                color: #0068FF;
+                font-weight: 600;
+            }
+        }
+
+        .rounded-custom {
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            border-radius: 100px;
+
+        }
+
+        .price-text {
+            font-size: 12px;
+        }
+
+        @media screen and (min-width: 768px) {
+            .price-text {
+                font-size: 14px;
+            }
+        }
+
+        .card-img-top {
+            border-radius: 12px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        .search-border {
+            border-bottom: 1px solid #ECECEC;
+        }
+
+        @media screen and (min-width: 768px) {
+            .card-img-top {
+                border-radius: 20px 20px 0 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .search-box-shadow {
+                box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.12);
+            }
+
+            .search-border {
+                border-bottom: 0px;
+            }
+        }
+        .page-link {
+            border-radius: 8px;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+          }
+          .material-symbols-outlined{
+            font-size: 16px;
+            line-height: 1.5;
+          }
     }
 
-    .hot-picks:before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        width: 32px;
-        height: 4px;
-        background-color: transparent;
-        transform: translateX(-50%);
-    }
-}
 
-.hot-picks:hover:before {
-    background-color: #0068FF;
-}
 
-.hot-picks.active:before {
-    background-color: #0068FF;
+
+
+
 }
