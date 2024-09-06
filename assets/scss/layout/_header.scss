@@ -1,4 +1,40 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.dropdown-toggle::after{
+  content: "\F282";
+  font-family: "bootstrap-icons";
+  border: none;
+  vertical-align: middle;
+}
+.dropdown-item{
+  &:not(.dropdown-item-all){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &::after{
+      content: "\F285";
+      font-family: "bootstrap-icons";
+      right: 0;
+    }
+  }
+  &:hover{
+    color: #fff;
+    background: $primary;
+    border-radius: 12px;
+  }
+}
+
+.navList{
+    height: calc(100vh - 200px);
+    overflow-y: scroll;
+  @include media-breakpoint-up(lg){
+    height: 600px;
+  }
+  
+}
+
+.dropdownMenuInner{
+  border: 0;
+  width: 100%;
+  max-width: 600px;
+  height: calc(100vh - 100px);
+  top: -160px !important;
 }
